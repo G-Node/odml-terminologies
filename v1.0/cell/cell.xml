@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
+<odML version="1">
+	<repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+	<!-- ********************************************************* -->
+	<!--                      Cell  section                        -->
+	<!-- ********************************************************* -->
+	<section>
+		<type>cell</type>
+		<name>Cell</name>
+      <definition>Specification of the recorded cell.
+      definition be a subsection of the <a href="../subject/subjectTerms.xml">Subsect</a> section.</definition>
+           
+      <property>
+         <name>Type</name>
+	      <value>
+			<type>string</type>
+	      </value>
+         <nameDefinition>The type of the recorded cell. E.g. pyramidal cell.</nameDefinition>
+      </property>
+      
+      <property>
+         <name>BrainRegion</name>
+	      <value>
+			<type>string</type>
+	      </value>
+         <nameDefinition>The region the cell is located in. For example
+         Retina, Cortex, Cerebellum etc.</nameDefinition>
+      </property> 
+      
+      <property>
+         <name>BrainSubRegion</name>
+	      <value>
+			<type>string</type>
+	      </value>
+         <nameDefinition>More detailed specification of the region the
+         cell is located in. For example, if BrainRegion is
+         "hippocampus", then the BrainSubRegion may be "CA1".</nameDefinition>
+      </property> 
+      
+      <property>
+         <name>Layer</name>
+	      <value>
+			<type>string</type>
+	      </value>
+         <nameDefinition>The name of the layer. For example, layer 4 in CA1.</nameDefinition>
+      </property> 
+      
+      <property>
+         <name>Ganglion</name>
+	      <value>
+			<type>string</type>
+	      </value>
+         <nameDefinition>Like the pro-, meta- and mesothoracal ganglion
+         in invertebrates.</nameDefinition>
+      </property>
+      
+      <property>
+         <name>Structure</name>
+	      <value>
+			<type>string</type>
+	      </value>
+         <nameDefinition>The structure of the organism the cell is
+         located in e.g. Eye, Spinal cord...</nameDefinition>
+      </property>
+      
+      <property>
+         <name>RecordingLocation</name>
+	      <value>
+			<type>string</type>
+	      </value>
+         <nameDefinition>The recording location in the cell. E.g. axonal, dendritic,
+         somatic, ...</nameDefinition>
+      </property> 
+      
+      <property>
+         <name>Identification</name>
+	      <value>
+			<type>string</type>
+	      </value>
+         <nameDefinition>How was the cell identified?</nameDefinition>
+      </property>
+      
+      <property>
+         <name>RestingPotential</name>
+	      <value>
+			<type>float</type>
+			<unit>mV</unit>
+		 </value>
+         <nameDefinition>What is the cells resting potential of the
+         cell. An indiator for the recording quality.</nameDefinition>
+      </property> 
+      
+      <property>
+         <name>BaselineRate</name>
+	      <value>
+			<type>float</type>
+			<unit>Hz</unit>
+		  </value>
+         <nameDefinition>For spiking cells, the spontaneous activity
+         which might be an indicator for the cell's health status and
+         thus recording quality.</nameDefinition>
+      </property>
+      
+      <property>
+         <name>BaselineNoise</name>
+	      <value>
+			<type>float</type>
+	      </value>
+         <nameDefinition>The standard deviation of the baseline
+         membrane potential.</nameDefinition>
+      </property> 
+      
+      <property>
+         <name>Rheobase</name>
+	      <value>
+			<type>float</type>
+			<unit>nA</unit>
+		  </value>
+         <nameDefinition>The minimum current required to make the cell
+         fire action potentials.</nameDefinition>
+      </property> 
+      
+      <property>
+         <name>MembraneCapacity</name>
+	      <value>
+			<type>float</type>
+			<unit>pF</unit>
+		  </value>
+         <nameDefinition>The capacity of the cell.</nameDefinition>
+      </property>
+      
+      <property>
+         <name>InputResistance</name>
+	      <value>
+			<type>float</type>
+			<unit>MOhm</unit>
+		  </value>
+         <nameDefinition>The input resistance of the recorded
+         cell.</nameDefinition>
+      </property>   
+      
+      <property>
+         <name>TimeConstant</name>
+	      <value>
+			<type>float</type>
+			<unit>ms</unit>
+		  </value>
+         <nameDefinition>The mebrane time-constant.</nameDefinition>
+      </property>  
+      
+      <property>
+         <name>Comment</name>
+	      <value>
+			<type>text</type>
+	      </value>
+         <nameDefinition>A comment on the cell.</nameDefinition>
+      </property>
+   </section> 
+</odML>

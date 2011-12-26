@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="odmlRepository.xsl" xmlns:odml="http://www.g-node.org/odml"?>
+<odML version="1"> 
+	<section>
+	   <type>analysis</type>
+	   <name>Analysis</name>
+	   <include>http://portal.g-node.org/odml/terminologies/v1.0/analysis/analysis.xml</include>
+	</section>
+	 
+    <section>
+	   <type>analysis/psth</type>
+	   <name>PSTH</name>
+           <include>http://portal.g-node.org/odml/terminologies/v1.0/analysis/psth.xml</include>
+	</section>
+         
+    <section>
+           <type>analysis/power_spectrum</type>
+           <name>PowerSpectrum</name>
+           <include>http://portal.g-node.org/odml/terminologies/v1.0/analysis/power_spectrum.xml</include>
+	</section>
+         
+	<section>
+	   <type>cell</type>
+	   <name>Cell</name>
+           <include>http://portal.g-node.org/odml/terminologies/v1.0/cell/cell.xml</include>
+	</section>
+	
+    <section>
+          <type>dataset</type>
+          <name>Dataset</name>
+          <include>http://portal.g-node.org/odml/terminologies/v1.0/dataset/dataset.xml</include>
+    </section>
+
+    <section>
+          <type>electrode/generic</type>
+          <name>Electrode</name>
+    </section>
+
+    <section>
+       <type>event</type>
+          <name>Event</name>
+          <include>http://portal.g-node.org/odml/terminologies/v1.0/event/event.xml</include>
+    </section>
+
+    <section>
+          <type>event_list</type>
+          <name>EventList</name>
+          <include>http://portal.g-node.org/odml/terminologies/v1.0/collection/event_list.xml</include>
+	</section>
+
+    <section>
+          <type>experiment</type>
+          <name>Experiment</name>
+          <include>http://portal.g-node.org/odml/terminologies/v1.0/experiment/experiment.xml</include>
+    </section>
+        
+    <section>
+	  <type>experiment/behavior</type>
+	  <name>Behavior</name>
+          <include>http://portal.g-node.org/odml/terminologies/v1.0/experiment/behavior.xml</include>
+	</section>
+
+    <section>
+	   <type>experiment/electrophysiology</type>
+	   <name>Electrophysiology</name>
+           <include>http://portal.g-node.org/odml/terminologies/v1.0/experiment/electrophysiology.xml</include>
+	</section>
+	
+	<section>
+	   <type>experiment/imaging</type>
+	   <name>Imaging</name>
+           <include>http://portal.g-node.org/odml/terminologies/v1.0/experiment/imaging.xml</include>
+	</section>
+		
+	<section>
+	   <type>experiment/modeling</type>
+	   <name>Modeling</name>		      
+           <include>http://portal.g-node.org/odml/terminologies/v1.0/experiment/modeling.xml</include>
+	</section>
+   	
+	<section>
+	   <type>experiment/pschophysics</type>
+	   <name>Psychophysics</name>
+           <include>http://portal.g-node.org/odml/terminologies/v1.0/experiment/psychophysics.xml</include>
+	</section>	
+	
+
+	<section>
+        <type>hardware_properties</type>
+		<name>HardwareProperties</name>
+        <include>http://portal.g-node.org/odml/terminologies/v1.0/collection/hardware_properties.xml</include>
+    </section>
+          
+    <section>
+        <type>hardware_settings</type>
+        <name>HardwareSettings</name>
+        <include>http://portal.g-node.org/odml/terminologies/v1.0/collection/hardware_settings.xml</include>
+    </section>
+        
+    <section>
+		<type>hardware</type>
+		<name>Hardware</name>
+        <include>http://portal.g-node.org/odml/terminologies/v1.0/hardware/hardware.xml</include>
+     </section>  
+	
+    <section>
+       <type>hardware/amplifier</type>
+       <name>Amplifier</name>
+       <include>http://portal.g-node.org/odml/terminologies/v1.0/hardware/amplifier.xml</include>
+    </section>
+         
+    <section>
+		<type>hardware/attenuator</type>
+	    <name>Attenuator</name>
+		<include>http://portal.g-node.org/odml/terminologies/v1.0/hardware/attenuator.xml</include>
+     </section>
+		
+     <section>
+        <type>hardware/cameraObjective</type>
+        <name>CameraObjective</name>
+        <include>http://portal.g-node.org/odml/terminologies/v1.0/hardware/attenuator.xml</include>
+	 </section>
+		
+	<section>
+	  <type>hardware/daq</type>
+	  <name>DataAcquisition</name>
+          <include>http://portal.g-node.org/odml/terminologies/v1.0/hardware/daq.xml</include>
+	</section>
+		
+	<section>
+	  <type>hardware/eyetracker</type>
+	  <name>Eyetracker</name>
+          <include>http://portal.g-node.org/odml/terminologies/v1.0/hardware/eyetracker.xml</include>
+	</section>
+		
+	<section>
+	  <type>hardware/filter</type>
+	  <name>Filter</name>
+          <include>http://portal.g-node.org/odml/terminologies/v1.0/hardware/filter.xml</include>
+	</section>
+		
+	<section>
+	  <type>hardware/filter_set</type>
+	  <name>Filterset</name>
+          <include>http://portal.g-node.org/odml/terminologies/v1.0/hardware/filter_set.xml</include>
+	</section>
+		
+	<section>
+	  <type>hardware/iaq</type>
+	  <name>ImageAcquisition</name>
+          <include>http://portal.g-node.org/odml/terminologies/v1.0/hardware/iaq.xml</include>
+	</section>
+		
+	<section>
+	  <type>hardware/light_source</type>
+	  <name>Lightsource</name>
+          <include>http://portal.g-node.org/odml/terminologies/v1.0/hardware/light_source.xml</include>
+	</section>
+		
+	<section>
+	  <type>hardware/microscope</type>
+	  <name>Microscope</name>
+          <include>http://portal.g-node.org/odml/terminologies/v1.0/hardware/microscope.xml</include>
+	</section>
+		
+	<section>
+          <type>hardware/microscope_objective</type>
+	  <name>MicroscopeObjective</name>
+          <include>http://portal.g-node.org/odml/terminologies/v1.0/hardware/microscope_objective.xml</include>
+	</section>
+				
+	<section>
+	  <type>hardware/scanner</type>
+	  <name>Scanner</name>
+          <include>http://portal.g-node.org/odml/terminologies/v1.0/hardware/scanner.xml</include>
+	</section>
+		
+	<section>
+	  <type>hardware/stimulus_isolator</type>
+	  <name>StimulusIsolator</name>
+          <include>http://portal.g-node.org/odml/terminologies/v1.0/hardware/stimulus_isolator.xml</include>
+	</section>
+     
+      
+      <section>
+        <type>person</type>
+	<name>Person</name>
+        <include>http://portal.g-node.org/odml/terminologies/v1.0/person/person.xml</include>
+      </section>	
+	
+      <section>
+        <type>preparation</type>
+	<name>Preparation</name>
+        <include>http://portal.g-node.org/odml/terminologies/v1.0/preparation/preparation.xml</include>
+      </section>
+	
+      <section>
+        <type>project</type>
+        <name>Project</name>
+        <include>http://portal.g-node.org/odml/terminologies/v1.0/project/project.xml</include>
+      </section>
+      
+      <section>
+        <type>recording</type>
+	<name>Recording</name>
+        <include>http://portal.g-node.org/odml/terminologies/v1.0/recording/recording.xml</include>
+      </section>
+	
+      <section>
+        <type>setup</type>
+	<name>Setup</name>
+        <include>http://portal.g-node.org/odml/terminologies/v1.0/setup/setup.xml</include>
+      </section>
+	
+      <section>
+        <type>stimulus</type>
+	<name>Stimulus</name>
+        <include>http://portal.g-node.org/odml/terminologies/v1.0/stimulus/stimulus.xml</include>
+      </section>
+      
+      <section>
+          <type>stimulus/dc</type>
+	  <name>DC</name>
+          <include>http://portal.g-node.org/odml/terminologies/v1.0/stimulus/dc.xml</include>
+        </section>
+      
+	<section>
+	  <type>stimulus/gabor</type>
+	  <name>Gabor</name>
+          <include>http://portal.g-node.org/odml/terminologies/v1.0/stimulus/gabor.xml</include>
+	</section>
+		
+	<section>
+	  <type>stimulus/grating</type>
+	  <name>Grating</name>
+          <include>http://portal.g-node.org/odml/terminologies/v1.0/stimulus/grating.xml</include>
+	</section>
+		
+	<section>
+	  <type>stimulus/pulse</type>
+	  <name>Pulse</name>
+          <include>http://portal.g-node.org/odml/terminologies/v1.0/stimulus/pulse.xml</include>
+	</section>
+		
+	<section>
+	  <type>stimulus/movie</type>
+	  <name>Movie</name>
+          <include>http://portal.g-node.org/odml/terminologies/v1.0/stimulus/movie.xml</include>
+	</section>
+		
+	<section>
+	  <type>stimulus/ramp</type>
+	  <name>Ramp</name>
+          <include>http://portal.g-node.org/odml/terminologies/v1.0/stimulus/ramp.xml</include>
+	</section>
+		
+	<section>
+	  <type>stimulus/random_dot</type>
+	  <name>RandomDot</name>
+          <include>http://portal.g-node.org/odml/terminologies/v1.0/stimulus/random_dot.xml</include>
+	</section>
+		
+	<section>
+	  <type>stimulus/sawtooth</type>
+	  <name>Sawtooth</name>
+          <include>http://portal.g-node.org/odml/terminologies/v1.0/stimulus/sawtooth.xml</include>
+	</section>
+		
+	<section>
+	  <type>stimulus/sine_wave</type>
+	  <name>Sinewave</name>
+          <include>http://portal.g-node.org/odml/terminologies/v1.0/stimulus/sine_wave.xml</include>
+	</section>
+		
+	<section>
+	  <type>stimulus/square_wave</type>
+	  <name>Squarewave</name>
+          <include>http://portal.g-node.org/odml/terminologies/v1.0/stimulus/square_wave.xml</include>
+	</section>
+		
+	<section>
+	  <type>stimulus/white_noise</type>
+	  <name>Whitenoise</name>
+          <include>http://portal.g-node.org/odml/terminologies/v1.0/stimulus/white_noise.xml</include>
+	</section>
+	
+      <section>
+	<type>subject</type>
+	<name>Subject</name>
+        <include>http://portal.g-node.org/odml/terminologies/v1.0/subject/subject.xml</include>
+      </section>
+   
+      <section>
+	<type>carmen_mini</type>
+	<name>CarmenMini</name>
+        <include>http://portal.g-node.org/odml/terminologies/v1.0/carmenMini/carmen_mini.xml</include>
+      </section>
+</odML>

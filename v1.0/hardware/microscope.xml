@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
+<!-- ********************************** -->
+<!--        Microscope properties        -->
+<!-- ********************************** -->
+<odML version="1">
+	<repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+	
+    <section>
+		<type>hardware/microscope</type>
+        <name>Microscope</name>
+        <definition>The Microscope section describes the properties of the used microscope.</definition>
+	     
+         <property>
+            <name>SerialNo</name>
+	         <value>
+				<type>string</type>
+	         </value>
+            <definition>The device's serial number.</definition>
+	      </property> 
+	      
+	      <property>
+            <name>InventoryNo</name>
+	         <value>
+				<type>string</type>
+	         </value>
+            <definition>The inventory number of the device.</definition>
+	      </property>
+	      
+	      <property>
+            <name>Owner</name>
+	         <value>
+				<type>string</type>
+	         </value>
+            <definition> Who's the owner of the device.</definition>
+	      </property> 
+	      
+	      <property>
+            <name>Type</name>
+	         <value>
+				<type>string</type>
+	         </value>
+            <definition>The microcope type: widefield, two-photon, multi-photon, confocal, etc...</definition>
+	      </property> 
+	      
+         <property>
+            <name>Model</name>
+	         <value>
+				<type>string</type>
+	         </value>
+            <definition>The model name of this hardware item.</definition>
+	      </property> 
+	      
+	      <property>
+            <name>Manufacturer</name>
+	         <value>
+				<type>string</type>
+	         </value>
+            <definition>The Manufacturer of this hardware item.</definition>
+	      </property> 
+	      
+	       
+      </section>
+
+</odML>
