@@ -144,6 +144,15 @@
 				<unit>nm</unit>
 			 </value>
             <definition>The transmission range (min - max).</definition>
-	      </property>
+	      </property>  
+	      
+	      <property>
+            <name>Description</name>
+	         <value>
+				<type>string</type>
+	         </value>
+            <definition>A description of the device.</definition>
+          </property>   
+
 	  </section>
 </odML>

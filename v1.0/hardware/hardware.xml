@@ -58,7 +58,14 @@
 	         </value>
             <definition>The Manufacturer of this hardware item.</definition>
 	      </property> 
-	      	      
+	      	    
+	      <property>
+            <name>Description</name>
+	         <value>
+				<type>string</type>
+	         </value>
+            <definition>A description of the device.</definition>
+	      </property>   
 	    
       </section>
 </odML>

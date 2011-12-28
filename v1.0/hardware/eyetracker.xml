@@ -117,5 +117,14 @@
 		  <dependencyValue>Tabletop</dependencyValue>
 		  <definition>The way the head was fixed. Makes no sense if the eytracker is head mounted.</definition>
       </property>
+      
+      <property>
+            <name>Description</name>
+	         <value>
+				<type>string</type>
+	         </value>
+            <definition>A description of the device.</definition>
+      </property>   
+	        
    </section>
 </odML>
