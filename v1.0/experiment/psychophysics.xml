@@ -5,6 +5,8 @@
 <!-- ********************************************************* --> 
 <odML version="1">
 	<repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+        <version>1.0</version>
+        <date>2011-01-21</date>
 	
 	<section>
 		<type>experiment/psychophysics</type>

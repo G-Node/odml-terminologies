@@ -128,9 +128,6 @@ xmlns:fn="http://www.w3.org/2005/02/xpath-functions">
             <b>Definition: </b><xsl:if test="definition"><xsl:value-of select="definition"/></xsl:if><br/>
          
 <!--
-         <xsl:for-each select="synonym">
-		      <p><b>Synonyms:</b> <xsl:value-of select="."/></p>
-	      </xsl:for-each>
 -->
          <b>Mapping: </b>   <xsl:if test="mapping"><xsl:value-of select="mapping"/></xsl:if><br/>
 		 </p>
@@ -143,7 +140,6 @@ xmlns:fn="http://www.w3.org/2005/02/xpath-functions">
                   <th><font size="+1" color="white"><b>Unit</b></font></th>
                   <th><font size="+1" color="white"><b>Type</b></font></th>
 		            <th><font size="+1" color="white"><b>Definition</b></font></th>
-		            <th><font size="+1" color="white"><b>Synonym</b></font></th>
 		            <th><font size="+1" color="white"><b>Mapping</b></font></th>
                   <th><font size="+1" color="white"><b>Dependency</b></font></th>
                   <th><font size="+1" color="white"><b>Dependency Value</b></font></th>	
@@ -172,13 +168,6 @@ xmlns:fn="http://www.w3.org/2005/02/xpath-functions">
                         </xsl:for-each>      
 							</td>
 							<td width="22.5%"><p><xsl:value-of select="definition"/></p></td> 
-		               <td width="10%">
-			               <p>
-				               <xsl:for-each select="synonym">
-					               <xsl:value-of select="."/><br/>
-				               </xsl:for-each>
-			               </p>
-                     </td>
 		               <td width="10%">
 			               <p>
 				               <xsl:for-each select="mapping">

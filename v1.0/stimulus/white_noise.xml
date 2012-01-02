@@ -4,6 +4,8 @@
 <!--                   White Noise stimulus                    -->
 <!-- ********************************************************* -->
 <odML version="1">
+  <version>1.0</version>
+        <date>2011-01-21</date>
 	<repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
 	
     <section>

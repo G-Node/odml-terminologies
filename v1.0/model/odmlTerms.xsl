@@ -8,11 +8,11 @@ xmlns:fn="http://www.w3.org/2005/02/xpath-functions">
 <!-- For viewing real metadata files use the odml.xsl stylesheet -->
 <!-- ************************************************  -->
 <!--                   root template                   -->
-<xsl:template match="odml">
+<xsl:template match="odML">
    <!-- if there is a base url definition read it and later pass it to the sections template -->
    <xsl:variable name="repository" select="repository"/>
    <html>
-      <link href="../../../images/odmlIcon.ico" rel="shortcut icon" csoptsettings="AQAAAD142mNgYNBomeIwObe4IIeBgYEvyTDuaAoPw3IFiwOcndS8HR1NjO0NDPTNdIzzEzOByni+A8EQNoAAPMPEQ4=" livesrc="../../../images/odmlIcon.png" />
+      <link href="../../../images/odMLIcon.ico" rel="shortcut icon" csoptsettings="AQAAAD142mNgYNBomeIwObe4IIeBgYEvyTDuaAoPw3IFiwOcndS8HR1NjO0NDPTNdIzzEzOByni+A8EQNoAAPMPEQ4=" livesrc="../../../images/odMLIcon.png" />
       <style type="text/css">
       body { margin-left:2%; margin-top:10px; padding:0;} div { border:0px solid #888; } 
 
@@ -23,7 +23,7 @@ xmlns:fn="http://www.w3.org/2005/02/xpath-functions">
       
       
       <body>
-         <a name="top" style="color:#336699"><h1>odml - Metadata</h1></a>
+         <a name="top" style="color:#336699"><h1>odML - Metadata</h1></a>
          <div id="navigationContainer">     
             <p>
             <hr style="color:yellow; background-color:#336699; height:4px; margin-right:0; text-align:right; border:1px dashed black;"/>
@@ -114,8 +114,7 @@ xmlns:fn="http://www.w3.org/2005/02/xpath-functions">
 	 <a name="{$anchorName}"><h3> <xsl:value-of select="name"/> Section</h3></a>
          <p>
             <b>Type: </b><xsl:value-of select="type"/><br/>
-            <b>Id: </b><xsl:if test="id"><xsl:value-of select="id"/></xsl:if><br/>
-         <xsl:choose>
+            <xsl:choose>
             <xsl:when test ="repository">
                <b>Repository: </b><xsl:value-of select="repository"/><br/>
             </xsl:when>
@@ -126,11 +125,9 @@ xmlns:fn="http://www.w3.org/2005/02/xpath-functions">
             <b>Link: </b><xsl:if test="link"><xsl:value-of select="link"/></xsl:if><br/>
             <b>Include:</b> <xsl:if test="include"><font color="red"><xsl:value-of select="include"/></font></xsl:if><br/>
             <b>Definition: </b><xsl:if test="definition"><xsl:value-of select="definition"/></xsl:if><br/>
-         
-<!--
--->
+         </p>
          <b>Mapping: </b>   <xsl:if test="mapping"><xsl:value-of select="mapping"/></xsl:if><br/>
-		 </p>
+
 	      <!--  Check if there are any properties  -->
          <xsl:if test="property">
             <table border="1" rules="rows" width="100%"><font size="-1">
@@ -168,7 +165,7 @@ xmlns:fn="http://www.w3.org/2005/02/xpath-functions">
                         </xsl:for-each>      
 							</td>
 							<td width="22.5%"><p><xsl:value-of select="definition"/></p></td> 
-		               <td width="10%">
+                     <td width="10%">
 			               <p>
 				               <xsl:for-each select="mapping">
 				                  <xsl:variable name="mapping" select="."/>

@@ -5,6 +5,8 @@
 <!-- ********************************** -->
 <odML version="1">
 	<repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+        <version>1.0</version>
+        <date>2011-01-21</date>
      
      <section>
 		<type>hardware</type>
@@ -58,14 +60,13 @@
 	         </value>
             <definition>The Manufacturer of this hardware item.</definition>
 	      </property> 
-	      	    
-	      <property>
-            <name>Description</name>
-	         <value>
-				<type>string</type>
-	         </value>
-            <definition>A description of the device.</definition>
-	      </property>   
-	    
+              
+              <property>
+                <name>Description</name>
+                <value>
+                  <type>string</type>
+                </value>
+                <definition>A description of this hardware item.</definition>
+	      </property>
       </section>
 </odML>

@@ -4,11 +4,14 @@
 <!--                      DC stimulus                       -->
 <!-- ********************************************************* -->
 <odML version="1">   
-	<repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
-		<section>
-			<type>stimulus/dc</type>
-			<name>DC</name>
-			<definition>Property definitions to describe a DC stimulus meaning a constant stimulus e.g. a constant illumination, current etc.</definition>
+  <version>1.0</version>
+  <date>2011-01-21</date>
+  <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+  
+  <section>
+	<type>stimulus/dc</type>
+	<name>DC</name>
+	<definition>Property definitions to describe a DC stimulus meaning a constant stimulus e.g. a constant illumination, current etc.</definition>
       
       
       <property>

@@ -72,12 +72,12 @@
            <include>http://portal.g-node.org/odml/terminologies/v1.0/experiment/imaging.xml</include>
 	</section>
 		
-	<section>
+	<!-- <section>
 	   <type>experiment/modeling</type>
 	   <name>Modeling</name>		      
            <include>http://portal.g-node.org/odml/terminologies/v1.0/experiment/modeling.xml</include>
-	</section>
-   	
+	 </section>-->
+
 	<section>
 	   <type>experiment/pschophysics</type>
 	   <name>Psychophysics</name>
@@ -181,7 +181,30 @@
           <include>http://portal.g-node.org/odml/terminologies/v1.0/hardware/stimulus_isolator.xml</include>
 	</section>
      
-      
+       <section>
+         <type>model/lif</type>
+         <name>Leaky integrate and fire</name>
+         <include>http://portal.g-node.org/odml/terminologies/v1.0/model/lif.xml</include>
+       </section>
+        
+       <section>
+         <type>model/pif</type>
+         <name>perfect integrate and fire</name>
+         <include>http://portal.g-node.org/odml/terminologies/v1.0/model/pif.xml</include>
+       </section>
+        
+       <section>
+         <type>model/one_compartment</type>
+         <name>One compartment model</name>
+         <include>http://portal.g-node.org/odml/terminologies/v1.0/model/single_compartment.xml</include>
+       </section>
+       
+       <section>
+         <type>model/multi_compartment</type>
+         <name>Multi compartment model</name>
+         <include>http://portal.g-node.org/odml/terminologies/v1.0/model/multi_compartment.xml</include>
+       </section>
+       
       <section>
         <type>person</type>
 	<name>Person</name>

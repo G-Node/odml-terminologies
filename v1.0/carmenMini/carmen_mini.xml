@@ -4,7 +4,7 @@
 <!--                     Mini section                    				   -->
 <!-- ********************************************************* -->  
 <odML version="1">
-  <repository>http://portal.g-node.org/odml/terminologies/v1.0/</repository>
+  <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
   <version>1.0</version>
   <date>2011-01-21</date>
   
@@ -15,7 +15,7 @@
     maps them to the odml "standard" terminologies.</definition>
 		
     <section>
-      <type>carmenmini/contact_and_context</type>
+      <type>carmen_mini/contact_and_context</type>
       <name>ContactAndContext</name>
       			
       <property>
@@ -23,7 +23,7 @@
 	<value>
 	 <type>datetime</type>
 	</value>
-	<definition>The date and time of work initioation in YYYY-MM-DD hh:mm:ss format. (TODO ISO 8601 requires the T lib has to able to deal with it!) </definition>
+	<definition>The date and time of work initiation in YYYY-MM-DD hh:mm:ss format. (TODO ISO 8601 requires the T lib has to able to deal with it!) </definition>
 	<mapping>http://portal.g-node.org/odml/terminologies/v1.0/recording/recording.xml#recording:Start</mapping>
       </property>
       
@@ -63,9 +63,10 @@ or 'intra cellular'.</definition>
     </section>
       
     <section>
-      <type>carmenmini/study_subject</type>
+      <type>carmen_mini/study_subject</type>
       <name>StudySubject</name>
-      
+      <mapping>http://portal.g-node.org/odml/terminologies/v1.0/subject/subject.xml#subject</mapping>
+
       <property>
         <name>Genus</name>
         <value>
@@ -188,7 +189,7 @@ or 'intra cellular'.</definition>
         <value>
           <type>string</type> 
         </value>
-        <definition>The type and value of the identiï¬er assigned to the subject. For example, vendor or patient identifier. For patients, the identifier must be approved by an Institutional Review Board or appropriate body.</definition>
+        <definition>The type and value of the identiÃ¯Â¬Âer assigned to the subject. For example, vendor or patient identifier. For patients, the identifier must be approved by an Institutional Review Board or appropriate body.</definition>
         <mapping>http://portal.g-node.org/odml/terminologies/v1.0/subject/subject.xml#subject:Comment</mapping>
       </property>  
       
@@ -200,7 +201,7 @@ or 'intra cellular'.</definition>
         <definition>The unique string which corresponds to the identifier type. TODO! How does this relate to the Identifier ?</definition>
         <mapping>http://portal.g-node.org/odml/terminologies/v1.0/subject/subject.xml#subject:Identifier</mapping>
       </property>  
-      
+
       <property>
         <name>AssociatedSubjectDetails</name>
         <value>
@@ -218,7 +219,7 @@ or 'intra cellular'.</definition>
         <definition>The surgical procedure or the preparation protocol implmented to obtain the specific sample for recording.</definition>
         <mapping>http://portal.g-node.org/odml/terminologies/v1.0/preparation/preparation.xml#preparation:Description</mapping>
       </property> 
-      
+
       <property>
         <name>PreparationDate</name>
         <value>
@@ -230,7 +231,7 @@ or 'intra cellular'.</definition>
     </section>
     
     <section>
-      <type>carmenmini/recording_location</type>
+      <type>carmen_mini/recording_location</type>
       <name>RecordingLocation</name>
       
       <property>
@@ -260,7 +261,7 @@ or 'intra cellular'.</definition>
         <definition>The thickness of the recording slice in milimeters.</definition>
         <mapping>http://portal.g-node.org/odml/terminologies/v1.0/preparation/preparation.xml#preparation:SliceThickness</mapping>
       </property>
-      
+
       <property>
         <name>SliceOrientation</name>
         <value>
@@ -297,7 +298,7 @@ or 'intra cellular'.</definition>
     </section>
     
     <section>
-      <type>carmenmini/task</type>
+      <type>carmen_mini/task</type>
       <name>Task</name>
       
       <property>
@@ -338,7 +339,7 @@ or 'intra cellular'.</definition>
     </section>
     
     <section>
-      <type>carmenmini/stimulus</type>
+      <type>carmen_mini/stimulus</type>
       <name>Stimulus</name>
       
       <property>
@@ -388,7 +389,7 @@ or 'intra cellular'.</definition>
     </section>
     
     <section>
-      <type>carmenmini/behavioural_event</type>
+      <type>carmen_mini/behavioural_event</type>
       <name>BehaviouralEvent</name>
       
       <property>
@@ -420,7 +421,7 @@ or 'intra cellular'.</definition>
     </section>
     
     <section>
-      <type>carmenmini/recording</type>
+      <type>carmen_mini/recording</type>
       <name>Recording</name>
       
       <property>
@@ -533,7 +534,7 @@ or 'intra cellular'.</definition>
     </section>
     
     <section>
-      <type>carmenmini/timeseries_data</type>
+      <type>carmen_mini/timeseries_data</type>
       <name>TimeSeriesData</name>
       
       <property>

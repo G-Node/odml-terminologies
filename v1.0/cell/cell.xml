@@ -2,6 +2,8 @@
 <?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
 <odML version="1">
 	<repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+        <version>1.0</version>
+        <date>2011-01-21</date>
 	<!-- ********************************************************* -->
 	<!--                      Cell  section                        -->
 	<!-- ********************************************************* -->
@@ -16,7 +18,7 @@
 	      <value>
 			<type>string</type>
 	      </value>
-         <nameDefinition>The type of the recorded cell. E.g. pyramidal cell.</nameDefinition>
+         <definition>The type of the recorded cell. E.g. pyramidal cell.</definition>
       </property>
       
       <property>
@@ -24,8 +26,8 @@
 	      <value>
 			<type>string</type>
 	      </value>
-         <nameDefinition>The region the cell is located in. For example
-         Retina, Cortex, Cerebellum etc.</nameDefinition>
+         <definition>The region the cell is located in. For example
+         Retina, Cortex, Cerebellum etc.</definition>
       </property> 
       
       <property>
@@ -33,9 +35,9 @@
 	      <value>
 			<type>string</type>
 	      </value>
-         <nameDefinition>More detailed specification of the region the
+         <definition>More detailed specification of the region the
          cell is located in. For example, if BrainRegion is
-         "hippocampus", then the BrainSubRegion may be "CA1".</nameDefinition>
+         "hippocampus", then the BrainSubRegion may be "CA1".</definition>
       </property> 
       
       <property>
@@ -43,7 +45,7 @@
 	      <value>
 			<type>string</type>
 	      </value>
-         <nameDefinition>The name of the layer. For example, layer 4 in CA1.</nameDefinition>
+         <definition>The name of the layer. For example, layer 4 in CA1.</definition>
       </property> 
       
       <property>
@@ -51,8 +53,8 @@
 	      <value>
 			<type>string</type>
 	      </value>
-         <nameDefinition>Like the pro-, meta- and mesothoracal ganglion
-         in invertebrates.</nameDefinition>
+         <definition>Like the pro-, meta- and mesothoracal ganglion
+         in invertebrates.</definition>
       </property>
       
       <property>
@@ -60,8 +62,8 @@
 	      <value>
 			<type>string</type>
 	      </value>
-         <nameDefinition>The structure of the organism the cell is
-         located in e.g. Eye, Spinal cord...</nameDefinition>
+         <definition>The structure of the organism the cell is
+         located in e.g. Eye, Spinal cord...</definition>
       </property>
       
       <property>
@@ -69,8 +71,8 @@
 	      <value>
 			<type>string</type>
 	      </value>
-         <nameDefinition>The recording location in the cell. E.g. axonal, dendritic,
-         somatic, ...</nameDefinition>
+         <definition>The recording location in the cell. E.g. axonal, dendritic,
+         somatic, ...</definition>
       </property> 
       
       <property>
@@ -78,7 +80,7 @@
 	      <value>
 			<type>string</type>
 	      </value>
-         <nameDefinition>How was the cell identified?</nameDefinition>
+         <definition>How was the cell identified?</definition>
       </property>
       
       <property>
@@ -87,8 +89,8 @@
 			<type>float</type>
 			<unit>mV</unit>
 		 </value>
-         <nameDefinition>What is the cells resting potential of the
-         cell. An indiator for the recording quality.</nameDefinition>
+         <definition>What is the cells resting potential of the
+         cell. An indiator for the recording quality.</definition>
       </property> 
       
       <property>
@@ -97,9 +99,9 @@
 			<type>float</type>
 			<unit>Hz</unit>
 		  </value>
-         <nameDefinition>For spiking cells, the spontaneous activity
+         <definition>For spiking cells, the spontaneous activity
          which might be an indicator for the cell's health status and
-         thus recording quality.</nameDefinition>
+         thus recording quality.</definition>
       </property>
       
       <property>
@@ -107,8 +109,8 @@
 	      <value>
 			<type>float</type>
 	      </value>
-         <nameDefinition>The standard deviation of the baseline
-         membrane potential.</nameDefinition>
+         <definition>The standard deviation of the baseline
+         membrane potential.</definition>
       </property> 
       
       <property>
@@ -117,8 +119,8 @@
 			<type>float</type>
 			<unit>nA</unit>
 		  </value>
-         <nameDefinition>The minimum current required to make the cell
-         fire action potentials.</nameDefinition>
+         <definition>The minimum current required to make the cell
+         fire action potentials.</definition>
       </property> 
       
       <property>
@@ -127,7 +129,7 @@
 			<type>float</type>
 			<unit>pF</unit>
 		  </value>
-         <nameDefinition>The capacity of the cell.</nameDefinition>
+         <definition>The capacity of the cell.</definition>
       </property>
       
       <property>
@@ -136,8 +138,8 @@
 			<type>float</type>
 			<unit>MOhm</unit>
 		  </value>
-         <nameDefinition>The input resistance of the recorded
-         cell.</nameDefinition>
+         <definition>The input resistance of the recorded
+         cell.</definition>
       </property>   
       
       <property>
@@ -146,7 +148,7 @@
 			<type>float</type>
 			<unit>ms</unit>
 		  </value>
-         <nameDefinition>The mebrane time-constant.</nameDefinition>
+         <definition>The mebrane time-constant.</definition>
       </property>  
       
       <property>
@@ -154,7 +156,7 @@
 	      <value>
 			<type>text</type>
 	      </value>
-         <nameDefinition>A comment on the cell.</nameDefinition>
+         <definition>A comment on the cell.</definition>
       </property>
    </section> 
 </odML>

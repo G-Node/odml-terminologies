@@ -2,6 +2,8 @@
 <?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
 <odML version="1">
 	<repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+        <version>1.0</version>
+        <date>2011-01-21</date>
 <!-- ********************************************************* -->
 <!--                     Analysis section                       -->
 <!-- ********************************************************* -->
