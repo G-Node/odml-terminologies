@@ -1,17 +1,15 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
-<odML version="1">
-	<repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
-        <version>1.0</version>
-        <date>2011-01-21</date>
-	<!-- ********************************************************* -->
-	<!--                      Cell  section                        -->
-	<!-- ********************************************************* -->
-	<section>
-		<type>cell</type>
-		<name>Cell</name>
-      <definition>Specification of the recorded cell.
-      definition be a subsection of the <a href="../subject/subjectTerms.xml">Subsect</a> section.</definition>
+<?xml version="1.0" encoding="ISO-8859-1"?> <?xml-stylesheet
+type="text/xsl" href="odmlTerms.xsl"
+xmlns:odml="http://www.g-node.org/odml"?> <odML version="1">
+<repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+<version>1.0</version> <date>2011-01-21</date> <!--
+********************************************************* --> <!--
+Cell section --> <!--
+********************************************************* -->
+<section> <type>cell</type> <name>Cell</name>
+<definition>Specification of the recorded cell. A cell definition
+should be a subsection of the <a
+href="../subject/subject.xml">Subject</a> section.
            
       <property>
          <name>Type</name>

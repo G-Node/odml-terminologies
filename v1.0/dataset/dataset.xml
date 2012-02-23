@@ -13,7 +13,7 @@
 		<definition>Names (URLs) and times of recorded data files.
      Datasets are obtained during a Recording and may belong to
      different Experiments. Related sections that can be used as
-     subsections, parent sections, or siblilngs are Stimulus,
+     subsections, parent sections, or siblings are Stimulus,
      HardwareSettings, and Experiment.</definition>
           
      <property>
