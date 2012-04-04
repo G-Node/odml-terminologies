@@ -9,7 +9,7 @@ Cell section --> <!--
 <section> <type>cell</type> <name>Cell</name>
 <definition>Specification of the recorded cell. A cell definition
 should be a subsection of the <a
-href="../subject/subject.xml">Subject</a> section.
+href="../subject/subject.xml">Subject</a> section.</definition>
            
       <property>
          <name>Type</name>
