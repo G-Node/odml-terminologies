@@ -51,7 +51,7 @@
       <property>
       	<name>SpatialResolution</name>
 	      <value>
-			<type>2-tupel</type>
+			<type>2-tuple</type>
 			<unit>pixel</unit>
 		 </value>
 	      <definition>The image resolution e.g. (640;480) pixel.</definition>
