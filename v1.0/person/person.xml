@@ -96,7 +96,7 @@
 	      <value>
 			<type>string</type>
 	      </value>
-         <definition> </definition>
+         <definition>Handedness - the dominand hand of the subject</definition>
       </property> 
    </section> 
 </odML>

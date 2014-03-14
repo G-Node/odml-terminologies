@@ -25,7 +25,7 @@
 	      <value>
 			<type>person</type>
 	      </value>
-         <definition>The personsm who create this protocol.</definition>
+         <definition>The person, who created this protocol.</definition>
       </property> 
       
       <property>

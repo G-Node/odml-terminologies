@@ -34,7 +34,7 @@
 	         <value>
 				<type>string</type>
 	         </value>
-            <definition> Developer of developers firm of the software.</definition>
+            <definition>The developer or the developers firm.</definition>
 	      </property> 
 	      
 	      <property>
@@ -97,7 +97,7 @@
 	         <value>
 				<type>string</type>
 	         </value>
-            <definition></definition>
+            <definition>The descrisption of the software.</definition>
 	      </property>  
       </section>
 </odML>
