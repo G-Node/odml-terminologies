@@ -3,7 +3,7 @@
 <odML version="1">
 	<repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
         <version>1.0</version>
-        <date>2011-01-21</date>
+        <date>2014-03-02</date>
 <!-- ********************************************************* -->
 <!--                     Person section                        -->
 <!-- ********************************************************* -->
@@ -67,10 +67,36 @@
 	      <value>Responsible Investigator
 			<type>string</type>
 	      </value>
+         <value>Subject
+			<type>string</type>
+	      </value>
          <definition> The role of this person e.g. when describing
          a project (Responsible investigator), or a recording
          (Experimenter).</definition>
       </property> 
    
+   <property>
+         <name>Email</name>
+	      <value>
+			<type>string</type>
+	      </value>
+         <definition> Person's e-mail.</definition>
+      </property> 
+      
+      <property>
+         <name>PhoneNumber</name>
+	      <value>
+			<type>string</type>
+	      </value>
+         <definition> Person's phone number.</definition>
+      </property> 
+      
+      <property>
+         <name>Laterality</name>
+	      <value>
+			<type>string</type>
+	      </value>
+         <definition>Handedness - the dominand hand of the subject</definition>
+      </property> 
    </section> 
 </odML>
