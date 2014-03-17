@@ -50,7 +50,7 @@
 	         <value>
 				<type>string</type>
 	         </value>
-            <definition></definition>
+            <definition>License type</definition>
 	      </property> 
 	      
 	      <property>
@@ -90,7 +90,7 @@
 	         <value>
 				<type>string</type>
 	         </value>
-            <definition></definition>
+            <definition>Distribution type</definition>
 	      </property>  
         <property>
             <name>Decsription</name>
