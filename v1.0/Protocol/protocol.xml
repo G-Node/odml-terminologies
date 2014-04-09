@@ -13,6 +13,14 @@
       <definition>Information about experiment</definition>
 
       <property>
+         <name>Name</name>
+         <value>
+			<type>string</type>
+         </value>
+         <definition>The protocol name.</definition>
+      </property>
+
+      <property>
          <name>Description</name>
          <value>
 			<type>string</type>
@@ -42,6 +50,14 @@
 			<type>URL</type>
 	      </value>
          <definition>URL for protocol file</definition>
+      </property> 
+      
+       <property>
+         <name>Duration</name>
+	      <value>
+			<type>time</type>
+	      </value>
+         <definition>Duration of the protocol.</definition>
       </property> 
       
       <property>

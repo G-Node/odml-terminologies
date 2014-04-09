@@ -37,7 +37,21 @@
             </value>
             <definition>The type of electrode.</definition>
 	      </property> 
-	      
+        
+        <property>
+            <name>Usage</name>
+	         <value>Ground
+				<type>string</type>
+	         </value>
+            <value>Reference
+				<type>string</type>
+            </value>
+            <value>Channel
+   				<type>string</type>
+            </value>
+            <definition>Usage of electrode.</definition>
+	      </property> 
+                        	      
 	      <property>
             <name>Material</name>
 	         <value>
@@ -144,6 +158,14 @@
 				<type>int</type>
 	         </value>
             <definition>Number of electrodes in a multi-electrode-array.</definition>
+	      </property>  
+        
+        <property>
+            <name>Description</name>
+	         <value>
+				<type>string</type>
+	         </value>
+            <definition></definition>
 	      </property>  
 	     
       </section>
