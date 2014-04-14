@@ -3,7 +3,7 @@
 <odML version="1">
 	<repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
         <version>1.0</version>
-        <date>2014-03-02</date>
+        <date>2014-04-01</date>
 <!-- ********************************************************* -->
 <!--                     Person section                        -->
 <!-- ********************************************************* -->
@@ -98,5 +98,13 @@
 	      </value>
          <definition>Handedness - the dominand hand of the subject</definition>
       </property> 
+      
+        <property>
+         <name>Education level</name>
+	      <value>
+			<type>string</type>
+	      </value>
+         <definition>Highest archived education level of the person.</definition>
+      </property>
    </section> 
 </odML>
