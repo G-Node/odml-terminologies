@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet  type="text/xsl" href="odmlTerms.xsl"?>
-<?xml-stylesheet  type="text/xsl" href="odml.xsl"?>
+<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
 <odML version="1">
+  <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+  <version>1.0</version>
+  <author>Lyuba Zehl</author>
+  <date>2014-04-01</date>
   <section>
+    <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
     <definition>Information on the Cerebus^TM data acquisition system</definition>
     <property>
       <definition>Owner of the device</definition>
@@ -25,7 +29,9 @@
       <name>UserManual</name>
     </property>
     <name>Cerebus</name>
+
     <section>
+      <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
       <definition>Information of the Cerebus^TM neural signal processor (NSP)</definition>
       <property>
         <definition>Type of the device</definition>
@@ -38,7 +44,9 @@
         <name>Model</name>
       </property>
       <name>NeuralSignalProcessor</name>
+
       <section>
+	<repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
         <definition>Information on analog inputs and outputs of the device</definition>
         <property>
           <definition>Connector port type</definition>
@@ -110,7 +118,9 @@
           <name>OutSavedIn</name>
         </property>
         <name>AnalogIO</name>
+
         <section>
+	  <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
           <definition>Information on the analog-to-digital converter</definition>
           <property>
             <definition>Voltage range of analog input</definition>
@@ -143,7 +153,9 @@
         </section>
         <type>setup/daq</type>
       </section>
+
       <section>
+	<repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
         <definition>Information on neural signal inputs and outputs of the device</definition>
         <property>
           <definition>Digital port type</definition>
@@ -173,7 +185,9 @@
         <name>NeuralSignalIO</name>
         <type>setup/daq</type>
       </section>
+
       <section>
+	<repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
         <definition>Information on digital inputs and outputs of the device</definition>
         <property>
           <definition>Possible digital input and output (DIO) ports</definition>
@@ -193,7 +207,9 @@
         <name>DigitalIO</name>
         <type>setup/daq</type>
       </section>
+
       <section>
+	<repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
         <definition>Information on inputs and outputs of the spike detection</definition>
         <property>
           <definition>Used method to define a data threshold for the spike detection</definition>
@@ -206,7 +222,9 @@
           <name>SavedIn</name>
         </property>
         <name>SpikeIO</name>
+
         <section>
+	  <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
           <definition>Information on the filter settings</definition>
           <property>
             <definition>Used filter type</definition>
@@ -241,7 +259,9 @@
           <name>Filter</name>
           <type>setup/daq</type>
         </section>
+
         <section>
+	  <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
           <definition>Information on the recorded spike waveforms of the spike detection</definition>
           <property>
             <definition>Waveform window width</definition>
@@ -261,7 +281,9 @@
           <name>Waveforms</name>
           <type>setup/daq</type>
         </section>
+
         <section>
+	  <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
           <definition>Information on the recorded spike events of the spike detection</definition>
           <property>
             <definition>Sampling rate of data</definition>
@@ -282,7 +304,9 @@
           <name>Events</name>
           <type>setup/daq</type>
         </section>
+
         <section>
+	  <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
           <definition>Information on rejected recorded spike events of the spike detection</definition>
           <property>
             <definition>Amplitude limits of spike waveforms used to reject spike events</definition>
@@ -311,7 +335,9 @@
       </section>
       <type>setup/daq/hardware</type>
     </section>
+
     <section>
+      <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
       <definition>Information on the Cerebus^TM neural signal amplifier (NSA)</definition>
       <property>
         <definition>Type of amplifier</definition>
@@ -334,7 +360,9 @@
         <name>AIUsedChannelCount</name>
       </property>
       <name>NeuralSignalAmplifier</name>
+      
       <section>
+	<repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
         <definition>Information on the analog-to-digital converter</definition>
         <property>
           <definition>Voltage range of analog input</definition>
@@ -365,7 +393,9 @@
         <name>ADConverter</name>
         <type>setup/daq</type>
       </section>
+      
       <section>
+	<repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
         <definition>Information on the filter settings</definition>
         <property>
           <definition>Filter type used</definition>
@@ -400,7 +430,9 @@
         <name>Filter</name>
         <type>setup/daq</type>
       </section>
+      
       <section>
+	<repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
         <definition>Information on the amplifier</definition>
         <property>
           <definition>Gain used</definition>
@@ -413,11 +445,14 @@
       <type>setup/daq/hardware</type>
     </section>
     <section>
+      <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
       <definition>Information on the Cerebus^TM neural signal stimulator (NSS)</definition>
       <name>NeuralSignalStimulator</name>
       <type>setup/daq/hardware</type>
     </section>
+    
     <section>
+      <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
       <definition>Information on the Cerebus^TM control computer</definition>
       <property>
         <definition>CPU model</definition>
@@ -451,6 +486,7 @@
       </property>
       <name>ControlComputer</name>
       <section>
+	<repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
         <definition>Information on the control software of the Cerebus^TM system</definition>
         <name>ControlSoftware</name>
         <type>setup/daq</type>
@@ -459,7 +495,9 @@
     </section>
     <type>setup/daq</type>
   </section>
+  
   <section>
+    <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
     <definition>Information on the Blackrock Utah Electrode Array</definition>
     <property>
       <definition>Owner of the device</definition>
@@ -492,7 +530,9 @@
       <name>WiresLength</name>
     </property>
     <name>UtahArray</name>
+  
     <section>
+      <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
       <definition>Information on the used connector</definition>
       <property>
         <definition>Style of the connector</definition>
@@ -537,7 +577,9 @@
       <name>Connector</name>
       <type>setup/daq/hardware</type>
     </section>
+    
     <section>
+      <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
       <definition>Information on the array used</definition>
       <property>
         <definition>Number of array grids</definition>
@@ -556,6 +598,7 @@
       </property>
       <name>Array</name>
       <section>
+	<repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
         <definition>Information on array grid</definition>
         <property>
           <definition>Grid ID</definition>
@@ -615,7 +658,9 @@
         <name>Grid_XX</name>
         <type>setup/daq/hardware</type>
       </section>
+    
       <section>
+	<repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
         <definition>Information on array electrodes</definition>
         <property>
           <definition>Total number of electrodes</definition>
@@ -628,7 +673,9 @@
           <name>ActiveElectrodeCount</name>
         </property>
         <name>Electrodes</name>
-        <section>
+      
+	<section>
+	  <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
           <definition>Information on electrode</definition>
           <property>
             <definition>Electrode ID</definition>
@@ -699,7 +746,9 @@
     </section>
     <type>setup/daq/hardware</type>
   </section>
+  
   <section>
+    <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
     <definition>Information on the headstage used</definition>
     <property>
       <definition>Model of device</definition>
@@ -724,5 +773,4 @@
     <name>Headstage</name>
     <type>setup/daq/hardware</type>
   </section>
-  <version>0.1</version>
 </odML>
