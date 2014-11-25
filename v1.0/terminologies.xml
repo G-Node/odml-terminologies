@@ -38,7 +38,7 @@
   </section>
 
   <section>
-    <type>electrode/blackrock</type>
+    <type>blackrock</type>
     <name>Blackrock</name>
     <definition>Information on the Cerebus^TM data acquisition system</definition>
     <include>http://portal.g-node.org/odml/terminologies/v1.0/blackrock/blackrock.xml</include>
@@ -291,6 +291,13 @@
     <name>Project</name>
     <definition>Information about the project.</definition>
     <include>http://portal.g-node.org/odml/terminologies/v1.0/project/project.xml</include>
+  </section>
+
+  <section>
+    <type>protocol</type>
+    <name>protocol</name>
+    <definition>Information about the experimental protocol.</definition>
+    <include>http://portal.g-node.org/odml/terminologies/v1.0/protocol/protocol.xml</include>
   </section>
   
   <section>
