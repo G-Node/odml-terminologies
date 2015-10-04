@@ -11,7 +11,7 @@
     <type>model/lif</type>
     <name>Leaky integrate and fire</name>
     <definition>Properties to describe a leaky integrate and fire neuron model.</definition>
-    
+
     <property>
       <name>Author</name>
       <value>
@@ -19,7 +19,7 @@
       </value>
       <definition>The author of this model.</definition>
     </property>
-    
+
     <property>
       <name>Date</name>
       <value>
@@ -27,7 +27,7 @@
       </value>
       <definition>The simulation date.</definition>
     </property>
-    
+
     <property>
       <name>Program</name>
       <value>
@@ -35,7 +35,7 @@
       </value>
       <definition>The program name.</definition>
     </property>
-    
+
     <property>
       <name>ProgramVersion</name>
       <value>
@@ -43,8 +43,7 @@
       </value>
       <definition>The program version name.</definition>
     </property>
-    
-    
+
     <property>
       <name>Description</name>
       <value>
@@ -52,6 +51,7 @@
       </value>
       <definition>A descriptive text.</definition>
     </property>
+
     <!--     Basics    -->
     <property>
       <name>RestingPotential</name>
@@ -69,7 +69,7 @@
       </value>
       <definition>The potential to which the neuron's potential is set after a spike.</definition>
     </property>
-    
+
     <property>
       <name>Resistance</name>
       <value>
@@ -78,7 +78,7 @@
       </value>
       <definition>The membrane restisance.</definition>
     </property>
-  
+
     <property>
       <name>Capacitance</name>
       <value>
@@ -87,8 +87,7 @@
       </value>
       <definition>The membrane restisance.</definition>
     </property>
-  
-    
+
     <property>
       <name>MembraneTimeConstant</name>
       <value>
@@ -97,7 +96,7 @@
       </value>
       <definition>The membrane time constant.</definition>
     </property>
-  
+
     <property>
       <name>BiasCurrent</name>
       <value>
@@ -106,8 +105,7 @@
       </value>
       <definition>The offset current.</definition>
     </property>
-    
-    
+
     <property>
       <name>Timestep</name>
       <value>
@@ -116,7 +114,7 @@
       </value>
       <definition>The duration of a time step in the simulation.</definition>
     </property>
-    
+
     <property>
       <name>VoltageEquation</name>
       <value>
@@ -124,9 +122,7 @@
       </value>
       <definition>The equation to calculate the membrane voltage.</definition>
     </property>
-    
-  
-    
+
     <!--     Adaptation -->
     <property>
       <name>AdaptationIncrement</name>
@@ -136,7 +132,7 @@
       </value>
       <definition>When an adaptation current is implemented the amount about which the adaptation is increased when a spike is fired.</definition>
     </property>
-    
+
     <property>
       <name>AdaptationTimeConstant</name>
       <value>
@@ -145,7 +141,7 @@
       </value>
       <definition>The time constant with which the adaptation current returns back to zero.</definition>
     </property>
-    
+
     <property>
       <name>AdaptationEquation</name>
       <value>
@@ -153,7 +149,7 @@
       </value>
       <definition>The equation to calculate the adaptation currrent.</definition>
     </property>
-    
+
     <!--     Noise  -->
     <property>
       <name>NoiseAmplitude</name>
@@ -163,7 +159,7 @@
       </value>
       <definition>The amount of noise added.</definition>
     </property>
-    
+
     <property>
       <name>NoiseType</name>
       <value>
@@ -171,7 +167,7 @@
       </value>
       <definition>The type of noise. For example Gaussian, Ohrnstein-Uhlenbeck etc.</definition>
     </property>
-    
+
     <property>
       <name>NoiseCorrelation</name>
       <value>
@@ -180,10 +176,7 @@
       </value>
       <definition>The correlation time constant used e.g. with OU noise.</definition>
     </property>
-    
-    
-    
-    
+
     <!-- Threshold settings -->
     <property>
       <name>Threshold</name>
@@ -193,7 +186,7 @@
       </value>
       <definition>The firing threshold.</definition>
     </property>
-    
+
     <property>
       <name>ThresholdIncrement</name>
       <value>
@@ -202,7 +195,7 @@
       </value>
       <definition>The voltage about which the threshold is increased once a spike has been fired.</definition>
     </property>
-    
+
     <property>
       <name>ThresholdTimeConstant</name>
       <value>
@@ -211,7 +204,7 @@
       </value>
       <definition>The time ocnstant with which the threshold returns back to baseline.</definition>
     </property>
-    
+
     <property>
       <name>Threshold</name>
       <value>
@@ -220,7 +213,7 @@
       </value>
       <definition>The firing threshold.</definition>
     </property>
-    
+
     <property>
       <name>ThresholdEquation</name>
       <value>
@@ -228,6 +221,6 @@
       </value>
       <definition>The equation to calculate the threshold.</definition>
     </property>
-    
+
   </section>
 </odML> 
