@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
-<odML version="1">
-  <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+
+<!-- ********************************************************* -->
+<!--                     Protocol section                      -->
+<!-- ********************************************************* -->
+
+<odML version="1.1">
+  <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
   <version>1.1</version>
   <date>2014-03-01</date>
-  <!-- ********************************************************* -->
-  <!--                     Protocol section                        -->
-  <!-- ********************************************************* -->
   <section>
     <type>protocol</type>
     <name>Protocol</name>
@@ -14,57 +16,37 @@
 
     <property>
       <name>Name</name>
-      <value>
-	<type>string</type>
-      </value>
+      <type>string</type>
       <definition>The protocol name.</definition>
     </property>
 
     <property>
       <name>Description</name>
-      <value>
-	<type>string</type>
-      </value>
+      <type>string</type>
       <definition>Description of the experiment</definition>
     </property>
     
     <property>
       <name>Author</name>
-      <value>
-	<type>person</type>
-      </value>
+      <type>person</type>
       <definition>The person, who created this protocol.</definition>
     </property> 
     
     <property>
-      <name>ProtocolFile</name>
-      <value>
-	<type>binary</type>
-      </value>
-      <definition>Protocol File</definition>
-    </property>
-    
-    <property>
       <name>ProtocolFileURL</name>
-      <value>
-	<type>URL</type>
-      </value>
+      <type>URL</type>
       <definition>URL for protocol file</definition>
     </property> 
     
     <property>
       <name>Duration</name>
-      <value>
-	<type>time</type>
-      </value>
+      <type>time</type>
       <definition>Duration of the protocol.</definition>
     </property> 
     
     <property>
       <name>Version</name>
-      <value>
-	<type>string</type>
-      </value>
+      <type>string</type>
       <definition> Version of the protocol</definition>
     </property> 
     

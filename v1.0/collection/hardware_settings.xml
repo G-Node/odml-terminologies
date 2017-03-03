@@ -17,7 +17,7 @@
       properties of the hardware that can not be changed, the
       HardwareSettings section describes the actual, adjustable,
       parameters of the hardware that may change with each recording
-      or dataset. For example, the sample rate of an data-acquisition
+      or dataset. For example, the animal_keeping rate of an data-acquisition
       board or the settings of a filter. In each of these two sections
       there are subsections for each device that correspond to the
       class of the device like data-acquisition, amplifier, etc. Some

@@ -3,8 +3,8 @@
 <!-- ********************************************************* -->
 <!--            single-compartmental model 	  	       -->
 <!-- ********************************************************* --> 
-<odML version="1">
-  <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+<odML version="1.1">
+  <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
   <version>1.0</version>
   <date>2011-10-14</date>
   <section>
@@ -12,12 +12,9 @@
     <name>Single compartment model</name>
     <definition>Properties to describe a biophysical model that consists of a single compartment.</definition>
     
-    
     <property>
       <name>SimulationType</name>
-      <value>
-        <type>string</type> 
-      </value>
+      <type>string</type> 
       <definition>The type of simulation: mathmatical, phenomenological, biophysical etc..</definition>
     </property>
   </section>

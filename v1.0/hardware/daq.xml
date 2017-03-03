@@ -126,7 +126,7 @@
 				<type>int</type>
 				<unit>Hz</unit>
 			 </value>
-            <definition>The sample rate with which an individual input
+            <definition>The animal_keeping rate with which an individual input
             channel was sampled. Given in Hz. </definition>
 	      </property> 
 	      
@@ -169,7 +169,7 @@
 				<type>int</type>
 				<unit>Hz</unit>
 			 </value>
-            <definition>The sample rate with which an individual output
+            <definition>The animal_keeping rate with which an individual output
             channel was sampled. Given in Hz.</definition>
 	      </property>  
 	      

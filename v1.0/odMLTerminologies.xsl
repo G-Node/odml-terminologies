@@ -31,7 +31,7 @@ xmlns:fn="http://www.w3.org/2005/02/xpath-functions">
    	</p>
    	<h3>So far defined terminologies</h3>
    	<p>The following Terminologies contain definitions according to the seciton name. If you specify e.g. the 
-   	sample rate of an analog input device include it contained within the respective section into your odML - file.</p>
+   	animal_keeping rate of an analog input device include it contained within the respective section into your odML - file.</p>
    	<xsl:variable name="baseurl" select="baseURL"/>
 		<ol>
 			<xsl:if test="section">

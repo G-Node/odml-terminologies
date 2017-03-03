@@ -189,7 +189,7 @@ or 'intra cellular'.</definition>
         <value>
           <type>string</type> 
         </value>
-        <definition>The type and value of the identiÃ¯Â¬Âer assigned to the subject. For example, vendor or patient identifier. For patients, the identifier must be approved by an Institutional Review Board or appropriate body.</definition>
+        <definition>The type and value of the identiï¬er assigned to the subject. For example, vendor or patient identifier. For patients, the identifier must be approved by an Institutional Review Board or appropriate body.</definition>
         <mapping>http://portal.g-node.org/odml/terminologies/v1.0/subject/subject.xml#subject:Comment</mapping>
       </property>  
       
@@ -216,7 +216,7 @@ or 'intra cellular'.</definition>
         <value>
           <type>string</type> 
         </value>
-        <definition>The surgical procedure or the preparation protocol implmented to obtain the specific sample for recording.</definition>
+        <definition>The surgical procedure or the preparation protocol implmented to obtain the specific animal_keeping for recording.</definition>
         <mapping>http://portal.g-node.org/odml/terminologies/v1.0/preparation/preparation.xml#preparation:Description</mapping>
       </property> 
 
@@ -225,7 +225,7 @@ or 'intra cellular'.</definition>
         <value>
           <type>date</type> 
         </value>
-        <definition>The date the surgical procedure or the preparation protocol was performed to obtain the specific sample for recording. Given in the ISO:8601 representation. YYYY-MM-DDThh:mm:ss</definition>
+        <definition>The date the surgical procedure or the preparation protocol was performed to obtain the specific animal_keeping for recording. Given in the ISO:8601 representation. YYYY-MM-DDThh:mm:ss</definition>
         <mapping>http://portal.g-node.org/odml/terminologies/v1.0/preparation/preparation.xml#preparation:Date</mapping>
       </property>
     </section>
@@ -447,7 +447,7 @@ or 'intra cellular'.</definition>
         <value>
           <type>string</type> 
         </value>
-        <definition>Containing device temperature of the subject or sample (for example, a bath): Include temperature if appropriate.</definition>
+        <definition>Containing device temperature of the subject or animal_keeping (for example, a bath): Include temperature if appropriate.</definition>
 <!--         <mapping>?</mapping> -->
       </property>
       

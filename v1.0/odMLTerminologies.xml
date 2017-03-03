@@ -77,7 +77,7 @@
       the properties describe the static properties of the hardware
       that do not change, the settings section describes the actual,
       adjustable, parameters, of the hardware that may change with
-      each recording or dataset e.g. the sample rate of an
+      each recording or dataset e.g. the animal_keeping rate of an
       data acquisition board. In each of these sections there are
       subsections for each device (or can be) that correspond to the
       class of the device like data-acquisition, amplifier, etc. Some
@@ -156,7 +156,7 @@
       the properties describe the static properties of the hardware
       that do not change, the settings section describes the actual,
       adjustable, parameters, of the hardware that may change with
-      each recording or dataset e.g. the sample rate of an
+      each recording or dataset e.g. the animal_keeping rate of an
       dataacquisition board. In each of these sections there are
       subsections for each device (or can be) that correspond to the
       class of the device like data-acquisition, amplifier, etc. Some

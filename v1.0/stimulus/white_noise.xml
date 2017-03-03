@@ -90,7 +90,7 @@
 	<unit>Hz</unit>
       </value>
       <definition>The upper frequency cutoff of lowpass filter with which the stimulus was filtered. (Upper cutoff may also be
-      defined by the nyquist frequency, respective the sample rate.)</definition>
+      defined by the nyquist frequency, respective the animal_keeping rate.)</definition>
     </property>
     
     <property>
