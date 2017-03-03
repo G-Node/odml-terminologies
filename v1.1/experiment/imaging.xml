@@ -3,35 +3,21 @@
 <!-- ********************************************************* -->
 <!--                     Imaging experiment			                       -->
 <!-- ********************************************************* --> 
-<odML version="1">
-	<repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
-        <version>1.0</version>
-        <date>2011-01-21</date>	
-	<section>
-		<type>experiment/imaging</type>
-		<name>Imaging</name>
-	   <definition>Properties for describing an imaging experiment ranging from conventional light microscpoy to fMRI.</definition>
-	   
-	            
-	   <property>
-         <name>Type</name>
-	      <value>REM
-			<type>string</type> 
-	      </value>
-	      <value>light microscopy
-	        <type>string</type> 
-	      </value>
-	      <value>confocal
-	        <type>string</type> 
-	      </value>
-	      <value>two-photon
-	        <type>string</type> 
-	      </value>
-	      <value>fMRI
-	        <type>string</type> 
-	      </value>
-         <definition>The type of imaging like two-photon, confocal, REM, light microscopy, fMRI, etc..</definition>
-      </property>
-      
-      </section>
+<odML version="1.1">
+  <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+  <version>1.0</version>
+  <date>2011-01-21</date>	
+  <section>
+    <type>experiment/imaging</type>
+    <name>Imaging</name>
+    <definition>Properties for describing an imaging experiment ranging from conventional light microscpoy to fMRI.</definition>
+    
+    <property>
+      <name>Type</name>
+      <value>[REM, light microscopy, confocal, two-photon, fMRI]</value>
+      <type>string</type> 
+      <definition>The type of imaging like two-photon, confocal, REM, light microscopy, fMRI, etc..</definition>
+    </property>
+    
+  </section>
 </odML>

@@ -19,7 +19,7 @@
 
     <property>
       <definition>Manufacturer of the device</definition>
-      <value>Blackrock Micorsystems</value>
+      <value>Blackrock Microsystems</value>
       <type>string</type>
       <name>Manufacturer</name>
     </property>
@@ -58,7 +58,7 @@
 
 
       <section>
-	<repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+	<repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
         <definition>Information on analog inputs and outputs of the device</definition>
 	<name>AnalogIO</name>
 	<type>setup/daq</type>
@@ -138,7 +138,7 @@
    
 
         <section>
-	  <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+	  <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
           <definition>Information on the analog-to-digital converter</definition>
           <name>ADConverter</name>
           <type>setup/daq</type>
@@ -187,7 +187,7 @@
 
 
       <section>
-	<repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+	<repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
         <definition>Information on neural signal inputs and outputs of the device</definition>
 	<name>NeuralSignalIO</name>
         <type>setup/daq</type>
@@ -229,7 +229,7 @@
 
 
       <section>
-	<repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+	<repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
         <definition>Information on digital inputs and outputs of the device</definition>
         <name>DigitalIO</name>
         <type>setup/daq</type>
@@ -250,14 +250,14 @@
 
 
       <section>
-	<repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+	<repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
         <definition>Information on inputs and outputs of the spike detection</definition>
         <name>SpikeIO</name>
         <type>setup/daq</type>
 
         <property>
           <definition>Used method to define a data threshold for the spike detection</definition>
-          <type>string</type>>
+          <type>string</type>
           <name>ThresholdType</name>
         </property>
 
@@ -269,114 +269,149 @@
         </property>
 
         <section>
-	  <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+	  <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
           <definition>Information on the filter settings</definition>
 	  <name>Filter</name>
           <type>setup/daq</type>
      
           <property>
             <definition>Used filter type</definition>
-            <value>butterworth<type>string</type></value>
+            <value>butterworth</value>
+	    <type>string</type>
             <name>Type</name>
           </property>
-          <property>
+          
+	  <property>
             <definition>States if the used filter is causal</definition>
-            <value>True<type>boolean</type></value>
+            <value>True</value>
+	    <type>boolean</type>
             <name>Causal</name>
           </property>
+	  
           <property>
             <definition>High pass frequency used</definition>
-            <value>-1.0<unit>Hz</unit><type>float</type></value>
+            <value>-1.0</value>
+	    <unit>Hz</unit>
+	    <type>float</type>
             <name>HighPassFreq</name>
           </property>
+
           <property>
             <definition>Low pass frequency used</definition>
-            <value>-1.0<unit>Hz</unit><type>float</type></value>
+            <value>-1.0</value>
+	    <unit>Hz</unit>
+	    <type>float</type>
             <name>LowPassFreq</name>
           </property>
+
           <property>
             <definition>High pass order used</definition>
-            <value>-1<type>int</type></value>
+            <value>-1</value>
+	    <type>int</type>
             <name>HighPassOrder</name>
           </property>
+
           <property>
             <definition>Low pass order used</definition>
-            <value>-1<type>int</type></value>
+            <value>-1</value>
+	    <type>int</type>
             <name>LowPassOrder</name>
           </property>
         </section>
 
         <section>
-	  <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+	  <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
           <definition>Information on the recorded spike waveforms of the spike detection</definition>
           <name>Waveforms</name>
           <type>setup/daq</type>
 
           <property>
             <definition>Waveform window width</definition>
-            <value>1.6<unit>ms</unit><type>float</type></value>
+            <value>1.6</value>
+	    <unit>ms</unit>
+	    <type>float</type>
             <name>Width</name>
           </property>
+
           <property>
             <definition>Sampling rate of data</definition>
-            <value>30000<unit>samples/sec</unit><type>int</type></value>
+            <value>30000</value>
+	    <unit>s^-1</unit>
+	    <type>int</type>
             <name>SamplingRate</name>
           </property>
+
           <property>
             <definition>Number of samples before waveform passes threshold</definition>
-            <value>10<unit>samples</unit><type>int</type></value>
+            <value>10</value>
+	    <unit>samples</unit>
+	    <type>int</type>
             <name>PreThresholdSamples</name>
           </property>
         </section>
 
         <section>
-	  <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+	  <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
           <definition>Information on the recorded spike events of the spike detection</definition>
           <name>Events</name>
           <type>setup/daq</type>
 
           <property>
             <definition>Sampling rate of data</definition>
-            <value>30000<unit>samples/sec</unit><type>int</type></value>
+            <value>30000</value>
+	    <unit>s^-1</unit>
+	    <type>int</type>
             <name>SamplingRate</name>
           </property>
+
           <property>
             <definition>Possible unit ID range of online sorted spike events on each channel</definition>
-            <value>1<type>int</type></value>
-            <value>16<type>int</type></value>
+            <value>[1, 16]</value>
+	    <type>int</type>
             <name>PreSortedUnitIDRange</name>
           </property>
+
           <property>
             <definition>Unit ID of unclassified spike events on each channel</definition>
-            <value>0<type>int</type></value>
+            <value>0</value>
+	    <type>int</type>
             <name>UnclassifiedUnitID</name>
           </property>
         </section>
 
         <section>
-	  <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+	  <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
           <definition>Information on rejected recorded spike events of the spike detection</definition>
           <name>Rejections</name>
           <type>setup/daq</type>
   
           <property>
             <definition>Amplitude limits of spike waveforms used to reject spike events</definition>
-            <value>-1.0<unit>mV</unit><type>float</type></value>
+            <value>-1.0</value>
+	    <unit>mV</unit>
+	    <type>float</type>
             <name>AmplitudeLimits</name>
           </property>
+
           <property>
             <definition>Minimum number of channels with a synchronously detected spike events used to reject these spike events</definition>
-            <value>-1<type>int</type></value>
+            <value>-1</value>
+	    <type>int</type>
             <name>SyncChannelLimit</name>
           </property>
+
           <property>
             <definition>Number of samples for which spike detection is turned off after a rejected synchronous spike event</definition>
-            <value>-1.0<unit>samples</unit><type>float</type></value>
+            <value>-1.0</value>
+	    <unit>samples</unit>
+	    <type>float</type>
             <name>SyncChannelRefPeriod</name>
           </property>
+
           <property>
             <definition>Unit ID reserved for rejected spike events on each channel</definition>
-            <value>255<type>int</type></value>
+            <value>255</value>
+	    <type>int</type>
             <name>UnitID</name>
           </property>
         </section>
@@ -384,251 +419,330 @@
     </section>
 
     <section>
-      <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+      <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
       <definition>Information on the Cerebus^TM neural signal amplifier (NSA)</definition>
       <name>NeuralSignalAmplifier</name>
  
       <property>
         <definition>Type of amplifier</definition>
-        <value>Front-End Amplifier<type>string</type></value>
+        <value>Front-End Amplifier</value>
+	<type>string</type>
         <name>Type</name>
       </property>
+
       <property>
         <definition>Model of amplifier</definition>
-        <value>-<type>string</type></value>
+        <type>string</type>
         <name>Model</name>
       </property>
+
       <property>
         <definition>Total number of analog input channels</definition>
-        <value>128<type>int</type></value>
+        <value>128</value>
+	<type>int</type>
         <name>AIChannelCount</name>
       </property>
+
       <property>
         <definition>Number of analog input channels used</definition>
-        <value>-1<type>int</type></value>
+        <value>-1</value>
+	<type>int</type>
         <name>AIUsedChannelCount</name>
       </property>
       
       <section>
-	<repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+	<repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
         <definition>Information on the analog-to-digital converter</definition>
         <name>ADConverter</name>
         <type>setup/daq</type>
 
         <property>
           <definition>Voltage range of analog input</definition>
-          <value>-8.192<unit>mV</unit><type>float</type></value>
-          <value>8.192<unit>mV</unit><type>float</type></value>
+          <value>[-8.192, 8.192]</value>
+	  <unit>mV</unit>
+	  <type>float</type>
           <name>AIRange</name>
         </property>
+
         <property>
           <definition>Maximum impedance of analog input</definition>
-          <value>-1.0<unit>G???</unit><type>float</type></value>
+          <value>-1.0</value>
+	  <unit>GOhm</unit>
+	  <type>float</type>
           <name>MaxAIImpedance</name>
         </property>
+
         <property>
           <definition>Resolution of AD converter</definition>
-          <value>0.25<unit>??V/bit</unit><type>float</type></value>
+          <value>0.25</value>
+	  <unit>??V/bit</unit>
+	  <type>float</type>
           <name>Resolution</name>
         </property>
+
         <property>
           <definition>Width of digital data in bits</definition>
-          <value>16<unit>bit</unit><type>int</type></value>
+          <value>16</value>
+	  <unit>bit</unit>
+	  <type>int</type>
           <name>DataBits</name>
         </property>
+	
         <property>
           <definition>Sampling rate of data</definition>
-          <value>-1<unit>samples/sec</unit><type>int</type></value>
+          <value>-1</value>
+	  <unit>s^-1</unit>
+	  <type>int</type>
           <name>SamplingRate</name>
         </property>
       </section>
       
       <section>
-	<repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+	<repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
         <definition>Information on the filter settings</definition>
+
         <property>
           <definition>Filter type used</definition>
-          <value>butterworth<type>string</type></value>
+          <value>butterworth</value>
+	  <type>string</type>
           <name>Type</name>
         </property>
+	
         <property>
           <definition>States if the used filter is causal</definition>
-          <value>True<type>boolean</type></value>
+          <value>True</value>
+	  <type>boolean</type>
           <name>Causal</name>
         </property>
+
         <property>
           <definition>High pass frequency used</definition>
-          <value>0.3<unit>Hz</unit><type>float</type></value>
+          <value>0.3</value>
+	  <unit>Hz</unit>
+	  <type>float</type>
           <name>HighPassFreq</name>
         </property>
+
         <property>
           <definition>Low pass frequency used</definition>
-          <value>7.5<unit>kHz</unit><type>float</type></value>
+          <value>7.5</value>
+	  <unit>kHz</unit>
+	  <type>float</type>
           <name>LowPassFreq</name>
         </property>
+
         <property>
           <definition>High pass order used</definition>
-          <value>1<type>int</type></value>
+          <value>1</value>
+	  <type>int</type>
           <name>HighPassOrder</name>
         </property>
+
         <property>
           <definition>Low pass order used</definition>
-          <value>3<type>int</type></value>
+          <value>3</value>
+	  <type>int</type>
           <name>LowPassOrder</name>
         </property>
+
         <name>Filter</name>
         <type>setup/daq</type>
       </section>
       
       <section>
-	<repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+	<repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
         <definition>Information on the amplifier</definition>
-        <property>
-          <definition>Gain used</definition>
-          <value>-1<type>int</type></value>
-          <name>Gain</name>
-        </property>
         <name>Amplifier</name>
         <type>setup/daq</type>
+
+        <property>
+          <definition>Gain used</definition>
+          <value>-1</value>
+	  <type>int</type>
+          <name>Gain</name>
+        </property>
+
       </section>
       <type>setup/daq/hardware</type>
     </section>
+
     <section>
-      <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+      <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
       <definition>Information on the Cerebus^TM neural signal stimulator (NSS)</definition>
       <name>NeuralSignalStimulator</name>
       <type>setup/daq/hardware</type>
     </section>
     
     <section>
-      <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+      <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
       <definition>Information on the Cerebus^TM control computer</definition>
+      <name>ControlComputer</name>
+      <type>setup/daq/software</type>
+
       <property>
         <definition>CPU model</definition>
-        <value>-<type>string</type></value>
+         <type>string</type>
         <name>CPU</name>
       </property>
+
       <property>
         <definition>Amount of RAM</definition>
-        <value>-1.0<unit>GB</unit><type>float</type></value>
+        <value>-1.0</value>
+	<unit>GB</unit>
+	<type>float</type>
         <name>RAM</name>
       </property>
+      
       <property>
         <definition>Mainboard type</definition>
-        <value>-<type>string</type></value>
+	<type>string</type>
         <name>Mainboard</name>
       </property>
+      
       <property>
         <definition>Disk capacity of data storage</definition>
-        <value>-1.0<unit>GB</unit><type>float</type></value>
+        <value>-1.0</value>
+	<unit>GB</unit>
+	<type>float</type>
         <name>HarddiskCapacity</name>
       </property>
+
       <property>
         <definition>Type of operating system</definition>
-        <value>-<type>string</type></value>
+        <type>string</type>
         <name>OSType</name>
       </property>
+      
       <property>
         <definition>Version of operating system</definition>
-        <value>-<type>string</type></value>
+        <type>string</type>
         <name>OSVersion</name>
       </property>
-      <name>ControlComputer</name>
+          
       <section>
-	<repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+	<repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
         <definition>Information on the control software of the Cerebus^TM system</definition>
         <name>ControlSoftware</name>
         <type>setup/daq</type>
       </section>
-      <type>setup/daq/software</type>
     </section>
     <type>setup/daq</type>
   </section>
   
   <section>
-    <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+    <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
     <definition>Information on the Blackrock Utah Electrode Array</definition>
+    <name>UtahArray</name>
+
     <property>
       <definition>Owner of the device</definition>
-      <value>-<type>string</type></value>
+      <type>string</type>
       <name>Owner</name>
     </property>
+
     <property>
       <definition>Serial number of the device</definition>
-      <value>-<type>string</type></value>
+      <type>string</type>
       <name>SerialNo</name>
     </property>
+
     <property>
       <definition>Manufacturer of the device</definition>
-      <value>Blackrock Microsystems<type>string</type></value>
+      <value>Blackrock Microsystems</value>
+      <type>string</type>
       <name>Manufacturer</name>
     </property>
+
     <property>
       <definition>Material of wires connecting array and connector</definition>
-      <value>Pt/Au<type>string</type></value>
+      <value>Pt/Au</value>
+      <type>string</type>
       <name>WiresMaterial</name>
     </property>
+
     <property>
       <definition>Diameter of each wire</definition>
-      <value>25.0<unit>??m</unit><type>float</type></value>
+      <value>25.0</value>
+      <unit>??m</unit>
+      <type>float</type>
       <name>WiresDiameter</name>
     </property>
+
     <property>
       <definition>Length of each wire</definition>
-      <value>-1.0<unit>mm</unit><type>float</type></value>
+      <value>-1.0</value>
+      <unit>mm</unit>
+      <type>float</type>
       <name>WiresLength</name>
     </property>
-    <name>UtahArray</name>
   
     <section>
-      <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+      <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
       <definition>Information on the used connector</definition>
-      <property>
-        <definition>Style of the connector</definition>
-        <value>-<type>string</type></value>
-        <name>Style</name>
-      </property>
-      <property>
-        <definition>Height of the connector</definition>
-        <value>-1.0<unit>mm</unit><type>float</type></value>
-        <name>Height</name>
-      </property>
-      <property>
-        <definition>Diameter of the base of the connector</definition>
-        <value>-1.0<unit>mm</unit><type>float</type></value>
-        <name>DiameterBase</name>
-      </property>
-      <property>
-        <definition>Diameter of the body of the connector</definition>
-        <value>-1.0<unit>mm</unit><type>float</type></value>
-        <name>DiameterBody</name>
-      </property>
-      <property>
-        <definition>Width of the connector</definition>
-        <value>-1.0<unit>mm</unit><type>float</type></value>
-        <name>Width</name>
-      </property>
-      <property>
-        <definition>Length of the connector</definition>
-        <value>-1.0<unit>mm</unit><type>float</type></value>
-        <name>Length</name>
-      </property>
-      <property>
-        <definition>Type of implantation</definition>
-        <value>-<type>string</type></value>
-        <name>ImplantType</name>
-      </property>
-      <property>
-        <definition>Type of mounting to the skull</definition>
-        <value>-<type>string</type></value>
-        <name>SkullMount</name>
-      </property>
       <name>Connector</name>
       <type>setup/daq/hardware</type>
+
+      <property>
+        <definition>Style of the connector</definition>
+        <type>string</type>
+        <name>Style</name>
+      </property>
+
+      <property>
+        <definition>Height of the connector</definition>
+        <value>-1.0</value>
+	<unit>mm</unit>
+	<type>float</type>
+        <name>Height</name>
+      </property>
+
+      <property>
+        <definition>Diameter of the base of the connector</definition>
+        <value>-1.0</value>
+	<unit>mm</unit>
+	<type>float</type>
+        <name>DiameterBase</name>
+      </property>
+
+      <property>
+        <definition>Diameter of the body of the connector</definition>
+        <value>-1.0</value>
+	<unit>mm</unit>
+	<type>float</type>
+        <name>DiameterBody</name>
+      </property>
+      
+      <property>
+        <definition>Width of the connector</definition>
+        <value>-1.0</value>
+	<unit>mm</unit>
+	<type>float</type>
+        <name>Width</name>
+      </property>
+      
+      <property>
+        <definition>Length of the connector</definition>
+        <value>-1.0</value>
+	<unit>mm</unit>
+	<type>float</type>
+        <name>Length</name>
+      </property>
+
+      <property>
+        <definition>Type of implantation</definition>
+        <type>string</type>
+        <name>ImplantType</name>
+      </property>
+  
+      <property>
+        <definition>Type of mounting to the skull</definition>
+        <type>string</type>
+        <name>SkullMount</name>
+      </property>
     </section>
     
     <section>
-      <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+      <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
       <definition>Information on the array used</definition>
       <name>Array</name>
       <type>setup/daq/hardware</type>
@@ -655,7 +769,7 @@
       </property>
     
       <section>
-	<repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+	<repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
         <definition>Information on array grid</definition>
         <name>Grid_XX</name>
         <type>setup/daq/hardware</type>
@@ -740,7 +854,7 @@
       </section>
     
       <section>
-	<repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+	<repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
         <definition>Information on array electrodes</definition>
         <name>Electrodes</name>
 	<type>setup/daq/hardware</type>
@@ -760,7 +874,7 @@
         </property>
 
 	<section>
-	  <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+	  <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
           <definition>Information on electrode</definition>
 	  <name>Electrode_XXX</name>
           <type>setup/daq/hardware</type>
@@ -859,7 +973,7 @@
   </section>
   
   <section>
-    <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+    <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
     <definition>Information on the headstage used</definition>
     <name>Headstage</name>
     <type>setup/daq/hardware</type>
