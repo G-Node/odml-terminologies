@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
+<odML version="1.1">
+  <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+  <version>1.1</version>
+  <date>2017-03-03</date>
+  <!-- ********************************************************* -->
+  <!--                     Analysis section                       -->
+  <!-- ********************************************************* -->
+  <section>
+    <type>analysis</type>
+    <name>Analysis</name>
+    <definition>Sections of the Analysis type can be used to describe analyses.</definition> 
+  
+    <property>
+      <name>Author</name>
+      <type>person</type>
+      <definition>The name of the person who did the analysis, e.g. 'John Doe' or 'Doe, John'</definition>
+    </property>
+    
+    <property>
+      <name>Date</name>
+      <type>date</type>
+      <definition>The date of analysis.</definition>
+    </property>
+    
+    <property>
+      <name>Description</name>
+      <type>text</type>
+      <definition>A general description of the analysis.</definition>
+    </property>
+    
+    <property>
+      <name>Method</name>
+      <type>string</type>
+      <definition>The name of a method used in this analysis. E.g. "power spectrum".</definition>
+    </property>
+    
+    <property>
+      <name>CommandlineCall</name>
+      <type>string</type>
+      <definition>The command used to execute the analysis including the command line parameter.</definition>
+    </property> 
+    
+    <property>
+      <name>Comment</name>
+      <type>text</type>
+      <definition>Specific comments on this analysis.</definition>
+    </property>
+    
+    <property>
+      <name>CodeFileURL</name>
+      <type>URL</type>
+      <definition>The URL of the applied piece of program code to actually do the analysis.</definition>
+    </property> 
+    
+    <property>
+      <name>CodeRevision</name>
+      <type>string</type>
+      <definition> If the analysis code is under version control the revision number can be specified using this property.</definition>
+    </property> 
+        
+    <property>
+      <name>ConfigFileURL</name>
+      <type>URL</type>
+      <definition>The URL of the used configuration file used to run the analysis.</definition>
+    </property>  
+    
+    <property>
+      <name>DatasetFileURL</name>
+      <type>URL</type>
+      <definition>The URL of a analysed datasetFile.</definition>
+    </property>
+
+    <property>
+      <name>ResultFileURL</name>
+      <type>URL</type>
+      <definition>The URL of a results file.</definition>
+    </property>  
+    
+    <property>
+      <name>PaperDOI</name>
+      <type>text</type>
+      <definition>If the results of this analysis have been published one can store the doi of the paper.</definition>
+    </property> 
+    
+    <property>
+      <name>PaperURL</name>
+      <type>URL</type>
+      <definition>If the results of this analysis have been published the URL of the document can be given here</definition>
+    </property> 
+    
+  </section> 
+</odML>
