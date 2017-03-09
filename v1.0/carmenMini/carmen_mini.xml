@@ -189,7 +189,7 @@ or 'intra cellular'.</definition>
         <value>
           <type>string</type> 
         </value>
-        <definition>The type and value of the identiï¬er assigned to the subject. For example, vendor or patient identifier. For patients, the identifier must be approved by an Institutional Review Board or appropriate body.</definition>
+        <definition>The type and value of the identifer assigned to the subject. For example, vendor or patient identifier. For patients, the identifier must be approved by an Institutional Review Board or appropriate body.</definition>
         <mapping>http://portal.g-node.org/odml/terminologies/v1.0/subject/subject.xml#subject:Comment</mapping>
       </property>  
       
