@@ -60,7 +60,13 @@
 	         </value>
             <definition>The Manufacturer of this hardware item.</definition>
 	      </property> 
-              
+               <property>
+	         <name>SampleRate</name>
+	         <value>
+				<type>float</type>
+	         </value>
+            <definition>The sampling rate of the device.</definition>
+	      </property> 
               <property>
                 <name>Description</name>
                 <value>
