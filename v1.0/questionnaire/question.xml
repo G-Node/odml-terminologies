@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl"  xmlns:odml="http://www.g-node.org/odml"?>
+<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
+<!-- ********************************************************* -->
+<!--                  Question section        	               -->
+<!-- ********************************************************* -->
 <odML version="1">
 	<repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
         <version>1.0</version>
         <date>2017-09-28</date>
-<!-- ********************************************************* -->
-<!--                  Question section        	               -->
-<!-- ********************************************************* -->
 	<section>
 		<type>question</type>
-		<name>question</name>
+		<name>Question</name>
 		<definition>Description of the question.</definition>
-      
-     
+		
       <property>
-         <name>Label/name>
+         <name>Label</name>
+		 
 	      <value>
 			<type>string</type>
 	      </value>
          <definition>A label of the questionnaire.</definition>
+		 
       </property>              
-              
       <property>
          <name>Question</name>
 	      <value>
@@ -28,8 +28,6 @@
 	      </value>
          <definition>Text of the question.</definition>
       </property> 
-      
-	 
       <property>
          <name>Answer</name>
 	      <value>
@@ -37,6 +35,7 @@
 	      </value>
          <definition>Answer for a question.</definition>
       </property>
-      
-         </section>   
+	  
+    </section>  
+	
 </odML>
