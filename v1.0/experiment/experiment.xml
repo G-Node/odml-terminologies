@@ -23,6 +23,13 @@
          <definition>A description of the
          experiment.</definition>
       </property>
+	   <property>
+         <name>DataDOI</name>
+	      <value>
+			<type>string</type> 
+	      </value>
+         <definition>A unique Digital object identifier of data.</definition>
+      </property>
       
       <property>
          <name>Type</name>
