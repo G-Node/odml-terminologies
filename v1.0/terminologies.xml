@@ -96,11 +96,6 @@
     <include>http://portal.g-node.org/odml/terminologies/v1.0/experiment/imaging.xml</include>
   </section>
   
-  <!-- <section>
-       <type>experiment/modeling</type>
-       <name>Modeling</name>		      
-       <include>http://portal.g-node.org/odml/terminologies/v1.0/experiment/modeling.xml</include>
-       </section>-->
 
   <section>
     <type>experiment/pschophysics</type>
@@ -208,12 +203,12 @@
     <definition>Properties to define an Image acquisition device. This can be a framegrabber, a camera etc.</definition>
     <include>http://portal.g-node.org/odml/terminologies/v1.0/hardware/iaq.xml</include>
   </section>
-  
+
   <section>
-    <type>hardware/light_source</type>
-    <name>Lightsource</name>
-    <definition>This section contains keywords to describe the actual settings of a light source used for stimulation or excitation.</definition>
-    <include>http://portal.g-node.org/odml/terminologies/v1.0/hardware/light_source.xml</include>
+    <type>hardware/iaq</type>
+    <name>ImageAcquisition</name>
+    <definition>Properties to define an Image acquisition device. This can be a framegrabber, a camera etc.</definition>
+    <include>http://portal.g-node.org/odml/terminologies/v1.0/hardware/iaq.xml</include>
   </section>
   
   <section>
@@ -271,14 +266,42 @@
     <definition>Section to describe a biophysical model that consists of a single compartment.</definition>
     <include>http://portal.g-node.org/odml/terminologies/v1.0/model/single_compartment.xml</include>
   </section>
+
+  <section>
+    <type>license</type>
+    <name>License</name>
+    <definition>This section contains keywords to a data or software license.</definition>
+    <include>http://portal.g-node.org/odml/terminologies/v1.0/license/license.xml</include>
+  </section>
+
+  <section>
+    <type>questionnaire/questionnaire</type>
+    <name>Questionnaire</name>
+    <definition>Description of a questionnaire.</definition>
+    <include>http://portal.g-node.org/odml/terminologies/v1.0/questionaire/questionnaire.xml</include>
+  </section>
+
+  <section>
+    <type>questionnaire/question</type>
+    <name>Question</name>
+    <definition>Description of a question if a questionnaire.</definition>
+    <include>http://portal.g-node.org/odml/terminologies/v1.0/questionaire/question.xml</include>
+  </section>
   
   <section>
     <type>person</type>
     <name>Person</name>
     <definition>Information about a person. E.g. as Experimenter, Author, etc.</definition>
     <include>http://portal.g-node.org/odml/terminologies/v1.0/person/person.xml</include>
-  </section>	
+  </section>
   
+  <section>
+    <type>person</type>
+    <name>Person</name>
+    <definition>Information about a person. E.g. as Experimenter, Author, etc.</definition>
+    <include>http://portal.g-node.org/odml/terminologies/v1.0/person/person.xml</include>
+  </section>
+
   <section>
     <type>preparation</type>
     <name>Preparation</name>
@@ -306,6 +329,13 @@
     <definition>During a recording session in a Setup Datasets are
     obtained from Cells and/or a Subject by using various stimuli (Stimulus section).</definition>
     <include>http://portal.g-node.org/odml/terminologies/v1.0/recording/recording.xml</include>
+  </section>
+
+  <section>
+    <type>response</type>
+    <name>Response</name>
+    <definition>General description of an recieved response (on stimulus).</definition>
+    <include>http://portal.g-node.org/odml/terminologies/v1.0/response/response.xml</include>
   </section>
   
   <section>
