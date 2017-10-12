@@ -1,57 +1,57 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <?xml-stylesheet type="text/xsl" href="odmlTerms.xsl"  xmlns:odml="http://www.g-node.org/odml"?>
 <odML version="1">
-	<repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
-        <version>1.0</version>
-        <date>2017-09-28</date>
-<!-- ********************************************************* -->
-<!--                  Questionnaire  section                     -->
-<!-- ********************************************************* -->
-	<section>
-		<type>questionnaire</type>
-		<name>questionnaire</name>
-		<definition>Description of the questionnaire.</definition>
-      
-      <property>
-         <name>Version</name>
-	      <value>
-			<type>string</type>
-	      </value>
-         <definition>A version of the questionnaire.</definition>
-      </property>
-              
-      <property>
-         <name>Label</name>
-	      <value>
-			<type>string</type>
-	      </value>
-         <definition>A label of the questionnaire.</definition>
-      </property>              
-              
-      <property>
-         <name>Question</name>
-	      <value>
-			<type>question</type>
-	      </value>
-         <definition>Question of the questionnaire.</definition>
-      </property> 
-      
-	 
-      <property>
-         <name>File</name>
-	      <value>
-			<type>File</type>
-	      </value>
-         <definition>The binary file with questionnaire.</definition>
-      </property>
-      
-      <property>
-         <name>FileURL</name>
-	      <value>
-			<type>URL</type>
-		 </value>
-         <definition>URL for questionnaire file.</definition>
-      </property> 
-      
-         </section>   
+  <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+  <version>1.0</version>
+  <date>2017-09-28</date>
+  <!-- ********************************************************* -->
+  <!--                  Questionnaire  section                     -->
+  <!-- ********************************************************* -->
+  <section>
+    <type>questionnaire</type>
+    <name>questionnaire</name>
+    <definition>Description of the questionnaire.</definition>
+    
+    <property>
+      <name>Version</name>
+      <value>
+	<type>string</type>
+      </value>
+      <definition>A version of the questionnaire.</definition>
+    </property>
+    
+    <property>
+      <name>Label</name>
+      <value>
+	<type>string</type>
+      </value>
+      <definition>A label of the questionnaire.</definition>
+    </property>              
+    
+    <property>
+      <name>Question</name>
+      <value>
+	<type>question</type>
+      </value>
+      <definition>Question of the questionnaire.</definition>
+    </property> 
+    
+    
+    <property>
+      <name>File</name>
+      <value>
+	<type>File</type>
+      </value>
+      <definition>The binary file with questionnaire.</definition>
+    </property>
+    
+    <property>
+      <name>FileURL</name>
+      <value>
+	<type>URL</type>
+      </value>
+      <definition>URL for questionnaire file.</definition>
+    </property> 
+    
+  </section>   
 </odML>

@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <?xml-stylesheet type="text/xsl" href="odmlTerms.xsl"  xmlns:odml="http://www.g-node.org/odml"?>
 <odML version="1">
-	<repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
-        <version>1.0</version>
-        <date>2017-09-28</date>
-<!-- ********************************************************* -->
-<!--                  License  section                     -->
-<!-- ********************************************************* -->
-	<section>
-		<type>License</type>
-		<name>License</name>
-		<definition>Description of the license for data / software.</definition>
-      <property>
-         <name>Name</name>
-	      <value>
-			<type>string</type>
-	      </value>
-         <definition>A name of the license.</definition>
-      </property>
-      <property>
-         <name>Type</name>
-	      <value>
-			<type>string</type>
-	      </value>
-         <definition>A type of the license.</definition>
-      </property>
-	<property>
-         <name>LicenseURL</name>
-	      <value>
-			<type>URL</type>
-	      </value>
-         <definition>URL of the license.</definition>
-      </property>	
-<property>
-         <name>Description</name>
-	      <value>
-			<type>string</type>
-	      </value>
-         <definition>A textual description of the license.</definition>
-      </property>
+  <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
+  <version>1.0</version>
+  <date>2017-09-28</date>
+  <!-- ********************************************************* -->
+  <!--                  License  section                     -->
+  <!-- ********************************************************* -->
+  <section>
+    <type>License</type>
+    <name>License</name>
+    <definition>Description of the license for data / software.</definition>
+    <property>
+      <name>Name</name>
+      <value>
+	<type>string</type>
+      </value>
+      <definition>A name of the license.</definition>
+    </property>
+    <property>
+      <name>Type</name>
+      <value>
+	<type>string</type>
+      </value>
+      <definition>A type of the license.</definition>
+    </property>
+    <property>
+      <name>LicenseURL</name>
+      <value>
+	<type>URL</type>
+      </value>
+      <definition>URL of the license.</definition>
+    </property>	
+    <property>
+      <name>Description</name>
+      <value>
+	<type>string</type>
+      </value>
+      <definition>A textual description of the license.</definition>
+    </property>
 
-                 </section>   
+  </section>   
 </odML>
