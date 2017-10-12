@@ -278,14 +278,14 @@
     <type>questionnaire/questionnaire</type>
     <name>Questionnaire</name>
     <definition>Description of a questionnaire.</definition>
-    <include>http://portal.g-node.org/odml/terminologies/v1.0/questionaire/questionnaire.xml</include>
+    <include>http://portal.g-node.org/odml/terminologies/v1.0/questionnaire/questionnaire.xml</include>
   </section>
 
   <section>
     <type>questionnaire/question</type>
     <name>Question</name>
     <definition>Description of a question if a questionnaire.</definition>
-    <include>http://portal.g-node.org/odml/terminologies/v1.0/questionaire/question.xml</include>
+    <include>http://portal.g-node.org/odml/terminologies/v1.0/questionnaire/question.xml</include>
   </section>
   
   <section>
