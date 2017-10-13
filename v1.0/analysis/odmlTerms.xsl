@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-		xmlns:fn="http://www.w3.org/2005/02/xpath-functions">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fn="http://www.w3.org/2005/02/xpath-functions">
 
   <!-- This stylesheet is for viewing odml-terminologies in a web browser -->
   <!-- Please note: only those elements will be displayed terminology related -->
@@ -14,13 +13,13 @@
     <html>
       <link href="../../../images/odMLIcon.ico" rel="shortcut icon" csoptsettings="AQAAAD142mNgYNBomeIwObe4IIeBgYEvyTDuaAoPw3IFiwOcndS8HR1NjO0NDPTNdIzzEzOByni+A8EQNoAAPMPEQ4=" livesrc="../../../images/odMLIcon.png" />
       <style type="text/css">
-	body { margin-left:2%; margin-top:10px; padding:0;} div { border:0px solid #888; } 
+  body { margin-left:2%; margin-top:10px; padding:0;} div { border:0px solid #888; }
 
-	#navigationContainer { left:20px; width:80%;} 
+  #navigationContainer { left:20px; width:80%;}
 
-	#contentContainer { left:20px; width:80%;}
+  #contentContainer { left:20px; width:80%;}
       </style>
-      
+
       <body>
         <a name="top" style="color:#336699"><h1>odML - Metadata</h1></a>
         <div id="navigationContainer">     
@@ -32,29 +31,30 @@
             <b>Version: </b><xsl:if test="version"><xsl:value-of select="version"/></xsl:if><br/>
             <b>Repository: </b><xsl:if test="repository"><xsl:value-of select="repository"/></xsl:if><br/>
           </p>
-          
+
           <hr style="color:yellow; background-color:#336699; height:4px; margin-right:0; text-align:right; border:1px dashed black;"/>
 
           <h2>Structure</h2>
-	  <font  size ="-1" >
-	    <xsl:if test="section">
-	      <xsl:for-each select="section">
-		<li>
-		  <xsl:call-template name="sectionTemplate">
-		    <xsl:with-param name="navigation">1</xsl:with-param>
-		    <xsl:with-param name="anchorBase">Sec</xsl:with-param>
-		    <xsl:with-param name="url" select="$repository"/>
-		  </xsl:call-template>
-		</li>
-	      </xsl:for-each>
-	  </xsl:if></font>
+          <font  size ="-1" >
+            <xsl:if test="section">
+              <xsl:for-each select="section">
+                <li>
+                  <xsl:call-template name="sectionTemplate">
+                    <xsl:with-param name="navigation">1</xsl:with-param>
+                    <xsl:with-param name="anchorBase">Sec</xsl:with-param>
+                    <xsl:with-param name="url" select="$repository"/>
+                  </xsl:call-template>
+                </li>
+              </xsl:for-each>
+            </xsl:if>
+          </font>
         </div>
-        
+
         <div id="contentContainer">
           <hr style="color:yellow; background-color:#336699; height:4px; margin-right:0; text-align:right; border:1px dashed black;"/>
           <h2>Content</h2>
           <!-- apply the section template  -->
-	  <xsl:if test="section">
+          <xsl:if test="section">
             <xsl:for-each select="section">
               <xsl:call-template name="sectionTemplate">
                 <xsl:with-param name="navigation">0</xsl:with-param>
@@ -78,21 +78,23 @@
     <!-- set new repository if specified within this section otherwise use the old one -->
     <xsl:variable name="repository">
       <xsl:choose>
-	<xsl:when test="repository">
-	  <xsl:value-of select ="repository"/>        
-	</xsl:when>
-	<xsl:otherwise>
-	  <xsl:value-of select ="$url"/>
-	</xsl:otherwise>
+        <xsl:when test="repository">
+          <xsl:value-of select ="repository"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select ="$url"/>
+        </xsl:otherwise>
       </xsl:choose>
     </xsl:variable>
     <!-- print out the content -->
     <xsl:choose>
       <!--  fill the navigation container if this is the task (navigation param = 1) -->
       <xsl:when test="$navigation = 1">
-	<!-- create a link to the anchor in the content container  -->
-	<ol style="compact"><font size="normal"><a href="#{$anchorName}">
-	  <xsl:value-of select="name"/> (type: <xsl:value-of select="type"/>)</a></font>
+        <!-- create a link to the anchor in the content container  -->
+        <ol style="compact">
+          <font size="normal"><a href="#{$anchorName}">
+            <xsl:value-of select="name"/> (type: <xsl:value-of select="type"/>)
+          </a></font>
           <!--  recursive call if there are subsections  -->
           <xsl:if test="section">
             <xsl:for-each select="section">
@@ -107,8 +109,7 @@
       </xsl:when>
       <!--  otherwise use template to display the content (navigation !=1) -->
       <xsl:otherwise>
-	
-	<a name="{$anchorName}"><h3> <xsl:value-of select="name"/> Section</h3></a>
+        <a name="{$anchorName}"><h3> <xsl:value-of select="name"/> Section</h3></a>
         <p>
           <b>Type: </b><xsl:value-of select="type"/><br/>
           <xsl:choose>
@@ -126,7 +127,7 @@
 
         <b>Mapping: </b>   <xsl:if test="mapping"><xsl:value-of select="mapping"/></xsl:if><br/>
 
-	<!--  Check if there are any properties  -->
+        <!--  Check if there are any properties  -->
         <xsl:if test="property">
           <table border="1" rules="rows" width="100%"><font size="-1">
             <tr bgcolor="#336699">
@@ -134,10 +135,10 @@
               <th><font size="+1" color="white"><b>Value</b></font></th>
               <th><font size="+1" color="white"><b>Unit</b></font></th>
               <th><font size="+1" color="white"><b>Type</b></font></th>
-	      <th><font size="+1" color="white"><b>Definition</b></font></th>
-	      <th><font size="+1" color="white"><b>Mapping</b></font></th>
+              <th><font size="+1" color="white"><b>Definition</b></font></th>
+              <th><font size="+1" color="white"><b>Mapping</b></font></th>
               <th><font size="+1" color="white"><b>Dependency</b></font></th>
-              <th><font size="+1" color="white"><b>Dependency Value</b></font></th>	
+              <th><font size="+1" color="white"><b>Dependency Value</b></font></th>
             </tr>
             <xsl:for-each select="property">
               <xsl:variable name="anchor">
@@ -145,7 +146,7 @@
               </xsl:variable>
               <tr>
                 <td width="15%"><a name="{$anchor}"/>
-                <p><xsl:value-of select="name"/></p>
+                  <p><xsl:value-of select="name"/></p>
                 </td>
                 <td width="10%">
                   <xsl:for-each select="value">
@@ -156,22 +157,22 @@
                   <xsl:for-each select="value">
                     <p><xsl:value-of select="unit"/><br/></p>
                   </xsl:for-each>      
-		</td>
+                </td>
                 <td width="5%">
                   <xsl:for-each select="value">
                     <p><xsl:value-of select="type"/><br/></p>
                   </xsl:for-each>      
-		</td>
-		<td width="22.5%"><p><xsl:value-of select="definition"/></p></td> 
-		<td width="10%">
-		  <p>
-		    <xsl:for-each select="mapping">
-		      <xsl:variable name="mapping" select="."/>
-	              <p><a href="{$mapping}"><small><xsl:value-of select="."/></small></a></p>
-		    </xsl:for-each>
-		  </p>
                 </td>
-		<td width="5%"><p><xsl:value-of select="dependency"/></p></td>
+                <td width="22.5%"><p><xsl:value-of select="definition"/></p></td>
+                <td width="10%">
+                  <p>
+                    <xsl:for-each select="mapping">
+                      <xsl:variable name="mapping" select="."/>
+                      <p><a href="{$mapping}"><small><xsl:value-of select="."/></small></a></p>
+                    </xsl:for-each>
+                  </p>
+                </td>
+                <td width="5%"><p><xsl:value-of select="dependency"/></p></td>
                 <td width="5%"><p><xsl:value-of select="dependencyValue"/></p></td>
               </tr>
             </xsl:for-each></font>
@@ -185,7 +186,7 @@
             <xsl:call-template name="sectionTemplate">
               <xsl:with-param name="navigation" select="$navigation"/>
               <xsl:with-param name="anchorBase" select="concat($anchorName,'SubSec')"/> 
-	      <xsl:with-param name="url" select="$repository"/>
+              <xsl:with-param name="url" select="$repository"/>
             </xsl:call-template>      
           </xsl:for-each>
         </xsl:if> 

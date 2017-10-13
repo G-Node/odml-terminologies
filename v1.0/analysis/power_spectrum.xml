@@ -5,197 +5,200 @@
   <version>1.0</version>
   <date>2011-01-21</date>
   <!-- ********************************************************* -->
-  <!--                     Analysis section                       -->
+  <!--                     Analysis section                      -->
   <!-- ********************************************************* -->
   <section>
     <type>analysis/power_spectrum</type>
     <name>Power spectrum</name>
     <definition>Properties of this section define the way a power spectrum was calculated.</definition>
-    
-    
+
     <property>
       <name>Author</name>
       <value>
-	<type>person</type>
+        <type>person</type>
       </value>
       <definition>The name of the person who did the analysis, e.g. 'John Doe' or 'Doe, John'</definition>
     </property>
-    
+
     <property>
       <name>Date</name>
       <value>
-	<type>date</type>
+        <type>date</type>
       </value>
       <definition>The date of analysis.</definition>
     </property>
-    
+
     <property>
       <name>Description</name>
       <value>
-	<type>text</type>
+        <type>text</type>
       </value>
       <definition>A general description of the analysis.</definition>
     </property>
-    
+
     <property>
       <name>SegmentLength</name>
       <value>
-	<type>int</type>
+        <type>int</type>
       </value>
       <definition>The length of the analysed data stretches. Given in samples.</definition>
     </property>
-    
+
     <property>
       <name>WindowFunction</name>
       <value>
-	<type>string</type>
+        <type>string</type>
       </value>
       <definition>The type of window used. E.g. Hamming, Hanning, etc.</definition>
     </property>
-    
+
     <property>
       <name>Overlap</name>
       <value>
-	<unit>%</unit>
-	<type>float</type>
-	<definition>The overlap between consecutive data segments. Given in percent of the SegmentLength.</definition>
+        <unit>%</unit>
+        <type>float</type>
+        <definition>The overlap between consecutive data segments. Given in percent of the SegmentLength.</definition>
       </value>
       <value>
-	<type>int</type>
-	<definition>The overlap between consecutive data segments given in samples.</definition>
+        <type>int</type>
+        <definition>The overlap between consecutive data segments given in samples.</definition>
       </value>
       <definition>The overlap between consecutive data segments.</definition>
     </property>
-        
+
     <property>
       <name>Method</name>
       <value>
-	<type>string</type>
+        <type>string</type>
       </value>
       <definition>The name of a method used in this analysis. E.g. "power spectrum".</definition>
     </property>
-    
+
     <property>
       <name>CommandlineCall</name>
       <value>
-	<type>string</type>
+        <type>string</type>
       </value>
       <definition>The command used to execute the analysis including the command line parameter.</definition>
-    </property> 
-    
+    </property>
+
     <property>
       <name>Comment</name>
       <value>
-	<type>text</type>
+        <type>text</type>
       </value>
       <definition>Specific comments on this analysis.</definition>
     </property>
-    
+
     <property>
       <name>Code</name>
       <value>
-	<type>binary</type>
-	<definition> The program code to analyse the data can be transferred using this property. 
-	Using it will blow up the the size of the metadatafile and we recommend to rather define the URL of underlying code file.</definition>
+        <type>binary</type>
+        <definition>The program code to analyse the data can be transferred using this property.
+          Using it will blow up the the size of the metadatafile and we recommend to rather define the URL of underlying
+          code file.
+        </definition>
       </value>
       <value>
-	<type>URL</type>
-	<definition>The URL of the applied piece of program code to actually do the analysis.</definition>
+        <type>URL</type>
+        <definition>The URL of the applied piece of program code to actually do the analysis.</definition>
       </value>
-      <definition>
-	The program code used to analyze the data.
-      </definition>
-    </property> 
-    
+      <definition>The program code used to analyze the data.</definition>
+    </property>
+
     <property>
       <name>CodeRevision</name>
       <value>
-	<type>string</type>
+        <type>string</type>
       </value>
-      <definition> If the analysis code is under version control the revision number can be specified using this property.</definition>
-    </property> 
+      <definition>If the analysis code is under version control the revision number can be specified using this
+        property.
+      </definition>
+    </property>
 
     <property>
       <name>ConfigFile</name>
       <value>
-	<type>URL</type>
-	<definition>The URL of the used configuration file used to run the analysis.</definition>
+        <type>URL</type>
+        <definition>The URL of the used configuration file used to run the analysis.</definition>
       </value>
       <value>
-	<type>binary</type>
-	<definition> 
-	  The configurations used to analyse the data can be transferred using this property. 
-	  Using it will blow up the the size of the metadatafile and we recommend to rather define the URL of underlying configuration file.
-	</definition>
+        <type>binary</type>
+        <definition>
+          The configurations used to analyse the data can be transferred using this property.
+          Using it will blow up the the size of the metadatafile and we recommend to rather define the URL of underlying
+          configuration file.
+        </definition>
       </value>
-      <definition> 
-	The configurations used to analyse the data.
-      </definition>
-    </property>  
+      <definition>The configurations used to analyse the data.</definition>
+    </property>
 
     <property>
       <name>DatasetFile</name>
       <value>
-	<type>binary</type>
-	<definition> The data analysed ion the described way can be transferred using this property. 
-	Using it will blow up the the size of the metadatafile and we recommend to rather define the URL of underlying dataset file.</definition>
+        <type>binary</type>
+        <definition>
+          The data analysed ion the described way can be transferred using this property.
+          Using it will blow up the the size of the metadatafile and we recommend to rather define the URL of underlying
+          dataset file.
+        </definition>
       </value>
       <value>
-	<type>URL</type>
-	<definition>The URL of a analysed datasetFile.</definition>
+        <type>URL</type>
+        <definition>The URL of a analysed datasetFile.</definition>
       </value>
-      <definition>
-	The analyzed dataset.
-      </definition>
-    </property> 
+      <definition>The analyzed dataset.</definition>
+    </property>
 
     <property>
       <name>ResultFile</name>
       <value>
-	<type>binary</type>
-	<definition> The results of this analysis can be transferred using this property. 
-	Using it willblow up the the size of the metadatafile and we recommend to rather define the URL of the results file.</definition>
+        <type>binary</type>
+        <definition>
+          The results of this analysis can be transferred using this property.
+          Using it will blow up the the size of the metadatafile and we recommend to rather define the URL of the
+          results file.
+        </definition>
       </value>
       <value>
-	<type>URL</type>
-	<definition>The URL of a results file.</definition>
+        <type>URL</type>
+        <definition>The URL of a results file.</definition>
       </value>
-      <definition>
-	A file containing the results of this analysis.
-      </definition>
-    </property> 
-    
+      <definition>A file containing the results of this analysis.</definition>
+    </property>
+
     <property>
       <name>ResultFigure</name>
       <value>
-	<type>binary</type>
-      <definition>This property is meant to strore the real figure
-      content. This will blow up the the size of the metadatafile and
-      we recommend to rather define the URL of the
-      figure.</definition>
+        <type>binary</type>
+        <definition>
+          This property is meant to store the real figure content. This will blow up the the size
+          of the metadatafile and we recommend to rather define the URL of the figure.
+        </definition>
       </value>
       <value>
-	<type>URL</type>
-	<definition>The url of the results figure.</definition>
+        <type>URL</type>
+        <definition>The url of the results figure.</definition>
       </value>
       <definition>A figure showing the results.</definition>
-    </property> 
-    
+    </property>
+
     <property>
       <name>PaperDOI</name>
       <value>
-	<type>text</type>
+        <type>text</type>
       </value>
       <definition>If the results of this analysis have been published one can store the doi of the paper.</definition>
-    </property> 
-    
+    </property>
+
     <property>
       <name>PaperURL</name>
       <value>
-	<type>URL</type>
+        <type>URL</type>
       </value>
-      <definition>If the results of this analysis have been published the URL of the document can be given here</definition>
-    </property> 
-    
-  </section> 
+      <definition>If the results of this analysis have been published the URL of the document can be given here
+      </definition>
+    </property>
+
+  </section>
 </odML>

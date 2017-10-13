@@ -5,40 +5,44 @@
   <version>1.0</version>
   <date>2017-09-28</date>
   <!-- ********************************************************* -->
-  <!--                  License  section                     -->
+  <!--                  License  section                         -->
   <!-- ********************************************************* -->
   <section>
     <type>License</type>
     <name>License</name>
     <definition>Description of the license for data / software.</definition>
+
     <property>
       <name>Name</name>
       <value>
-	<type>string</type>
+        <type>string</type>
       </value>
       <definition>A name of the license.</definition>
     </property>
+
     <property>
       <name>Type</name>
       <value>
-	<type>string</type>
+        <type>string</type>
       </value>
       <definition>A type of the license.</definition>
     </property>
+
     <property>
       <name>LicenseURL</name>
       <value>
-	<type>URL</type>
+        <type>URL</type>
       </value>
       <definition>URL of the license.</definition>
-    </property>	
+    </property>
+
     <property>
       <name>Description</name>
       <value>
-	<type>string</type>
+        <type>string</type>
       </value>
       <definition>A textual description of the license.</definition>
     </property>
 
-  </section>   
+  </section>
 </odML>

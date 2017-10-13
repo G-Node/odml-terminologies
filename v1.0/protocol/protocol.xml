@@ -5,7 +5,7 @@
   <version>1.1</version>
   <date>2014-03-01</date>
   <!-- ********************************************************* -->
-  <!--                     Protocol section                        -->
+  <!--                     Protocol section                      -->
   <!-- ********************************************************* -->
   <section>
     <type>protocol</type>
@@ -15,7 +15,7 @@
     <property>
       <name>Name</name>
       <value>
-	<type>string</type>
+        <type>string</type>
       </value>
       <definition>The protocol name.</definition>
     </property>
@@ -23,50 +23,50 @@
     <property>
       <name>Description</name>
       <value>
-	<type>string</type>
+        <type>string</type>
       </value>
       <definition>Description of the experiment</definition>
     </property>
-    
+
     <property>
       <name>Author</name>
       <value>
-	<type>person</type>
+        <type>person</type>
       </value>
       <definition>The person, who created this protocol.</definition>
-    </property> 
-    
+    </property>
+
     <property>
       <name>ProtocolFile</name>
       <value>
-	<type>binary</type>
+        <type>binary</type>
       </value>
       <definition>Protocol File</definition>
     </property>
-    
+
     <property>
       <name>ProtocolFileURL</name>
       <value>
-	<type>URL</type>
+        <type>URL</type>
       </value>
       <definition>URL for protocol file</definition>
-    </property> 
-    
+    </property>
+
     <property>
       <name>Duration</name>
       <value>
-	<type>time</type>
+        <type>time</type>
       </value>
       <definition>Duration of the protocol.</definition>
-    </property> 
-    
+    </property>
+
     <property>
       <name>Version</name>
       <value>
-	<type>string</type>
+        <type>string</type>
       </value>
-      <definition> Version of the protocol</definition>
-    </property> 
-    
-  </section> 
+      <definition>Version of the protocol</definition>
+    </property>
+
+  </section>
 </odML>
