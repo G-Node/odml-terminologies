@@ -101,7 +101,7 @@
       <value>
         <type>string</type>
       </value>
-      <definition>If the subject has been labled in a specific way. The lable can be described here.</definition>
+      <definition>If the subject has been labeled in a specific way. The label can be described here.</definition>
     </property>
 
     <property>
@@ -117,7 +117,7 @@
       <value>
         <type>string</type>
       </value>
-      <definition>The developemtal stage of the subject. E.g. "embroyonal", "adult", "larval" etc.</definition>
+      <definition>The developmental stage of the subject. E.g. "embryonal", "adult", "larval" etc.</definition>
     </property>
 
     <property>
@@ -134,7 +134,7 @@
         <type>float</type>
       </value>
       <definition>The size of the subject. This value may be used context dependent. Size could be length for a fish,
-        heigth for a human subject, or shoulder height for a horse etc...
+        height for a human subject, or shoulder height for a horse etc...
       </definition>
     </property>
 

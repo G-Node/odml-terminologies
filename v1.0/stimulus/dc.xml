@@ -73,7 +73,7 @@
         <type>string</type>
       </value>
       <definition>The physical output device (e.g. an analog output channel, a monitor screen, the same loudspeaker,
-        etc.). This information can be used to explicitely express that several stimuli (that share the same
+        etc.). This information can be used to explicitly express that several stimuli (that share the same
         OutputChannel) are jointly presented.
       </definition>
     </property>

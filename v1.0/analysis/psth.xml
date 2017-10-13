@@ -184,7 +184,7 @@
       <value>
         <type>binary</type>
       </value>
-      <definition>A figure showing the results. This property is meant to strore the real figure content.
+      <definition>A figure showing the results. This property is meant to store the real figure content.
         This will blow up the the size of the metadatafile and we recommend to rather define the URL of the figure.
       </definition>
     </property>

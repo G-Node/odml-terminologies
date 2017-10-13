@@ -495,7 +495,7 @@
           <type>string</type>
         </value>
         <definition>The subject conditions during the recording. Invivo or invitro preparation If invivo was it
-          anethesitised or awake? If awake what was the stimulus condition.
+          anesthetised or awake? If awake what was the stimulus condition.
         </definition>
         <!-- <mapping>?</mapping> -->
       </property>

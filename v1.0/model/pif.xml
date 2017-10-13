@@ -18,7 +18,7 @@
       <value>
         <type>string</type>
       </value>
-      <definition>The type of simulation: mathmatical, phenomenological, biophysical etc..</definition>
+      <definition>The type of simulation: mathematical, phenomenological, biophysical etc..</definition>
     </property>
 
   </section>

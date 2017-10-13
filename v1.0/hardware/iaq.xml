@@ -64,7 +64,7 @@
       <value>Framegrabber
         <type>string</type>
       </value>
-      <definition>The kind of image acquisiton device.</definition>
+      <definition>The kind of image acquisition device.</definition>
     </property>
 
     <property>
@@ -86,7 +86,7 @@
       <value>Color
         <type>string</type>
       </value>
-      <definition>The kind of image acquisiton device.</definition>
+      <definition>The kind of image acquisition device.</definition>
     </property>
 
     <property>
@@ -221,7 +221,7 @@
       <value>
         <type>int</type>
       </value>
-      <definition>The heigth of the region of interest. Given in pixels.</definition>
+      <definition>The height of the region of interest. Given in pixels.</definition>
     </property>
 
     <property>

@@ -78,7 +78,7 @@
         <type>float</type>
         <unit>Ohm</unit>
       </value>
-      <definition>The membrane restisance.</definition>
+      <definition>The membrane resistance.</definition>
     </property>
 
     <property>
@@ -151,7 +151,7 @@
       <value>
         <type>string</type>
       </value>
-      <definition>The equation to calculate the adaptation currrent.</definition>
+      <definition>The equation to calculate the adaptation current.</definition>
     </property>
 
     <!--     Noise  -->
@@ -206,7 +206,7 @@
         <type>float</type>
         <unit>s</unit>
       </value>
-      <definition>The time ocnstant with which the threshold returns back to baseline.</definition>
+      <definition>The time constant with which the threshold returns back to baseline.</definition>
     </property>
 
     <property>

@@ -10,7 +10,7 @@
   <section>
     <type>Response</type>
     <name>Response</name>
-    <definition>General description of an recieved response (on stimulus).</definition>
+    <definition>General description of an received response (on stimulus).</definition>
 
     <property>
       <name>Description</name>
@@ -107,7 +107,7 @@
       <value>
         <type>binary</type>
       </value>
-      <definition>The response file recived. Using it will blow up the the size of the metadatafile and we recommend to
+      <definition>The response file received. Using it will blow up the the size of the metadatafile and we recommend to
         rather define the URL of underlying response file.
       </definition>
     </property>
@@ -117,7 +117,7 @@
       <value>
         <type>URL</type>
       </value>
-      <definition>The URL of a an recievedresponse file. This is the recommended alternative to explicitely including
+      <definition>The URL of a an recieved response file. This is the recommended alternative to explicitly including
         the actual response via ResponseFile.
       </definition>
     </property>

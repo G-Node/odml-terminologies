@@ -137,7 +137,7 @@
       </value>
       <definition>
         The results of this analysis can be transferred using this property.
-        Using it willblow up the the size of the metadatafile and we recommend to rather define the URL of the results
+        Using it will blow up the the size of the metadatafile and we recommend to rather define the URL of the results
         file.
       </definition>
     </property>

@@ -349,7 +349,7 @@
   <section>
     <type>response</type>
     <name>Response</name>
-    <definition>General description of an recieved response (on stimulus).</definition>
+    <definition>General description of an received response (on stimulus).</definition>
     <include>http://portal.g-node.org/odml/terminologies/v1.0/response/response.xml</include>
   </section>
 

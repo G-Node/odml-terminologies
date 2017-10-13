@@ -66,7 +66,7 @@
       <value>
         <type>string</type>
       </value>
-      <definition>The slice orientation: horizontal, sagital etc.</definition>
+      <definition>The slice orientation: horizontal, sagittal etc.</definition>
     </property>
 
     <property>

@@ -57,7 +57,7 @@
         <type>string</type>
       </value>
       <definition>The physical output device (e.g. an analog output channel, a monitor screen, the same loudspeaker,
-        etc.). This information can be used to explicitely express that several stimuli (that share the same
+        etc.). This information can be used to explicitly express that several stimuli (that share the same
         OutputChannel) are jointly presented.
       </definition>
     </property>
@@ -76,7 +76,7 @@
       <value>
         <type>float</type>
       </value>
-      <definition>The part of the cylce spend in the up state. E.g. 0.5 if up and down state each take half of the
+      <definition>The part of the cycle spend in the up state. E.g. 0.5 if up and down state each take half of the
         time.
       </definition>
     </property>
@@ -102,7 +102,7 @@
       <value>
         <type>float</type>
       </value>
-      <definition>The amlitude with which the squarewave stimulus started. This may assume either intensity offset - or
+      <definition>The amplitude with which the squarewave stimulus started. This may assume either intensity offset - or
         + amplitude/2.
       </definition>
     </property>

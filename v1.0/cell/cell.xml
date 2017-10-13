@@ -142,7 +142,7 @@
         <type>float</type>
         <unit>ms</unit>
       </value>
-      <definition>The mebrane time-constant.</definition>
+      <definition>The membrane time-constant.</definition>
     </property>
 
     <property>
