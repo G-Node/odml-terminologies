@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl"  xmlns:odml="http://www.g-node.org/odml"?>
+<odML version="1.1">
+  <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+  <version>1.0</version>
+  <date>2017-09-28</date>
+  <!-- ********************************************************* -->
+  <!--                  Questionnaire  section                   -->
+  <!-- ********************************************************* -->
+  <section>
+    <type>questionnaire</type>
+    <name>questionnaire</name>
+    <definition>Description of the questionnaire.</definition>
+
+    <property>
+      <name>Version</name>
+      <definition>A version of the questionnaire.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Label</name>
+      <definition>A label of the questionnaire.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Question</name>
+      <definition>Question of the questionnaire.</definition>
+      <type>question</type>
+    </property>
+
+    <property>
+      <name>File</name>
+      <definition>The binary file with questionnaire.</definition>
+      <type>File</type>
+    </property>
+
+    <property>
+      <name>FileURL</name>
+      <definition>URL for questionnaire file.</definition>
+      <type>URL</type>
+    </property>
+
+  </section>
+</odML>

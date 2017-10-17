@@ -1,60 +1,59 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
 <!-- ********************************** -->
-<!--        Microscope properties        -->
+<!--        Microscope properties       -->
 <!-- ********************************** -->
 <odML version="1.1">
   <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
   <version>1.0</version>
   <date>2011-01-21</date>
-  
+
   <section>
     <type>hardware/microscope</type>
     <name>Microscope</name>
     <definition>The Microscope section describes the properties of the used microscope.</definition>
-    
+
     <property>
       <name>SerialNo</name>
-      <type>string</type>
       <definition>The device's serial number.</definition>
-    </property> 
-    
+      <type>string</type>
+    </property>
+
     <property>
       <name>InventoryNo</name>
-      <type>string</type>
       <definition>The inventory number of the device.</definition>
+      <type>string</type>
     </property>
-    
+
     <property>
       <name>Owner</name>
+      <definition>Who's the owner of the device.</definition>
       <type>string</type>
-      <definition> Who's the owner of the device.</definition>
-    </property> 
-    
+    </property>
+
     <property>
       <name>Type</name>
+      <definition>The microscope type: widefield, two-photon, multi-photon, confocal, etc...</definition>
       <type>string</type>
-      <definition>The microcope type: widefield, two-photon, multi-photon, confocal, etc...</definition>
-    </property> 
-    
+    </property>
+
     <property>
       <name>Model</name>
-      <type>string</type>
       <definition>The model name of this hardware item.</definition>
-    </property> 
-    
+      <type>string</type>
+    </property>
+
     <property>
       <name>Manufacturer</name>
-      <type>string</type>
       <definition>The Manufacturer of this hardware item.</definition>
-    </property> 
-    
+      <type>string</type>
+    </property>
+
     <property>
       <name>Description</name>
-      <type>string</type>
       <definition>A description of this hardware item.</definition>
+      <type>string</type>
     </property>
-    
-  </section>
 
+  </section>
 </odML>

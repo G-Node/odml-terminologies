@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl"  xmlns:odml="http://www.g-node.org/odml"?>
+<odML version="1.1">
+  <version>1.0</version>
+  <date>2011-01-21</date>
+  <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+  <!-- ********************************************************* -->
+  <!--                  Response section                         -->
+  <!-- ********************************************************* -->
+  <section>
+    <type>Response</type>
+    <name>Response</name>
+    <definition>General description of an received response (on stimulus).</definition>
+
+    <property>
+      <name>Description</name>
+      <definition>A textual description of the response.</definition>
+      <type>text</type>
+    </property>
+
+    <property>
+      <name>Comment</name>
+      <definition>A comment on this specific response.</definition>
+      <type>text</type>
+    </property>
+
+    <property>
+      <name>Author</name>
+      <definition>Who is the author of this response.</definition>
+      <type>person</type>
+    </property>
+
+    <property>
+      <name>Duration</name>
+      <definition>The duration of the response.</definition>
+      <type>float</type>
+      <unit>s</unit>
+    </property>
+
+    <property>
+      <name>StartTime</name>
+      <definition>The time the response started.</definition>
+      <type>time</type>
+    </property>
+
+    <property>
+      <name>EndTime</name>
+      <definition>The time the response ended.</definition>
+      <type>time</type>
+    </property>
+
+    <property>
+      <name>Intensity</name>
+      <definition>like the current in case of electrical stimulation.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Location</name>
+      <definition>Describes the site of the response application.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Modality</name>
+      <definition>Visual, acoustic, haptic, electrical, etc. response.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Repetitions</name>
+      <definition>The number of repetitions of the described response.</definition>
+      <type>int</type>
+    </property>
+
+    <property>
+      <name>InterstimulusInterval</name>
+      <definition>The time between two subsequent response.</definition>
+      <type>float</type>
+      <unit>s</unit>
+    </property>
+
+    <property>
+      <name>ResponseFile</name>
+      <definition>The response file received. Using it will blow up the the size of the metadatafile and we recommend to
+        rather define the URL of underlying response file.
+      </definition>
+      <type>binary</type>
+    </property>
+
+    <property>
+      <name>ResponseFileURL</name>
+      <definition>The URL of a an received response file. This is the recommended alternative to explicitly including
+        the actual response via ResponseFile.
+      </definition>
+      <type>URL</type>
+    </property>
+
+  </section>
+</odML>

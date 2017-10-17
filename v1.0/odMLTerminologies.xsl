@@ -19,7 +19,7 @@
         <h1>odML - Terminologies</h1>
         <h3>How to use:</h3>
         <p>The terminologies (see below) generally define the names of properties. In some cases we also define
-          "values". This is mainly the case if the occurence of a certain property value requires more properties
+          "values". This is mainly the case if the occurrence of a certain property value requires more properties
           for further specification. One example for this would be the switching frequency on an amplifier used
           in an electrophysiological experiment. This property is only meaningful if the amplifier was used in
           in a discontinuous operation mode.
@@ -33,7 +33,7 @@
           </ul>
         </p>
         <h3>So far defined terminologies</h3>
-        <p>The following Terminologies contain definitions according to the seciton name. If you specify e.g.
+        <p>The following Terminologies contain definitions according to the section name. If you specify e.g.
           the sample rate of an analog input device include it contained within the respective section into
           your odML - file.</p>
         <xsl:variable name="baseurl" select="baseURL"/>

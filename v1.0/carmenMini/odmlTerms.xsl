@@ -16,11 +16,11 @@
             csoptsettings="AQAAAD142mNgYNBomeIwObe4IIeBgYEvyTDuaAoPw3IFiwOcndS8HR1NjO0NDPTNdIzzEzOByni+A8EQNoAAPMPEQ4="
             livesrc="../../../images/odMLIcon.png" />
       <style type="text/css">
-  body { margin-left:2%; margin-top:10px; padding:0;} div { border:0px solid #888; }
+        body { margin-left:2%; margin-top:10px; padding:0;} div { border:0px solid #888; }
 
-  #navigationContainer { left:20px; width:80%;}
+        #navigationContainer { left:20px; width:80%;}
 
-  #contentContainer { left:20px; width:80%;}
+        #contentContainer { left:20px; width:80%;}
       </style>
 
       <body>
@@ -93,7 +93,7 @@
     <xsl:choose>
       <!--  fill the navigation container if this is the task (navigation param = 1) -->
       <xsl:when test="$navigation = 1">
-      <!-- create a link to the anchor in the content container  -->
+        <!-- create a link to the anchor in the content container  -->
         <ol style="compact">
           <font size="normal"><a href="#{$anchorName}">
             <xsl:value-of select="name"/> (type: <xsl:value-of select="type"/>)
@@ -105,9 +105,9 @@
                 <xsl:with-param name="navigation" select="$navigation"/>
                 <xsl:with-param name="anchorBase" select="concat($anchorName,'SubSec')"/>
                 <xsl:with-param name="url" select="$repository"/>
-                </xsl:call-template>
-              </xsl:for-each>
-            </xsl:if>
+              </xsl:call-template>
+            </xsl:for-each>
+          </xsl:if>
         </ol>
       </xsl:when>
       <!--  otherwise use template to display the content (navigation !=1) -->
@@ -149,7 +149,7 @@
               </xsl:variable>
               <tr>
                 <td width="15%"><a name="{$anchor}"/>
-                <p><xsl:value-of select="name"/></p>
+                  <p><xsl:value-of select="name"/></p>
                 </td>
                 <td width="10%">
                   <xsl:for-each select="value">

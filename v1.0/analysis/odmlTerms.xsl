@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fn="http://www.w3.org/2005/02/xpath-functions">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:fn="http://www.w3.org/2005/02/xpath-functions">
 
   <!-- This stylesheet is for viewing odml-terminologies in a web browser -->
   <!-- Please note: only those elements will be displayed terminology related -->
@@ -11,18 +12,20 @@
     <!-- if there is a base url definition read it and later pass it to the sections template -->
     <xsl:variable name="repository" select="repository"/>
     <html>
-      <link href="../../../images/odMLIcon.ico" rel="shortcut icon" csoptsettings="AQAAAD142mNgYNBomeIwObe4IIeBgYEvyTDuaAoPw3IFiwOcndS8HR1NjO0NDPTNdIzzEzOByni+A8EQNoAAPMPEQ4=" livesrc="../../../images/odMLIcon.png" />
+      <link href="../../../images/odMLIcon.ico" rel="shortcut icon"
+            csoptsettings="AQAAAD142mNgYNBomeIwObe4IIeBgYEvyTDuaAoPw3IFiwOcndS8HR1NjO0NDPTNdIzzEzOByni+A8EQNoAAPMPEQ4="
+            livesrc="../../../images/odMLIcon.png" />
       <style type="text/css">
-  body { margin-left:2%; margin-top:10px; padding:0;} div { border:0px solid #888; }
+        body { margin-left:2%; margin-top:10px; padding:0;} div { border:0px solid #888; }
 
-  #navigationContainer { left:20px; width:80%;}
+        #navigationContainer { left:20px; width:80%;}
 
-  #contentContainer { left:20px; width:80%;}
+        #contentContainer { left:20px; width:80%;}
       </style>
 
       <body>
         <a name="top" style="color:#336699"><h1>odML - Metadata</h1></a>
-        <div id="navigationContainer">     
+        <div id="navigationContainer">
           <p>
             <hr style="color:yellow; background-color:#336699; height:4px; margin-right:0; text-align:right; border:1px dashed black;"/>
             <h2>Document info</h2>
@@ -35,7 +38,7 @@
           <hr style="color:yellow; background-color:#336699; height:4px; margin-right:0; text-align:right; border:1px dashed black;"/>
 
           <h2>Structure</h2>
-          <font  size ="-1" >
+          <font size ="-1" >
             <xsl:if test="section">
               <xsl:for-each select="section">
                 <li>
@@ -65,13 +68,13 @@
           </xsl:if>
         </div>
       </body>
-    </html> 
+    </html>
   </xsl:template>
 
   <!-- ************************************************  -->
   <!--              section template.                    -->
   <xsl:template name="sectionTemplate" match="section">
-    <xsl:param name="navigation"/>   
+    <xsl:param name="navigation"/>
     <xsl:param name="anchorBase"/>
     <xsl:param name="url"/>
     <xsl:variable name="anchorName" select="concat($anchorBase,position())"/>
@@ -102,9 +105,9 @@
                 <xsl:with-param name="navigation" select="$navigation"/>
                 <xsl:with-param name="anchorBase" select="concat($anchorName,'SubSec')"/>
                 <xsl:with-param name="url" select="$repository"/>
-              </xsl:call-template>      
+              </xsl:call-template>
             </xsl:for-each>
-          </xsl:if> 
+          </xsl:if>
         </ol>
       </xsl:when>
       <!--  otherwise use template to display the content (navigation !=1) -->
@@ -151,17 +154,17 @@
                 <td width="10%">
                   <xsl:for-each select="value">
                     <p><xsl:value-of select="text()"/><br/></p>
-                  </xsl:for-each>      
+                  </xsl:for-each>
                 </td>
                 <td width="5%">
                   <xsl:for-each select="value">
                     <p><xsl:value-of select="unit"/><br/></p>
-                  </xsl:for-each>      
+                  </xsl:for-each>
                 </td>
                 <td width="5%">
                   <xsl:for-each select="value">
                     <p><xsl:value-of select="type"/><br/></p>
-                  </xsl:for-each>      
+                  </xsl:for-each>
                 </td>
                 <td width="22.5%"><p><xsl:value-of select="definition"/></p></td>
                 <td width="10%">
@@ -177,20 +180,20 @@
               </tr>
             </xsl:for-each></font>
           </table>
-        </xsl:if>  
+        </xsl:if>
         <a href="#top"><tiny>top</tiny></a>
-        <hr style="background-color:#336699; height:1px; margin-right:0; text-align:right;"/>  
+        <hr style="background-color:#336699; height:1px; margin-right:0; text-align:right;"/>
         <!--  recursive call if there are subsections  -->
         <xsl:if test="section">
           <xsl:for-each select="section">
             <xsl:call-template name="sectionTemplate">
               <xsl:with-param name="navigation" select="$navigation"/>
-              <xsl:with-param name="anchorBase" select="concat($anchorName,'SubSec')"/> 
+              <xsl:with-param name="anchorBase" select="concat($anchorName,'SubSec')"/>
               <xsl:with-param name="url" select="$repository"/>
-            </xsl:call-template>      
+            </xsl:call-template>
           </xsl:for-each>
-        </xsl:if> 
+        </xsl:if>
       </xsl:otherwise>
-    </xsl:choose> 
+    </xsl:choose>
   </xsl:template>
 </xsl:stylesheet>

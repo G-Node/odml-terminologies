@@ -1,75 +1,78 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
-
-<!-- ********************************************************* -->
-<!--                    Recording section                      -->
-<!-- ********************************************************* --> 
-
 <odML version="1.1">
   <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
   <version>1.0</version>
   <date>2011-01-21</date>
-
+  <!-- ********************************************************* -->
+  <!--                    Recording section                      -->
+  <!-- ********************************************************* -->
   <section>
     <type>recording</type>
     <name>Recording</name>
-    <definition>During a recording session in a Setup Datasets are
-    obtained from Cells and/or a Subject by using various stimuli (Stimulus section).</definition>
-    
+    <definition>During a recording session in a Setup Datasets are obtained from Cells and/or a Subject by using various
+      stimuli (Stimulus section).
+    </definition>
+
     <property>
       <name>Comment</name>
-      <type>string</type>
       <definition>Comments on the recording session.</definition>
-    </property>      
-    
+      <type>string</type>
+    </property>
+
     <property>
       <name>Experimenter</name>
-      <type>person</type>
       <definition>The name of the person actually performing the recordings.</definition>
-    </property> 
-    
+      <type>person</type>
+    </property>
+
     <property>
       <name>ExperimenterID</name>
-      <type>person</type>
       <definition>If registered in a database the primary key of the person that performed the experiments.</definition>
-    </property> 
-    
+      <type>person</type>
+    </property>
+
     <property>
       <name>Start</name>
+      <definition>The date and time at which the recording started in (YYYY-MM-DD hh:mm:ss format).</definition>
       <type>datetime</type>
-      <definition>The date and time at which the recording started in  (YYYY-MM-DD hh:mm:ss format).</definition>
-    </property> 
-    
+    </property>
+
     <property>
       <name>End</name>
+      <definition>The date and time at which the recording ended in (YYYY-MM-DD hh:mm:ss format).</definition>
       <type>datetime</type>
-      <definition>The date and time at which the recording ended in  (YYYY-MM-DD hh:mm:ss format).</definition>
-    </property> 
-    
+    </property>
+
     <property>
       <name>StartDate</name>
-      <type>date</type>
       <definition>The date the recording session was conducted (YYYY-MM-DD format).</definition>
-    </property> 
-    
+      <type>date</type>
+    </property>
+
     <property>
       <name>EndDate</name>
+      <definition>The date the recording session ended (YYYY-MM-DD format).</definition>
       <type>date</type>
-      <definition>The date the recording session ended (YYYY-MM-DD
-      format).</definition>
-    </property> 
-    
+    </property>
+
     <property>
       <name>StartTime</name>
-      <type>time</type>
       <definition>The time the recordings began (hh:mm:ss format).</definition>
-    </property> 
-    
+      <type>time</type>
+    </property>
+
     <property>
       <name>EndTime</name>
-      <type>time</type>
       <definition>The time the recordings ended (hh:mm:ss format).</definition>
-    </property> 
+      <type>time</type>
+    </property>
 
-  </section> 
+    <property>
+      <name>Type</name>
+      <definition>The type of recording (EEG, Eyetracker,Motion data).</definition>
+      <type>string</type>
+    </property>
+
+  </section>
 </odML>

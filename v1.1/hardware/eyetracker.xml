@@ -1,97 +1,111 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
-<odML version="1.1"> 
+<odML version="1.1">
   <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
   <version>1.0</version>
   <date>2011-01-21</date>
+
   <section>
     <type>hardware/eyetracker</type>
     <name>Eyetracker</name>
     <definition>Properties of an eyetracker.</definition>
-    
+
     <property>
       <name>SerialNo</name>
-      <type>string</type>
+      <value>
+        </value>
       <definition>The device's serial number.</definition>
-    </property> 
-    
+    <type>string</type></property>
+
     <property>
       <name>InventoryNo</name>
-      <type>string</type>
+      <value>
+        </value>
       <definition>The inventory number of the device.</definition>
-    </property> 
-    
+    <type>string</type></property>
+
     <property>
       <name>Owner</name>
-      <type>string</type>
-      <definition> Who's the owner of the device.</definition>
-    </property> 
-    
+      <value>
+        </value>
+      <definition>Who's the owner of the device.</definition>
+    <type>string</type></property>
+
     <property>
       <name>Model</name>
-      <type>string</type>
+      <value>
+        </value>
       <definition>The model name of this hardware item.</definition>
-    </property> 
-    
+    <type>string</type></property>
+
     <property>
       <name>Manufacturer</name>
-      <type>string</type>
+      <value>
+        </value>
       <definition>The Manufacturer of this hardware item.</definition>
-    </property> 
-    
+    <type>string</type></property>
+
     <property>
       <name>Comment</name>
-      <type>text</type>
+      <value>
+        </value>
       <definition>Space for some comments.</definition>
-    </property>
-    
+    <type>text</type></property>
+
     <property>
       <name>Type</name>
-      <value>[Tabletop, Head mounted] </value>
-      <type>string</type>
+      <value>tabletop
+        , head mounted
+        </value>
       <definition>The kind of eyetracker.</definition>
-    </property> 
-    
+    <type>string</type></property>
+
     <property>
       <name>SampleRate</name>
-      <type>float</type>
-      <unit>Hz</unit>
+      <value>
+        </value>
       <definition>The rate with which eye positions are sampled.</definition>
-    </property>
-    
+    <type>float</type><unit>Hz</unit></property>
+
     <property>
       <name>DetektorType</name>
-      <value>[Infrared, Dual Purkinje, Coil]</value>
-      <type>string</type>
-      <definition>The kind of detektor used in this eyetracker.</definition>
-    </property>
-    
+      <value>Infrared
+        , Dual Purkinje
+        , Coil
+        </value>
+      <definition>The kind of detector used in this eyetracker.</definition>
+    <type>string</type></property>
+
     <property>
       <name>Filter</name>
-      <type>string</type>
+      <value>
+        </value>
       <definition>The kind of filter applied to the data.</definition>
-    </property>
-    
+    <type>string</type></property>
+
     <property>
       <name>Calibration</name>
-      <type>string</type>
+      <value>
+        </value>
       <definition>The calibration procedure.</definition>
-    </property>
-    
+    <type>string</type></property>
+
     <property>
       <name>Fixation</name>
-      <value>[Bitebar, Chinrest]</value>
-      <type>string</type>
+      <value>Bitebar
+        , Chinrest
+        </value>
       <dependency>Type</dependency>
       <dependencyValue>Tabletop</dependencyValue>
       <definition>The way the head was fixed. Makes no sense if the eytracker is head mounted.</definition>
-    </property>
+    <type>string</type></property>
 
     <property>
       <name>Description</name>
-      <type>string</type>
+      <value>
+        </value>
       <definition>A description of this hardware item.</definition>
-    </property>
+    <type>string</type></property>
 
   </section>
 </odML>

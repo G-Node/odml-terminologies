@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl"  xmlns:odml="http://www.g-node.org/odml"?>
+<odML version="1.1">
+  <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+  <version>1.0</version>
+  <date>2017-09-28</date>
+  <!-- ********************************************************* -->
+  <!--                  License  section                         -->
+  <!-- ********************************************************* -->
+  <section>
+    <type>License</type>
+    <name>License</name>
+    <definition>Description of the license for data / software.</definition>
+
+    <property>
+      <name>Name</name>
+      <definition>A name of the license.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Type</name>
+      <definition>A type of the license.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>LicenseURL</name>
+      <definition>URL of the license.</definition>
+      <type>URL</type>
+    </property>
+
+    <property>
+      <name>Description</name>
+      <definition>A textual description of the license.</definition>
+      <type>string</type>
+    </property>
+
+  </section>
+</odML>

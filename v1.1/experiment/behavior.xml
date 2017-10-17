@@ -1,46 +1,49 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
 <!-- ********************************************************* -->
-<!--                     Behavioral experiment			                       -->
-<!-- ********************************************************* -->  
+<!--                     Behavioral experiment                 -->
+<!-- ********************************************************* -->
 <odML version="1.1">
   <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
   <version>1.0</version>
-  <date>2011-01-21</date>	
-  
+  <date>2011-01-21</date>
+
   <section>
     <type>experiment/bahavior</type>
     <name>Behavior</name>
     <definition>Properties for describing an behavioural experiment.</definition>
-    
+
     <property>
       <name>Paradigm</name>
-      <type>string</type> 
-      <definition>The paradigm used in the experiment, e.g. Learning, navigation, etc... </definition>
+      <definition>The paradigm used in the experiment, e.g. Learning, navigation, etc...</definition>
+      <type>string</type>
     </property>
-    
+
     <property>
       <name>Environment</name>
-      <type>string</type> 
-      <definition>The environment in which the experiments were conducted. Classical environments are e.g. the Y-maze or T-maze. Some environments are called enriched also reduced or even natural.</definition>
+      <definition>The environment in which the experiments were conducted. Classical environments are e.g. the Y-maze or
+        T-maze. Some environments are called enriched also reduced or even natural.
+      </definition>
+      <type>string</type>
     </property>
-    
+
     <property>
       <name>IndividualCount</name>
-      <type>int</type> 
       <definition>The number of individuals that are observed/investigated at the same time.</definition>
+      <type>int</type>
     </property>
-    
+
     <property>
       <name>definition</name>
-      <type>text</type> 
       <definition>A definition of the conducted experiment.</definition>
+      <type>text</type>
     </property>
-    
+
     <property>
       <name>Protocol</name>
-      <type>text</type> 
       <definition>A description of the task protocol undertaken by the subject.</definition>
+      <type>text</type>
     </property>
+
   </section>
 </odML>
