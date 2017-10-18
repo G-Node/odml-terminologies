@@ -1,117 +1,118 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
 <!-- ********************************** -->
-<!--           Camera Objective         		 -->
+<!--           Camera Objective         -->
 <!-- ********************************** -->
 <odML version="1.1">
   <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
   <version>1.0</version>
   <date>2011-01-21</date>
+
   <section>
     <type>hardware/camera_objective</type>
     <name>CameraObjective</name>
     <definition>This section contains properties that describe a camera objective.</definition>
-    
+
     <property>
       <name>InventoryNo</name>
-      <type>string</type>
       <definition>The inventory number of this device.</definition>
-    </property> 
-    
+      <type>string</type>
+    </property>
+
     <property>
       <name>SerialNo</name>
-      <type>string</type>
       <definition>The serial number of this device.</definition>
-    </property> 
-    
+      <type>string</type>
+    </property>
+
     <property>
       <name>Owner</name>
-      <type>string</type>
       <definition>The owner of this device.</definition>
-    </property> 
-    
+      <type>string</type>
+    </property>
+
     <property>
       <name>Model</name>
-      <type>string</type>
       <definition>The objective model name.</definition>
-    </property> 
-    
+      <type>string</type>
+    </property>
+
     <property>
       <name>Manufacturer</name>
-      <type>string</type>
       <definition>The Manufacturer providing the objective.</definition>
-    </property> 
-    
+      <type>string</type>
+    </property>
+
     <property>
       <name>Type</name>
       <value>[Zoom, Macro, FixedFocus, FixedApperture]</value>
-      <type>string</type>
       <definition>The type of objective.</definition>
+      <type>string</type>
     </property>
-    
+
     <property>
       <name>Mount</name>
       <value>[C-Mount, CS-Mount]</value>
-      <type>string</type>
       <definition>The type of mount.</definition>
+      <type>string</type>
     </property>
-    
+
     <property>
       <name>NumericalAperture</name>
-      <type>float</type>
       <definition>The numerical aperture (N.A.) of the objective.</definition>
-    </property> 
-    
+      <type>float</type>
+    </property>
+
     <property>
       <name>MaximumAperture</name>
-      <type>float</type>
       <definition>The maximum aperture of the objective.</definition>
-    </property> 
-    
+      <type>float</type>
+    </property>
+
     <property>
       <name>Aperture</name>
-      <type>float</type>
       <definition>The actual aperture setting of the objective.</definition>
+      <type>float</type>
     </property>
-    
+
     <property>
       <name>FocalLengthRange</name>
-      <type>float</type>
       <definition>The range of focal lengths of the objective.</definition>
+      <type>float</type>
     </property>
-    
+
     <property>
       <name>FocalLength</name>
-      <type>float</type>
       <definition>The focal length of the objective.</definition>
+      <type>float</type>
     </property>
-    
+
     <property>
       <name>TransmissionLowerBound</name>
+      <definition>The lower bound of transmission.</definition>
       <type>float</type>
       <unit>nm</unit>
-      <definition>The lower bound of transmission.</definition>
     </property>
-    
+
     <property>
       <name>TransmissionUpperBound</name>
+      <definition>The upper bound of transmission.</definition>
       <type>float</type>
       <unit>nm</unit>
-      <definition>The upper bound of transmission.</definition>
     </property>
-    
+
     <property>
       <name>TransmissionRange</name>
+      <definition>The transmission range (min - max).</definition>
       <type>float</type>
       <unit>nm</unit>
-      <definition>The transmission range (min - max).</definition>
     </property>
 
     <property>
       <name>Description</name>
-      <type>string</type>
       <definition>A description of this hardware item.</definition>
+      <type>string</type>
     </property>
-    
+
   </section>
 </odML>

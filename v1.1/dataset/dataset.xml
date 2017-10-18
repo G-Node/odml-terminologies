@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
 <odML version="1.1">
   <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
-  <version>1.1</version>
-  <date>2017-03-03</date>
+  <version>1.0</version>
+  <date>2011-01-21</date>
   <!-- ********************************************************* -->
   <!--                      Dataset section                      -->
   <!-- ********************************************************* -->
@@ -11,78 +11,76 @@
     <type>dataset</type>
     <name>Dataset</name>
     <definition>Names (URLs) and times of recorded data files.
-    Datasets are obtained during a Recording and may belong to
-    different Experiments. Related sections that can be used as
-    subsections, parent sections, or siblings are Stimulus,
-    HardwareSettings, and Experiment.</definition>
+      Datasets are obtained during a Recording and may belong to
+      different Experiments. Related sections that can be used as
+      subsections, parent sections, or siblings are Stimulus,
+      HardwareSettings, and Experiment.
+    </definition>
 
     <property>
       <name>Start</name>
+      <definition>The point in time the recording of this dataset was started.</definition>
       <type>datetime</type>
-      <definition>The point in time the recording of this dataset was
-      started.</definition>
-    </property> 
+    </property>
 
     <property>
       <name>End</name>
+      <definition>The point in time the recording of this dataset was ended.</definition>
       <type>datetime</type>
-      <definition>The point in time the recording of this dataset was
-      ended.</definition>
     </property>
-    
+
     <property>
       <name>StartDate</name>
+      <definition>The date recording of this dataset was started.</definition>
       <type>date</type>
-      <definition>The date recording of this dataset was
-      started.</definition>
-    </property> 
+    </property>
 
     <property>
       <name>EndDate</name>
+      <definition>The date the recording of this dataset was ended.</definition>
       <type>date</type>
-      <definition>The date the recording of this dataset was
-      ended.</definition>
     </property>
 
     <property>
       <name>StartTime</name>
-      <type>time</type>
       <definition>The local time recording was started.</definition>
-    </property> 
+      <type>time</type>
+    </property>
 
     <property>
       <name>EndTime</name>
-      <type>time</type>
       <definition>The local time recording was ended.</definition>
-    </property> 
+      <type>time</type>
+    </property>
 
     <property>
       <name>Comment</name>
+      <definition>A comment about the dataset (common to all files belonging to this dataset).</definition>
       <type>text</type>
-      <definition>A comment about the dataset (common to all files
-      belonging to this dataset).</definition>
     </property>
 
     <property>
       <name>File</name>
-      <type>URL</type>
-      <definition>The URL of a data file.</definition>
-    </property> 
+      <type>binary</type>
+      <definition>Data of this dataset. Be aware that including the actual content of a data file by this property
+        will blow up the the size of the metadatafile. We rather recommend to simply refer to the URL of a dataset
+        file using the FileURL property.
+      </definition>
+    </property>
 
     <property>
       <name>Quality</name>
+      <definition>A rough indication of the overall quality of the dataset. E.g. poor, fair, or good.</definition>
       <type>string</type>
-      <definition>A rough indication of the overall quality of
-      the dataset. E.g. poor, fair, or good.</definition>
-    </property> 
+    </property>
 
     <property>
       <name>QualityRange</name>
+      <definition>A comma separated ascending list of all used values for indicating the overall quality of the dataset.
+        E.g. "poor,fair,good".
+      </definition>
       <type>string</type>
-      <definition>A comma separated ascending list of all used
-      values for indicating the overall quality of the
-      dataset. E.g. "poor,fair,good".</definition>
-    </property> 
+    </property>
 
   </section>
 </odML>

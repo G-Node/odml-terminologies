@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
 <odML version="1.1">
   <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
@@ -14,66 +14,66 @@
 
     <property>
       <name>FirstName</name>
+      <definition>The persons first Name (John).</definition>
       <type>string</type>
-      <definition>The  persons first Name (John).</definition>
     </property>
-    
+
     <property>
       <name>LastName</name>
-      <type>string</type>
       <definition>The persons last name (Doe).</definition>
-    </property> 
-    
+      <type>string</type>
+    </property>
+
     <property>
       <name>FullName</name>
+      <definition>The complete name of this person e.g. John Doe.</definition>
       <type>person</type>
-      <definition>The complete name of this person e.g. John
-      Doe.</definition>
     </property>
-    
+
     <property>
       <name>Gender</name>
-      <type>string</type>
       <definition>Male or female?</definition>
-    </property> 
-    
+      <type>string</type>
+    </property>
+
     <property>
       <name>Birthday</name>
+      <definition>The birthday. YYYY-MM-dd</definition>
       <type>date</type>
-      <definition> The birthday. YYYY-MM-dd</definition>
-    </property> 
-    
+    </property>
+
     <property>
       <name>Role</name>
       <value>[Author, Experimenter, Principle Investigator, Responsible Investigator, Subject]</value>
+      <definition>The role of this person e.g. when describing a project (Responsible investigator), or a recording
+        (Experimenter).
+      </definition>
       <type>string</type>
-      <definition> The role of this person e.g. when describing
-      a project (Responsible investigator), or a recording
-      (Experimenter).</definition>
-    </property> 
-    
+    </property>
+
     <property>
       <name>Email</name>
+      <definition>Person's e-mail.</definition>
       <type>string</type>
-      <definition> Person's e-mail.</definition>
-    </property> 
-    
+    </property>
+
     <property>
       <name>PhoneNumber</name>
+      <definition>Person's phone number.</definition>
       <type>string</type>
-      <definition> Person's phone number.</definition>
-    </property> 
-    
+    </property>
+
     <property>
       <name>Laterality</name>
+      <definition>Handedness - the dominant hand of the subject</definition>
       <type>string</type>
-      <definition>Handedness - the dominand hand of the subject</definition>
-    </property> 
-    
+    </property>
+
     <property>
       <name>Education level</name>
-      <type>string</type>
       <definition>Highest archived education level of the person.</definition>
+      <type>string</type>
     </property>
-  </section> 
+
+  </section>
 </odML>

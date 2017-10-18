@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
 <!-- ********************************** -->
 <!--           LightSources             -->
@@ -7,99 +7,102 @@
   <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
   <version>1.0</version>
   <date>2011-01-21</date>
-  
+
   <section>
     <type>hardware/light_source</type>
     <name>Lightsource</name>
-    <definition>This section contains keywords to describe the actual settings of a light source used for stimulation or excitation.</definition>
-    
+    <definition>This section contains keywords to describe the actual settings of a light source used for stimulation or
+      excitation.
+    </definition>
+
     <property>
       <name>SerialNo</name>
-      <type>string</type>
       <definition>The device's serial number.</definition>
-    </property> 
-    
+      <type>string</type>
+    </property>
+
     <property>
       <name>InventoryNo</name>
-      <type>string</type>
       <definition>The inventory number of the device.</definition>
-    </property> 
-    
+      <type>string</type>
+    </property>
+
     <property>
       <name>Model</name>
-      <type>string</type>
       <definition>The model name of this hardware item.</definition>
-    </property> 
-    
+      <type>string</type>
+    </property>
+
     <property>
       <name>Manufacturer</name>
-      <type>string</type>
       <definition>The Manufacturer of this hardware item.</definition>
-    </property> 
-    
+      <type>string</type>
+    </property>
+
     <property>
       <name>Owner</name>
+      <definition>Who's the owner of the device.</definition>
       <type>string</type>
-      <definition> Who's the owner of the device.</definition>
-    </property> 
-    
+    </property>
+
     <property>
       <name>Type</name>
       <value>[LED, Laser, Mercury Arc, Halogen Lamp, Xenon Lamp]</value>
-      <type>string</type>
       <definition>The type of light source used.</definition>
-    </property> 
-    
+      <type>string</type>
+    </property>
+
     <property>
       <name>PulseWidth</name>
-      <type>string</type>
-      <unit>s</unit>
       <dependency>Type</dependency>
       <dependencyValue>Laser</dependencyValue>
       <definition>The width of the laser pulse.</definition>
+      <type>string</type>
+      <unit>s</unit>
     </property>
-    
+
     <property>
       <name>PulseRate</name>
-      <type>float</type>
-      <unit>Hz</unit>
       <dependency>Type</dependency>
       <dependencyValue>Laser</dependencyValue>
       <definition>The frequency with which laser pulses are delivered.</definition>
+      <type>float</type>
+      <unit>Hz</unit>
     </property>
-    
+
     <property>
       <name>Wavelength</name>
+      <definition>The wavelength of the emitted light.</definition>
       <type>float</type>
       <unit>nm</unit>
-      <definition>The wavelength of the emitted light.</definition>
     </property>
-    
+
     <property>
       <name>WavelengthLowerBound</name>
+      <definition>The lower bound of the output spectrum.</definition>
       <type>float</type>
       <unit>nm</unit>
-      <definition>The lower bound of the output spectrum.</definition>
     </property>
-    
+
     <property>
       <name>WavelengthUpperBound</name>
+      <definition>The upper bound of the output spectrum.</definition>
       <type>float</type>
       <unit>nm</unit>
-      <definition>The upper bound of the output spectrum.</definition>
     </property>
 
     <property>
       <name>Intensity</name>
-      <type>float</type>
       <definition>The output intensity of the light source.</definition>
+      <type>float</type>
+      <unit>W</unit>
     </property>
-    
+
     <property>
       <name>Description</name>
-      <type>string</type>
       <definition>A description of this hardware item.</definition>
+      <type>string</type>
     </property>
-    
+
   </section>
 </odML>

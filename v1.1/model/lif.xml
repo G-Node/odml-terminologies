@@ -1,12 +1,13 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
 <!-- ********************************************************* -->
-<!--         Leaky integrate and fire	  	 	       -->
-<!-- ********************************************************* --> 
+<!--                  Leaky integrate and fire                 -->
+<!-- ********************************************************* -->
 <odML version="1.1">
   <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
   <version>1.0</version>
   <date>2011-01-21</date>
+
   <section>
     <type>model/lif</type>
     <name>Leaky integrate and fire</name>
@@ -14,158 +15,161 @@
 
     <property>
       <name>Author</name>
-      <type>person</type> 
       <definition>The author of this model.</definition>
+      <type>person</type>
     </property>
 
     <property>
       <name>Date</name>
-      <type>date</type> 
       <definition>The simulation date.</definition>
+      <type>date</type>
     </property>
 
     <property>
       <name>Program</name>
-      <type>string</type> 
       <definition>The program name.</definition>
+      <type>string</type>
     </property>
 
     <property>
       <name>ProgramVersion</name>
-      <type>string</type> 
       <definition>The program version name.</definition>
+      <type>string</type>
     </property>
 
     <property>
       <name>Description</name>
-      <type>string</type> 
       <definition>A descriptive text.</definition>
+      <type>string</type>
     </property>
 
     <!--     Basics    -->
     <property>
       <name>RestingPotential</name>
-      <type>float</type> 
-      <unit>V</unit>
       <definition>The resting voltage.</definition>
+      <type>float</type>
+      <unit>V</unit>
     </property>
+
     <property>
       <name>ResetPotential</name>
-      <type>float</type> 
-      <unit>V</unit>
       <definition>The potential to which the neuron's potential is set after a spike.</definition>
+      <type>float</type>
+      <unit>V</unit>
     </property>
 
     <property>
       <name>Resistance</name>
-      <type>float</type> 
+      <definition>The membrane resistance.</definition>
+      <type>float</type>
       <unit>Ohm</unit>
-      <definition>The membrane restisance.</definition>
     </property>
 
     <property>
       <name>Capacitance</name>
-      <type>float</type> 
+      <definition>The membrane resistance.</definition>
+      <type>float</type>
       <unit>F</unit>
-      <definition>The membrane restisance.</definition>
     </property>
 
     <property>
       <name>MembraneTimeConstant</name>
-      <type>float</type> 
-      <unit>s</unit>
       <definition>The membrane time constant.</definition>
+      <type>float</type>
+      <unit>s</unit>
     </property>
 
     <property>
       <name>BiasCurrent</name>
-      <type>float</type> 
-      <unit>A</unit>
       <definition>The offset current.</definition>
+      <type>float</type>
+      <unit>A</unit>
     </property>
 
     <property>
       <name>Timestep</name>
-      <type>float</type> 
-      <unit>s</unit>
       <definition>The duration of a time step in the simulation.</definition>
+      <type>float</type>
+      <unit>s</unit>
     </property>
 
     <property>
       <name>VoltageEquation</name>
-      <type>string</type> 
       <definition>The equation to calculate the membrane voltage.</definition>
+      <type>string</type>
     </property>
 
     <!--     Adaptation -->
     <property>
       <name>AdaptationIncrement</name>
-      <type>float</type> 
+      <definition>When an adaptation current is implemented the amount about which the adaptation is increased when a
+        spike is fired.
+      </definition>
+      <type>float</type>
       <unit>A</unit>
-      <definition>When an adaptation current is implemented the amount about which the adaptation is increased when a spike is fired.</definition>
     </property>
 
     <property>
       <name>AdaptationTimeConstant</name>
-      <type>float</type> 
-      <unit>s</unit>
       <definition>The time constant with which the adaptation current returns back to zero.</definition>
+      <type>float</type>
+      <unit>s</unit>
     </property>
 
     <property>
       <name>AdaptationEquation</name>
-      <type>string</type> 
-      <definition>The equation to calculate the adaptation currrent.</definition>
+      <definition>The equation to calculate the adaptation current.</definition>
+      <type>string</type>
     </property>
 
     <!--     Noise  -->
     <property>
       <name>NoiseAmplitude</name>
-      <type>float</type> 
-      <unit>A</unit>
       <definition>The amount of noise added.</definition>
+      <type>float</type>
+      <unit>A</unit>
     </property>
 
     <property>
       <name>NoiseType</name>
-      <type>string</type> 
       <definition>The type of noise. For example Gaussian, Ohrnstein-Uhlenbeck etc.</definition>
+      <type>string</type>
     </property>
 
     <property>
       <name>NoiseCorrelation</name>
-      <type>float</type> 
-      <unit>s</unit>
       <definition>The correlation time constant used e.g. with OU noise.</definition>
+      <type>float</type>
+      <unit>s</unit>
     </property>
 
     <!-- Threshold settings -->
     <property>
       <name>Threshold</name>
-      <type>float</type> 
-      <unit>V</unit>
       <definition>The firing threshold.</definition>
+      <type>float</type>
+      <unit>V</unit>
     </property>
 
     <property>
       <name>ThresholdIncrement</name>
-      <type>float</type> 
-      <unit>V</unit>
       <definition>The voltage about which the threshold is increased once a spike has been fired.</definition>
+      <type>float</type>
+      <unit>V</unit>
     </property>
 
     <property>
       <name>ThresholdTimeConstant</name>
-      <type>float</type> 
+      <definition>The time constant with which the threshold returns back to baseline.</definition>
+      <type>float</type>
       <unit>s</unit>
-      <definition>The time ocnstant with which the threshold returns back to baseline.</definition>
     </property>
 
     <property>
       <name>ThresholdEquation</name>
-      <type>string</type> 
       <definition>The equation to calculate the threshold.</definition>
+      <type>string</type>
     </property>
 
   </section>
-</odML> 
+</odML>

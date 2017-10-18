@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
 <!-- ********************************************************* -->
-<!--                   Project section  		       -->
+<!--                     Project section                       -->
 <!-- ********************************************************* -->
-
 <odML version="1.1">
   <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
   <version>1.0</version>
   <date>2011-01-21</date>
+
   <section>
     <type>project</type>
     <name>Project</name>
@@ -15,39 +15,39 @@
 
     <property>
       <name>Topic</name>
-      <type>text</type> 
-      <definition>A descriptive text of the 
-      project topic.</definition>
+      <definition>A descriptive text of the project topic.</definition>
+      <type>text</type>
     </property>
-    
+
     <property>
       <name>Grant</name>
-      <type>string</type> 
       <definition>The name or identifier of the grant funding this project.</definition>
-    </property> 
-    
+      <type>string</type>
+    </property>
+
     <property>
       <name>PrincipleInvestigator</name>
-      <type>person</type> 
       <definition>The person responsible for this project.</definition>
+      <type>person</type>
     </property>
-    
+
     <property>
       <name>Scientist</name>
-      <type>person</type> 
       <definition>Additional involved person(s).</definition>
-    </property> 
-    
+      <type>person</type>
+    </property>
+
     <property>
       <name>Start</name>
-      <type>date</type> 
       <definition>The day the project was begun.</definition>
-    </property> 
-    
+      <type>date</type>
+    </property>
+
     <property>
       <name>End</name>
-      <type>date</type> 
       <definition>The date the project ended.</definition>
-    </property>      
-  </section> 
+      <type>date</type>
+    </property>
+
+  </section>
 </odML>

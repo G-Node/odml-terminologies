@@ -1,59 +1,63 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
 <!-- ********************************************************* -->
-<!--                     Psychophysics Experiment	                       -->
-<!-- ********************************************************* --> 
+<!--                     Psychophysics Experiment              -->
+<!-- ********************************************************* -->
 <odML version="1.1">
   <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
   <version>1.0</version>
   <date>2011-01-21</date>
-  
+
   <section>
     <type>experiment/psychophysics</type>
     <name>Psychophysics</name>
     <definition>Properties for describing an psychophysical experiment.</definition>
-    
+
     <property>
       <name>Task</name>
-      <type>string</type> 
-      <definition>The task the subjects have to do like "discrimination" between different stimuli, "detection" of a stimulus etc... </definition>
+      <definition>The task the subjects have to do like "discrimination" between different stimuli, "detection" of a
+        stimulus etc...
+      </definition>
+      <type>string</type>
     </property>
-    
+
     <property>
       <name>Paradigm</name>
-      <type>string</type> 
-      <definition>The experimental paradigm e.g. Two-alternative-forced-choice, Three-alternative-forced-choice.</definition>
-    </property> 
-    
+      <definition>The experimental paradigm e.g. Two-alternative-forced-choice, Three-alternative-forced-choice.
+      </definition>
+      <type>string</type>
+    </property>
+
     <property>
       <name>SubjectKnowledge</name>
-      <type>string</type> 
       <definition>Was the subject "naive", "trained", or "instructed"?</definition>
-    </property> 
-    
+      <type>string</type>
+    </property>
+
     <property>
       <name>TrainingTrials</name>
-      <type>int</type> 
       <definition>The number of trials used for training of the experimental subject.</definition>
-    </property> 
-    
+      <type>int</type>
+    </property>
+
     <property>
       <name>TrainingDuration</name>
-      <type>float</type> 
-      <unit>h</unit> 
       <definition>The training duration.</definition>
-    </property> 
-    
+      <type>float</type>
+      <unit>h</unit>
+    </property>
+
     <property>
       <name>SubjectInstruction</name>
-      <type>text</type> 
       <definition>The instructions given to the subjects.</definition>
-    </property> 
-    
+      <type>text</type>
+    </property>
+
     <property>
       <name>definition</name>
-      <type>text</type> 
       <definition>A definition of the conducted experiment.</definition>
+      <type>text</type>
     </property>
+
   </section>
 </odML>

@@ -1,88 +1,86 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
-<!-- ********************************** -->
-<!--       Microscope Objective         -->
-<!-- ********************************** -->
-
 <odML version="1.1">
   <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
   <version>1.0</version>
   <date>2011-01-21</date>
+  <!-- ********************************** -->
+  <!--           Microscope Objective     -->
+  <!-- ********************************** -->
   <section>
     <type>hardware/microscope_objective</type>
     <name>MicroscopeObjecive</name>
     <definition>This section contains properties that describe the objective used in a microscope.</definition>
-    
+
     <property>
       <name>InventoryNo</name>
-      <type>string</type>
       <definition>The inventory number of the device.</definition>
+      <type>string</type>
     </property>
-    
+
     <property>
       <name>Model</name>
-      <type>string</type>
       <definition>The objective model name.</definition>
-    </property> 
-    
+      <type>string</type>
+    </property>
+
     <property>
       <name>Manufacturer</name>
-      <type>string</type>
       <definition>The Manufacturer providing the objective.</definition>
-    </property> 
-    
+      <type>string</type>
+    </property>
+
     <property>
       <name>Type</name>
       <value>[dry, water immersion, oil immersion]</value>
-      <type>string</type>
       <definition>The type of objective used in a microscope. (e.g. water immersion, oil immersion, dry.)</definition>
+      <type>string</type>
     </property>
-    
+
     <property>
       <name>Owner</name>
-      <type>string</type>
       <definition>The owner of this device.</definition>
-    </property> 
-    
+      <type>string</type>
+    </property>
+
     <property>
       <name>Magnification</name>
-      <type>float</type>
       <definition>The magnification of the objective.</definition>
-    </property> 
-    
+      <type>float</type>
+    </property>
+
     <property>
       <name>NumericalAperture</name>
-      <type>float</type>
       <definition>The numerical aperture (N.A.) of the objective.</definition>
-    </property> 
-    
+      <type>float</type>
+    </property>
+
     <property>
       <name>TransmissionLowerBound</name>
+      <definition>The lower bound of transmission.</definition>
       <type>float</type>
       <unit>nm</unit>
-      <definition>The lower bound of transmission.</definition>
     </property>
-    
+
     <property>
       <name>TransmissionUpperBound</name>
+      <definition>The upper bound of transmission.</definition>
       <type>float</type>
       <unit>nm</unit>
-      <definition>The upper bound of transmission.</definition>
     </property>
-    
+
     <property>
       <name>TransmissionRange</name>
+      <definition>The transmission range (min - max).</definition>
       <type>float</type>
       <unit>nm</unit>
-      <definition>The transmission range (min - max).</definition>
     </property>
-    
+
     <property>
       <name>Description</name>
-      <type>string</type>
       <definition>A description of this hardware item.</definition>
+      <type>string</type>
     </property>
-    
-  </section>
 
+  </section>
 </odML>

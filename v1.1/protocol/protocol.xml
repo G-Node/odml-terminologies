@@ -1,14 +1,12 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
-
-<!-- ********************************************************* -->
-<!--                     Protocol section                      -->
-<!-- ********************************************************* -->
-
 <odML version="1.1">
   <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
   <version>1.1</version>
   <date>2014-03-01</date>
+  <!-- ********************************************************* -->
+  <!--                     Protocol section                      -->
+  <!-- ********************************************************* -->
   <section>
     <type>protocol</type>
     <name>Protocol</name>
@@ -16,39 +14,45 @@
 
     <property>
       <name>Name</name>
-      <type>string</type>
       <definition>The protocol name.</definition>
+      <type>string</type>
     </property>
 
     <property>
       <name>Description</name>
-      <type>string</type>
       <definition>Description of the experiment</definition>
+      <type>string</type>
     </property>
-    
+
     <property>
       <name>Author</name>
-      <type>person</type>
       <definition>The person, who created this protocol.</definition>
-    </property> 
-    
+      <type>person</type>
+    </property>
+
+    <property>
+      <name>ProtocolFile</name>
+      <definition>Protocol File</definition>
+      <type>binary</type>
+    </property>
+
     <property>
       <name>ProtocolFileURL</name>
-      <type>URL</type>
       <definition>URL for protocol file</definition>
-    </property> 
-    
+      <type>URL</type>
+    </property>
+
     <property>
       <name>Duration</name>
-      <type>time</type>
       <definition>Duration of the protocol.</definition>
-    </property> 
-    
+      <type>time</type>
+    </property>
+
     <property>
       <name>Version</name>
+      <definition>Version of the protocol</definition>
       <type>string</type>
-      <definition> Version of the protocol</definition>
-    </property> 
-    
-  </section> 
+    </property>
+
+  </section>
 </odML>
