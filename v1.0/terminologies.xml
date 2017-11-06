@@ -219,13 +219,6 @@
   </section>
 
   <section>
-    <type>hardware/iaq</type>
-    <name>ImageAcquisition</name>
-    <definition>Properties to define an Image acquisition device. This can be a framegrabber, a camera etc.</definition>
-    <include>http://portal.g-node.org/odml/terminologies/v1.0/hardware/iaq.xml</include>
-  </section>
-
-  <section>
     <type>hardware/microscope</type>
     <name>Microscope</name>
     <definition>The Microscope section describes the properties of the used microscope.</definition>
