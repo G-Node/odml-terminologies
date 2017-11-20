@@ -287,13 +287,6 @@
     <definition>Information about a person. E.g. as Experimenter, Author, etc.</definition>
     <include>http://portal.g-node.org/odml/terminologies/v1.0/person/person.xml</include>
   </section>
-  
-  <section>
-    <type>person</type>
-    <name>Person</name>
-    <definition>Information about a person. E.g. as Experimenter, Author, etc.</definition>
-    <include>http://portal.g-node.org/odml/terminologies/v1.0/person/person.xml</include>
-  </section>
 
   <section>
     <type>preparation</type>
