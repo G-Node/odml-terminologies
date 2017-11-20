@@ -161,7 +161,6 @@
         <definition>The unique string which corresponds to the identifier type. TODO! How does this relate to the
           Identifier ?
         </definition>
-        <mapping>http://portal.g-node.org/odml/terminologies/v1.1/subject/subject.xml#subject:Identifier</mapping>
         <type>string</type>
       </property>
 
@@ -447,7 +446,6 @@
       <property>
         <name>SamplingRate</name>
         <definition>The sampling rate of the recording.</definition>
-        <mapping>http://portal.g-node.org/odml/terminologies/v1.1/hardware/daq.xml#hardware/daq:AISampleRate</mapping>
         <type>string</type>
       </property>
 
