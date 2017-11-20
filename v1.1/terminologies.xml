@@ -303,13 +303,6 @@
   </section>
 
   <section>
-    <type>person</type>
-    <name>Person-2</name>
-    <definition>Information about a person. E.g. as Experimenter, Author, etc.</definition>
-    <include>http://portal.g-node.org/odml/terminologies/v1.1/person/person.xml</include>
-  </section>
-
-  <section>
     <type>preparation</type>
     <name>Preparation</name>
     <definition>Description of the preparation procedure.</definition>
