@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl"  xmlns:odml="http://www.g-node.org/odml"?>
+<!-- ********************************************************* -->
+<!--                     Environment section                   -->
+<!-- ********************************************************* -->
+<odML version="1.1">
+  <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+  <version>1.0</version>
+  <date>2014-04-01</date>
+
+  <section>
+    <type>environment</type>
+    <name>Environment</name>
+    <definition>The environment conditions for the experiment.</definition>
+
+    <property>
+      <name>Weather</name>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>RoomTemperature</name>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>AirHumidity</name>
+      <definition>The air humidity in %..</definition>
+      <type>float</type>
+    </property>
+
+    <property>
+      <name>Description</name>
+      <type>string</type>
+    </property>
+
+  </section>
+</odML>

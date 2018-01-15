@@ -5,53 +5,53 @@
   <version>1.0</version>
   <date>2017-09-28</date>
   <!-- ********************************************************* -->
-  <!--                  Questionnaire  section                     -->
+  <!--                  Questionnaire  section                   -->
   <!-- ********************************************************* -->
   <section>
     <type>questionnaire</type>
     <name>questionnaire</name>
     <definition>Description of the questionnaire.</definition>
-    
+
     <property>
       <name>Version</name>
       <value>
-	<type>string</type>
+        <type>string</type>
       </value>
       <definition>A version of the questionnaire.</definition>
     </property>
-    
+
     <property>
       <name>Label</name>
       <value>
-	<type>string</type>
+        <type>string</type>
       </value>
       <definition>A label of the questionnaire.</definition>
-    </property>              
-    
+    </property>
+
     <property>
       <name>Question</name>
       <value>
-	<type>question</type>
+        <type>question</type>
       </value>
       <definition>Question of the questionnaire.</definition>
-    </property> 
-    
-    
+    </property>
+
+
     <property>
       <name>File</name>
       <value>
-	<type>File</type>
+        <type>File</type>
       </value>
       <definition>The binary file with questionnaire.</definition>
     </property>
-    
+
     <property>
       <name>FileURL</name>
       <value>
-	<type>URL</type>
+        <type>URL</type>
       </value>
       <definition>URL for questionnaire file.</definition>
-    </property> 
-    
-  </section>   
+    </property>
+
+  </section>
 </odML>

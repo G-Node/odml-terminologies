@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
+<odML version="1.1">
+  <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+  <version>1.0</version>
+  <date>2011-01-21</date>
+  <!-- ********************************************************* -->
+  <!--                            Cell section                   -->
+  <!-- ********************************************************* -->
+  <section>
+    <type>cell</type>
+    <name>Cell</name>
+    <definition>Specification of the recorded cell. A cell definition should be a subsection of the
+      <a href="../subject/subject.xml">Subject</a>
+      section.
+    </definition>
+
+    <property>
+      <name>Type</name>
+      <definition>The type of the recorded cell. E.g. pyramidal cell.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>BrainRegion</name>
+      <definition>The region the cell is located in. For example Retina, Cortex, Cerebellum etc.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>BrainSubRegion</name>
+      <definition>More detailed specification of the region the cell is located in. For example, if BrainRegion is
+        "hippocampus", then the BrainSubRegion may be "CA1".
+      </definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Layer</name>
+      <definition>The name of the layer. For example, layer 4 in CA1.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Ganglion</name>
+      <definition>Like the pro-, meta- and mesothoracal ganglion in invertebrates.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Structure</name>
+      <definition>The structure of the organism the cell is located in e.g. Eye, Spinal cord...</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>RecordingLocation</name>
+      <definition>The recording location in the cell. E.g. axonal, dendritic, somatic, ...</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Identification</name>
+      <definition>How was the cell identified?</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>RestingPotential</name>
+      <definition>What is the cells resting potential of the cell. An indicator for the recording quality.</definition>
+      <type>float</type>
+      <unit>mV</unit>
+    </property>
+
+    <property>
+      <name>BaselineRate</name>
+      <definition>For spiking cells, the spontaneous activity which might be an indicator for the cell's health status
+        and thus recording quality.
+      </definition>
+      <type>float</type>
+      <unit>Hz</unit>
+    </property>
+
+    <property>
+      <name>BaselineNoise</name>
+      <definition>The standard deviation of the baseline membrane potential.</definition>
+      <type>float</type>
+    </property>
+
+    <property>
+      <name>Rheobase</name>
+      <definition>The minimum current required to make the cell fire action potentials.</definition>
+      <type>float</type>
+      <unit>nA</unit>
+    </property>
+
+    <property>
+      <name>MembraneCapacity</name>
+      <definition>The capacity of the cell.</definition>
+      <type>float</type>
+      <unit>pF</unit>
+    </property>
+
+    <property>
+      <name>InputResistance</name>
+      <definition>The input resistance of the recorded cell.</definition>
+      <type>float</type>
+      <unit>MOhm</unit>
+    </property>
+
+    <property>
+      <name>TimeConstant</name>
+      <definition>The membrane time-constant.</definition>
+      <type>float</type>
+      <unit>ms</unit>
+    </property>
+
+    <property>
+      <name>Comment</name>
+      <definition>A comment on the cell.</definition>
+      <type>text</type>
+    </property>
+
+  </section>
+</odML>

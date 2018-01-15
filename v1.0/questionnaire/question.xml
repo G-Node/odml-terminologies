@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
 <!-- ********************************************************* -->
-<!--                  Question section        	               -->
+<!--                  Question section                         -->
 <!-- ********************************************************* -->
 <odML version="1">
   <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
@@ -15,7 +15,7 @@
     <property>
       <name>Label</name>
       <value>
-	<type>string</type>
+        <type>string</type>
       </value>
       <definition>A label of the questionnaire.</definition>
     </property>
@@ -23,7 +23,7 @@
     <property>
       <name>Question</name>
       <value>
-	<type>string</type>
+        <type>string</type>
       </value>
       <definition>Text of the question.</definition>
     </property>
@@ -31,9 +31,10 @@
     <property>
       <name>Answer</name>
       <value>
-	<type>string</type>
+        <type>string</type>
       </value>
       <definition>Answer for a question.</definition>
     </property>
+
   </section>
 </odML>

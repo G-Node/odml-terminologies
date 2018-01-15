@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
+<odML version="1.1">
+  <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+  <version>1.0</version>
+  <date>2011-01-21</date>
+  <!-- ********************************************************* -->
+  <!--                      Setup section                        -->
+  <!-- ********************************************************* -->
+  <section>
+    <type>setup</type>
+    <name>Setup</name>
+    <definition>The experimental setup used in the recordings. By using HardwareProperties as a subsection, a very
+      detailed description of the setup can be given.
+    </definition>
+
+    <property>
+      <name>Description</name>
+      <definition>A description of the setup.</definition>
+      <type>text</type>
+    </property>
+
+    <property>
+      <name>Location</name>
+      <definition>The location of the setup (e.g. room).</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Department</name>
+      <definition>The department where the setup is located.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Creator</name>
+      <definition>The person who built the setup.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Maintainer</name>
+      <definition>The person who is responsible for the setup maintenance.</definition>
+      <type>person</type>
+    </property>
+
+    <property>
+      <name>Config</name>
+      <definition>An identifier of the used setup configuration, e.g. if variations of the same setup are used.
+      </definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>ConfigID</name>
+      <definition>The ID of a setup configuration stored e.g. in a database.</definition>
+      <type>string</type>
+    </property>
+
+  </section>
+</odML>

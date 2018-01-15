@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl"  xmlns:odml="http://www.g-node.org/odml"?>
+<odML version="1.1">
+  <version>1.0</version>
+  <date>2011-01-21</date>
+  <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+  <!-- ********************************************************* -->
+  <!--                  stimulation section                      -->
+  <!-- ********************************************************* -->
+  <section>
+    <type>stimulus</type>
+    <name>Stimulus</name>
+    <definition>General description of an applied stimulus. This section is basis of various related sections that
+      specify more specific stimuli.
+    </definition>
+
+    <property>
+      <name>Description</name>
+      <definition>A textual description of the stimulus.</definition>
+      <type>text</type>
+    </property>
+
+    <property>
+      <name>Comment</name>
+      <definition>A comment on this specific stimulus.</definition>
+      <type>text</type>
+    </property>
+
+    <property>
+      <name>Author</name>
+      <definition>Who is the author of this stimulus.</definition>
+      <type>person</type>
+    </property>
+
+    <property>
+      <name>Duration</name>
+      <definition>The duration of the stimulus.</definition>
+      <type>float</type>
+      <unit>s</unit>
+    </property>
+
+    <property>
+      <name>StartTime</name>
+      <definition>The time the stimulus started.</definition>
+      <type>time</type>
+    </property>
+
+    <property>
+      <name>EndTime</name>
+      <definition>The time the stimulus ended.</definition>
+      <type>time</type>
+    </property>
+
+    <property>
+      <name>Intensity</name>
+      <definition>like the current in case of electrical stimulation.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Location</name>
+      <definition>Describes the site of the stimulus application.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Modality</name>
+      <definition>Visual, acoustic, haptic, electrical, etc. stimulation.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Repetitions</name>
+      <definition>The number of repetitions of the described stimulation.</definition>
+      <type>int</type>
+    </property>
+
+    <property>
+      <name>InterstimulusInterval</name>
+      <definition>The time between two subsequent stimulations.</definition>
+      <type>float</type>
+      <unit>s</unit>
+    </property>
+
+    <property>
+      <name>StimulusFile</name>
+      <definition>The stimulus file used. Using it will blow up the the size of the metadatafile and we recommend to
+        rather define the URL of underlying stimulus file.
+      </definition>
+      <type>binary</type>
+    </property>
+
+    <property>
+      <name>StimulusFileURL</name>
+      <definition>The URL of a an applied stimulus file. This is the recommended alternative to explicitely including
+        the actual stimulus via StimulusFile.
+      </definition>
+      <type>URL</type>
+    </property>
+
+    <property>
+      <name>Position</name>
+      <definition>The position of the stimulus on e.g the screen. Specified as a 2-tuple (x;y). By default this position
+        refers to the top-left corner of the object or its bounding box.
+      </definition>
+      <type>2-tuple</type>
+    </property>
+
+    <property>
+      <name>PositionReference</name>
+      <value>[top-left, center, bottom-right]</value>
+      <definition>By default stimulus positions are specified by the coordinates of the top-left corner (or of the
+        bounding box). Use this property for other definitions.
+      </definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>SpatialExtent</name>
+      <definition>The spatial extend of the presented stimulus (width;height) e.g. (1024;768).</definition>
+      <type>2-tuple</type>
+    </property>
+
+  </section>
+</odML>

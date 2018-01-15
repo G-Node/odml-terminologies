@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
+<!-- ********************************************************* -->
+<!--                     Psychophysics Experiment              -->
+<!-- ********************************************************* -->
+<odML version="1.1">
+  <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+  <version>1.0</version>
+  <date>2011-01-21</date>
+
+  <section>
+    <type>experiment/psychophysics</type>
+    <name>Psychophysics</name>
+    <definition>Properties for describing an psychophysical experiment.</definition>
+
+    <property>
+      <name>Task</name>
+      <definition>The task the subjects have to do like "discrimination" between different stimuli, "detection" of a
+        stimulus etc...
+      </definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Paradigm</name>
+      <definition>The experimental paradigm e.g. Two-alternative-forced-choice, Three-alternative-forced-choice.
+      </definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>SubjectKnowledge</name>
+      <definition>Was the subject "naive", "trained", or "instructed"?</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>TrainingTrials</name>
+      <definition>The number of trials used for training of the experimental subject.</definition>
+      <type>int</type>
+    </property>
+
+    <property>
+      <name>TrainingDuration</name>
+      <definition>The training duration.</definition>
+      <type>float</type>
+      <unit>h</unit>
+    </property>
+
+    <property>
+      <name>SubjectInstruction</name>
+      <definition>The instructions given to the subjects.</definition>
+      <type>text</type>
+    </property>
+
+    <property>
+      <name>definition</name>
+      <definition>A definition of the conducted experiment.</definition>
+      <type>text</type>
+    </property>
+
+  </section>
+</odML>

@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="odMLTerminologies.xsl"?>
+<odML version="1.1">
+  <baseURL>http://www.g-node.org/odml/terminologies/v1.1/</baseURL>
+
+  <section>
+    <type>analysis/generic</type>
+    <name>Analysis</name>
+
+    <section>
+      <type>analysis/psth</type>
+      <name>PSTH</name>
+    </section>
+  </section>
+
+  <section>
+    <type>cell/generic</type>
+    <name>Cell</name>
+  </section>
+
+  <section>
+    <type>dataset/generic</type>
+    <name>Dataset</name>
+  </section>
+
+  <section>
+    <type>event/generic</type>
+    <name>Event</name>
+
+    <section>
+      <type>event/eventList</type>
+      <name>EventList</name>
+    </section>
+  </section>
+
+  <section>
+    <type>electrode/generic</type>
+    <name>Electrode</name>
+  </section>
+
+  <section>
+    <type>experiment/generic</type>
+    <name>Experiment</name>
+
+    <section>
+      <type>experiment/behavior</type>
+      <name>Behavior</name>
+    </section>
+
+    <section>
+      <type>experiment/electrophysiology</type>
+      <name>Electrophysiology</name>
+    </section>
+
+    <section>
+      <type>experiment/imaging</type>
+      <name>Imaging</name>
+    </section>
+
+    <section>
+      <type>experiment/modeling</type>
+      <name>Modeling</name>
+    </section>
+
+    <section>
+      <type>experiment/pschophysics</type>
+      <name>Psychophysics</name>
+    </section>
+  </section>
+
+  <section>
+    <type>collection/hardwareProperties</type>
+    <name>HardwareProperties</name>
+    <definition>There are two hardware related sections i.e. the
+      "HardwareProperties" and the "HardwareSettings" section. While
+      the properties describe the static properties of the hardware
+      that do not change, the settings section describes the actual,
+      adjustable, parameters, of the hardware that may change with
+      each recording or dataset e.g. the animal_keeping rate of an
+      data acquisition board. In each of these sections there are
+      subsections for each device (or can be) that correspond to the
+      class of the device like data-acquisition, amplifier, etc. Some
+      properties are common for any type.
+    </definition>
+    <section>
+      <type>hardware/generic</type>
+      <name>Hardware</name>
+    </section>
+
+    <section>
+      <type>hardware/attenuator</type>
+      <name>Attenuator</name>
+    </section>
+
+    <section>
+      <type>hardware/cameraObjective</type>
+      <name>CameraObjective</name>
+    </section>
+
+    <section>
+      <type>hardware/daq</type>
+      <name>DataAcquisition</name>
+    </section>
+
+    <section>
+      <type>hardware/eyetracker</type>
+      <name>Eyetracker</name>
+    </section>
+
+    <section>
+      <type>hardware/filter</type>
+      <name>Filter</name>
+    </section>
+
+    <section>
+      <type>hardware/filterSet</type>
+      <name>Filterset</name>
+    </section>
+
+    <section>
+      <type>hardware/iaq</type>
+      <name>ImageAcquisition</name>
+    </section>
+
+    <section>
+      <type>hardware/lightSource</type>
+      <name>Lightsource</name>
+    </section>
+
+    <section>
+      <type>hardware/microscope</type>
+      <name>Microscope</name>
+    </section>
+
+    <section>
+      <type>hardware/microscopeObjective</type>
+      <name>MicroscopeObjective</name>
+    </section>
+
+    <section>
+      <type>hardware/scanner</type>
+      <name>Scanner</name>
+    </section>
+
+    <section>
+      <type>hardware/stimulusIsolator</type>
+      <name>StimulusIsolator</name>
+    </section>
+  </section>
+
+  <section>
+    <type>collection/hardwareSettings</type>
+    <name>HardwareSettings</name>
+    <definition>There are two hardware related sections i.e. the
+      "Hardwaredefinition" and the "HardwareSettings" section. While
+      the properties describe the static properties of the hardware
+      that do not change, the settings section describes the actual,
+      adjustable, parameters, of the hardware that may change with
+      each recording or dataset e.g. the animal_keeping rate of an
+      dataacquisition board. In each of these sections there are
+      subsections for each device (or can be) that correspond to the
+      class of the device like data-acquisition, amplifier, etc. Some
+      properties are common for any type.
+    </definition>
+    <section>
+      <type>hardware/generic</type>
+      <name>Hardware-2</name>
+    </section>
+
+    <section>
+      <type>hardware/amplifier</type>
+      <name>Amplifier</name>
+    </section>
+
+    <section>
+      <type>hardware/attenuator</type>
+      <name>Attenuator-2</name>
+    </section>
+
+    <section>
+      <type>hardware/cameraObjective</type>
+      <name>CameraObjective-2</name>
+    </section>
+
+    <section>
+      <type>hardware/daq</type>
+      <name>DataAcquisition-2</name>
+    </section>
+
+    <section>
+      <type>hardware/eyetracker</type>
+      <name>Eyetracker-2</name>
+    </section>
+
+    <section>
+      <type>hardware/filter</type>
+      <name>Filter-2</name>
+    </section>
+
+    <section>
+      <type>hardware/filterSet</type>
+      <name>Filterset-2</name>
+    </section>
+
+    <section>
+      <type>hardware/iaq</type>
+      <name>ImageAcquisition-2</name>
+    </section>
+
+    <section>
+      <type>hardware/lightSource</type>
+      <name>Lightsource-2</name>
+    </section>
+
+    <section>
+      <type>hardware/microscope</type>
+      <name>Microscope-2</name>
+    </section>
+
+    <section>
+      <type>hardware/microscopeObjective</type>
+      <name>MicroscopeObjective-2</name>
+    </section>
+
+    <section>
+      <type>hardware/scanner</type>
+      <name>Scanner-2</name>
+    </section>
+
+    <section>
+      <type>hardware/stimulusIsolator</type>
+      <name>StimulusIsolator-2</name>
+    </section>
+  </section>
+
+  <section>
+    <type>person/generic</type>
+    <name>Person</name>
+  </section>
+
+  <section>
+    <type>preparation/generic</type>
+    <name>Preparation</name>
+  </section>
+
+  <section>
+    <type>recording/generic</type>
+    <name>Recording</name>
+  </section>
+
+  <section>
+    <type>setup/generic</type>
+    <name>Setup</name>
+  </section>
+
+  <section>
+    <type>stimulus/generic</type>
+    <name>Stimulus</name>
+    <definition>Some global definitions of the applied stimulus. This section is parent to various subsections that
+      further specify the applied stimulus.
+    </definition>
+
+    <section>
+      <type>stimulus/dc</type>
+      <name>DC</name>
+    </section>
+
+    <section>
+      <type>stimulus/gabor</type>
+      <name>Gabor</name>
+    </section>
+
+    <section>
+      <type>stimulus/grating</type>
+      <name>Grating</name>
+    </section>
+
+    <section>
+      <type>stimulus/pulse</type>
+      <name>Pulse</name>
+    </section>
+
+    <section>
+      <type>stimulus/movie</type>
+      <name>Movie</name>
+    </section>
+
+    <section>
+      <type>stimulus/ramp</type>
+      <name>Ramp</name>
+    </section>
+
+    <section>
+      <type>stimulus/randomDot</type>
+      <name>RandomDot</name>
+    </section>
+
+    <section>
+      <type>stimulus/sawtooth</type>
+      <name>Sawtooth</name>
+    </section>
+
+    <section>
+      <type>stimulus/sinewave</type>
+      <name>Sinewave</name>
+    </section>
+
+    <section>
+      <type>stimulus/squarewave</type>
+      <name>Squarewave</name>
+    </section>
+
+    <section>
+      <type>stimulus/whitenoise</type>
+      <name>WhiteNoise</name>
+    </section>
+  </section>
+
+  <section>
+    <type>subject/generic</type>
+    <name>Subject</name>
+  </section>
+
+  <section>
+    <type>carmenMini/generic</type>
+    <name>CarmenMini</name>
+    <definition>This is a convenience section that lists the terms of the CARMEN MINI (Gibson et al. Nature Precedings,
+      2009 Version 0.6) and maps them to the odml "standard" terminologies.
+    </definition>
+  </section>
+
+</odML>

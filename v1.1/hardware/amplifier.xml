@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
+<!-- ********************************** -->
+<!--        Amplifier                   -->
+<!-- ********************************** -->
+<odML version="1.1">
+  <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+  <version>1.0</version>
+  <date>2011-01-21</date>
+
+  <section>
+    <type>hardware/amplifier</type>
+    <name>Amplifier</name>
+    <definition>The amplifier section defines elements that can be used to describe amplifier properties and settings.
+    </definition>
+
+    <property>
+      <name>SerialNo</name>
+      <definition>The device's serial number.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>InventoryNo</name>
+      <definition>The inventory number of the device.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Owner</name>
+      <definition>Who's the owner of the device.</definition>
+      <type>person</type>
+    </property>
+
+    <property>
+      <name>Model</name>
+      <definition>The model name of this hardware item.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Type</name>
+      <definition>The type of amplifier. E.g. extracellular, intracellular amplifier etc.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Manufacturer</name>
+      <definition>The Manufacturer of this hardware item.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>MeasurementType</name>
+      <value>[Bridge, CC, VC, VCcCC, Dynamic Clamp]</value>
+      <definition>The amplifier mode. Measurement in Voltage clamp controlled current clamp -mode. Bridge: Passive
+        measurement in Bridge -Mode; CC: Current Clamp measurement; VC: Voltage Clamp measurement; VCcCC: Voltage Clamp
+        controlled Current Clamp measurement; Dynamic Clamp: Dynamic Clamp measurement
+      </definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>OperationMode</name>
+      <value>[Bridged, Discontinuous]</value>
+      <definition>The amplifier mode. Bridged: Passive measurement in Bridge -Mode; Discontinuous: Measurement in
+        Discontinuous (switched) -Mode
+      </definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>SwitchingFrequency</name>
+      <dependency>OperationMode</dependency>
+      <dependencyValue>Discontinuous</dependencyValue>
+      <definition>The amplifier switching frequency. This property is only meaningful in Discontinuous operation modes.
+      </definition>
+      <type>float</type>
+      <unit>Hz</unit>
+    </property>
+
+    <property>
+      <name>DutyCycle</name>
+      <dependency>OperationMode</dependency>
+      <dependencyValue>Discontinuous</dependencyValue>
+      <definition>The amplifier duty cycle if in discontinuous mode (e.g. 0.25, 0.5).</definition>
+      <type>float</type>
+    </property>
+
+    <property>
+      <name>Gain</name>
+      <definition>The amplifier gain.</definition>
+      <type>float</type>
+    </property>
+
+    <property>
+      <name>HighpassCutoff</name>
+      <definition>The cutoff frequency of the amplifier's highpass filter.</definition>
+      <type>float</type>
+      <unit>Hz</unit>
+    </property>
+
+    <property>
+      <name>LowpassCutoff</name>
+      <definition>The cutoff frequency of the amplifier's lowpass filter.</definition>
+      <type>float</type>
+      <unit>Hz</unit>
+    </property>
+    <property>
+      <name>SampleRate</name>
+      <definition>The sampling rate of the device.</definition>
+      <type>float</type>
+    </property>
+    <property>
+      <name>Description</name>
+      <definition>A description of this hardware item.</definition>
+      <type>string</type>
+    </property>
+
+  </section>
+</odML>

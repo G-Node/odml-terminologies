@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
+<!-- ********************************************************* -->
+<!--            single-compartmental model                     -->
+<!-- ********************************************************* -->
+<odML version="1.1">
+  <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+  <version>1.0</version>
+  <date>2011-10-14</date>
+
+  <section>
+    <type>model/single_compartment</type>
+    <name>Single compartment model</name>
+    <definition>Properties to describe a biophysical model that consists of a single compartment.</definition>
+
+    <property>
+      <name>SimulationType</name>
+      <definition>The type of simulation: mathematical, phenomenological, biophysical etc..</definition>
+      <type>string</type>
+    </property>
+
+  </section>
+</odML>

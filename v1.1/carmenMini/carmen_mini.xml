@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
+<!-- ********************************************************* -->
+<!--                     Mini section                          -->
+<!-- ********************************************************* -->
+<odML version="1.1">
+  <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+  <version>1.0</version>
+  <date>2011-01-21</date>
+
+  <section>
+    <type>carmen_mini</type>
+    <name>Carmen Mini</name>
+    <definition>This is a convenience section that lists the terms of the CARMEN MINI (Gibson et al. Nature Precedings,
+      2009 Version 0.6) and maps them to the odml "standard" terminologies.
+    </definition>
+
+    <section>
+      <type>carmen_mini/contact_and_context</type>
+      <name>ContactAndContext</name>
+
+      <property>
+        <name>DateAndTime</name>
+        <definition>The date and time of work initiation in YYYY-MM-DD hh:mm:ss format. (TODO ISO 8601 requires the T
+          lib has to able to deal with it!)
+        </definition>
+        <type>datetime</type>
+      </property>
+
+      <property>
+        <name>ResponsiblePerson</name>
+        <definition>The (stable) primary contact person for this data set; this could be the experimenter, lab head,
+          line manager etc. Where responsibility rests with an institutional role (e.g. one of a number of duty
+          officers) rather than a person, give the official name of the role rather than any one person. In all cases
+          give affiliation and stable contact information, which consists of (i) Name, (ii) Postal address and (iii)
+          Email address.
+        </definition>
+        <type>person</type>
+      </property>
+
+      <property>
+        <name>ExperimentalContext</name>
+        <definition>The name of the project, study or wider investigation of which the 'experiment' is a part (if
+          appropriate).
+        </definition>
+        <type>text</type>
+      </property>
+
+      <property>
+        <name>ElectrophysiologyType</name>
+        <definition>The type of electrophysiology recording reported as 'extra cellular' or 'intra cellular'.
+        </definition>
+        <type>string</type>
+      </property>
+    </section>
+
+    <section>
+      <type>carmen_mini/study_subject</type>
+      <name>StudySubject</name>
+
+      <property>
+        <name>Genus</name>
+        <definition>The genus classification of the study subject according to the NCBI taxonomy classification.
+        </definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>Species</name>
+        <definition>The species classification of the study subject according to the NCBI taxonomy classification.
+        </definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>Strain</name>
+        <definition>The strain, genetic variation classification of the study subject, if appropriate. Note this is not
+          the cell line.
+        </definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>CellLine</name>
+        <definition>The identifier for the immortalized cell line, if appropriate.</definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>GeneticCharacteristics</name>
+        <definition>The genotype of the study stubject. Genetics characteristics include polymorphisms, disease alleles
+          and haplotypes.
+        </definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>GeneticVariation</name>
+        <definition>The genetic modification introduced in addition to strain, if appropriate.</definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>DeseaseState</name>
+        <definition>The name of the pathology diagnosed in the subject. The disease state is 'normal' if no disease
+          state has been diagnosed.
+        </definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>ClinicalInformation</name>
+        <definition>A link, summary or reference to additional clinical information, if appropriate.</definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>Sex</name>
+        <definition>The sex of the subject, in terms of either male, female or hermaphrodite.</definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>Age</name>
+        <definition>The time period elapsed since an identifiable point in the life cycle of an organism. If a
+          developmental stage is specified the identifiable point would be the beginning of that stage. Otherwise the
+          identifiable point must be specifies. For example, 2 hours post surgery.
+        </definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>DevelopmentalStage</name>
+        <definition>The developmental stage of the of the study subject's life cycle.</definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>SubjectLabel</name>
+        <definition>If the subject has been chemically labeled or stained; state the label name.</definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>SubjectIdentifier</name>
+        <definition>The type and value of the identifier assigned to the subject.</definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>SubjectIdentifierType</name>
+        <definition>The type and value of the identifier assigned to the subject. For example, vendor or patient
+          identifier. For patients, the identifier must be approved by an Institutional Review Board or appropriate
+          body.
+        </definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>SubjectIdentifierValue</name>
+        <definition>The unique string which corresponds to the identifier type. TODO! How does this relate to the
+          Identifier ?
+        </definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>AssociatedSubjectDetails</name>
+        <definition>The organisation (e.g vendor) or individual responsible for the subject.</definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>PreparationProtocol</name>
+        <definition>The surgical procedure or the preparation protocol implemented to obtain the specific sample for
+          recording.
+        </definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>PreparationDate</name>
+        <definition>The date the surgical procedure or the preparation protocol was performed to obtain the specific
+          sample for recording. Given in the ISO:8601 representation. YYYY-MM-DDThh:mm:ss
+        </definition>
+        <type>date</type>
+      </property>
+    </section>
+
+    <section>
+      <type>carmen_mini/recording_location</type>
+      <name>RecordingLocation</name>
+
+      <property>
+        <name>LocationStructure</name>
+        <definition>The anatomical part or structure of the subject under investigation or recorded from. For example
+          brain or cell culture.
+        </definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>BrainArea</name>
+        <definition>If the anatomical structure under study from 3.(a) is the brain then state the location. If the
+          anatomical structure under study is the mammalian brain then state the location using Neuronames.
+          (http://braininfo.rprc.washington.edu/aboutfolder/aboutbi.html).
+        </definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>SliceThickness</name>
+        <definition>The thickness of the recording slice in millimeters.</definition>
+        <type>float</type>
+        <unit>mm</unit>
+      </property>
+
+      <property>
+        <name>SliceOrientation</name>
+        <definition>State the planes of the slice, in terms of either i) coronal (widthways), ii) saggital (lengthways
+          parallel to midline) or iii) tangential (lengthways perpendicular to midline).
+        </definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>CellType</name>
+        <definition>The cell type of the anatomical structure given in 3.(a) under investigation if non mixed. If mixed
+          the target cell type should be provided.
+        </definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>TargetCellType</name>
+        <definition>The cell type of the anatomical structure given in 3.(a) under investigation if non mixed. If mixed
+          the target cell type should be provided
+        </definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>ConfirmedCellType</name>
+        <definition>The method of coordinate assignment given in 2.3.1. Reported as 'anatomy confirmation', 'estimation'
+          or chemical label (this includes antibodies and staining). The label used should be reported in section 2.(l).
+          Additional information such as recordings or image files which also confirm the location can be referenced
+          here.
+        </definition>
+        <type>string</type>
+      </property>
+    </section>
+
+    <section>
+      <type>carmen_mini/task</type>
+      <name>Task</name>
+
+      <property>
+        <name>Protocol</name>
+        <definition>A description of the task protocol undertaken by the subject.</definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>SensoryConditions</name>
+        <definition>The sensory conditions during the task protocol.</definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>Equipment</name>
+        <definition>The Model Name, Model Number and Manufacturer for equipment used in the task protocol.</definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>Recording</name>
+        <definition>If the task is recorded state how and what data types are being recorded.</definition>
+        <type>string</type>
+      </property>
+    </section>
+
+    <section>
+      <type>carmen_mini/stimulus</type>
+      <name>Stimulus</name>
+
+      <property>
+        <name>Protocol</name>
+        <definition>A description of the stimulus protocol undertaken by the subject.</definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>SensoryConditions</name>
+        <definition>The sensory conditions during the stimulus protocol.</definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>Solutions</name>
+        <definition>Description of the solutions used in terms of name, components with concentrations,(if
+          appropriate).
+        </definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>Equipment</name>
+        <definition>The Model Name, Model Number and Manufacturer for specialised equipment used during the stimulus
+          protocol. If electrode(s) are used then they should be described following the structure presented in ref x.x
+        </definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>Recording</name>
+        <definition>If the stimulus is recorded state how and what data types are being recorded.</definition>
+        <type>string</type>
+      </property>
+    </section>
+
+    <section>
+      <type>carmen_mini/behavioural_event</type>
+      <name>BehaviouralEvent</name>
+
+      <property>
+        <name>Event</name>
+        <definition>A description of the behavioural event observed.</definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>Equipment</name>
+        <definition>The equipment use to record the behavioural event, if recorded in terms of The Model Name, Model
+          Number and Manufacturer.
+        </definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>BehaviouralEventRecording</name>
+        <definition>The type of recording of the behavioural event, the file format and the format encoding.
+        </definition>
+        <type>string</type>
+      </property>
+    </section>
+
+    <section>
+      <type>carmen_mini/recording</type>
+      <name>Recording</name>
+
+      <property>
+        <name>Protocol</name>
+        <definition>A description of the recording protocol.</definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>Conditions</name>
+        <definition>The subject conditions during the recording. Invivo or invitro preparation If invivo was it
+          anesthetised or awake? If awake what was the stimulus condition.
+        </definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>ContainingDevice</name>
+        <definition>Containing device temperature of the subject or sample (for example, a bath): Include temperature if
+          appropriate.
+        </definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>Solutions</name>
+        <definition>Description of the solutions used in terms of name, components with concentrations,(if
+          appropriate).
+        </definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>SolutionFlowSpeed</name>
+        <definition>The flow speed of the solution described in (ref x.x) in terms of ml/min.</definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>Electrode</name>
+        <definition>The type of electrode and the Model Name, Model Number and Manufacturer for specialised equipment.
+        </definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>ElectrodeConfiguration</name>
+        <definition>The configuration or arrangement of the electrode. For example, a 2-dimensional array. Also state
+          the distance between each electrode. If the study uses voltage clamp in a patch configuration, state the
+          access resistance (the resistance of the cell membrane, which is in series with the electrode resistance).
+        </definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>ElectrodeImpedance</name>
+        <definition>The electrode range or impedance of the electrode.</definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>Amplifier</name>
+        <definition>The Model Name, Model Number and Manufacturer of the amplifier.</definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>Filter</name>
+        <definition>The Model Name, Model Number and Manufacturer of the filter.</definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>FilterSettings</name>
+        <definition>The settings or the parameters of the filter.</definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>Recorder</name>
+        <definition>The Model Name, Model Number and Manufacturer of the recorder.</definition>
+        <type>string</type>
+      </property>
+    </section>
+
+    <section>
+      <type>carmen_mini/timeseries_data</type>
+      <name>TimeSeriesData</name>
+
+      <property>
+        <name>DataFormat</name>
+        <definition>The name of the data format of the time series data and specific encoding. For example, ASCII or
+          binary encoding.
+        </definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>SamplingRate</name>
+        <definition>The sampling rate of the recording.</definition>
+        <type>string</type>
+      </property>
+
+      <property>
+        <name>FileLocation</name>
+        <definition>The time series file location should be made available when the experiment is published, for
+          example, using a Uniform Resource Identifier (URI) or a Digital Object Identifier (DOI). (Note this will be
+          achieved automatically via submission to the CARMEN system).
+        </definition>
+        <type>URL</type>
+      </property>
+    </section>
+
+  </section>
+</odML>

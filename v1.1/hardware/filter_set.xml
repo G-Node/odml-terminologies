@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
+<odML version="1.1">
+  <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+  <version>1.0</version>
+  <date>2011-01-21</date>
+  <!-- ********************************** -->
+  <!--     Filter set aka Filter cube     -->
+  <!-- ********************************** -->
+  <section>
+    <type>hardware/filter_set</type>
+    <name>Filterset</name>
+    <definition>The FilterSet or also FilterCube used in a microscope.</definition>
+
+    <property>
+      <name>InventoryNo</name>
+      <definition>The inventory number of the FilterSet.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Owner</name>
+      <definition>The inventory number of the FilterSet.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>ExcitationFilterModel</name>
+      <definition>The model of excitation filter.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>ExcitationFilterManufacturer</name>
+      <definition>The Manufacturer providing the of the excitation filter.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>ExcitationFilterWavelength</name>
+      <definition>The wavelength of the excitation filter.</definition>
+      <type>float</type>
+      <unit>nm</unit>
+    </property>
+
+    <property>
+      <name>ExcitationFilterLowerBound</name>
+      <definition>The lower bound of of the wavelength transmitted by the excitation filter.</definition>
+      <type>float</type>
+      <unit>nm</unit>
+    </property>
+
+    <property>
+      <name>ExcitationFilterUpperBound</name>
+      <definition>The upper bound of of the wavelength transmitted by the excitation filter.</definition>
+      <type>float</type>
+      <unit>nm</unit>
+    </property>
+
+    <property>
+      <name>ExcitationFilterRange</name>
+      <definition>The width of the transmitted wavelength range.</definition>
+      <type>float</type>
+      <unit>nm</unit>
+    </property>
+
+    <property>
+      <name>ExcitationFilterPassbandTransmission</name>
+      <definition>The transmission in the passband. Given in %.</definition>
+      <type>float</type>
+    </property>
+
+    <property>
+      <name>EmissionFilterModel</name>
+      <definition>The model of excitation filter.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>EmissionFilterManufacturer</name>
+      <definition>The Manufacturer providing the of the excitation filter.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>EmissionFilterWavelength</name>
+      <definition>The wavelength of the excitation filter.</definition>
+      <type>float</type>
+      <unit>nm</unit>
+    </property>
+
+    <property>
+      <name>EmissionFilterLowerBound</name>
+      <definition>The lower bound of of the wavelength transmitted by the emission filter.</definition>
+      <type>float</type>
+      <unit>nm</unit>
+    </property>
+
+    <property>
+      <name>EmissionFilterUpperBound</name>
+      <definition>The upper bound of of the wavelength transmitted by the excitation filter.</definition>
+      <type>float</type>
+      <unit>nm</unit>
+    </property>
+
+    <property>
+      <name>EmissionFilterRange</name>
+      <definition>The width of the transmitted wavelength range.</definition>
+      <type>float</type>
+      <unit>nm</unit>
+    </property>
+
+    <property>
+      <name>EmissionFilterPassbandTransmission</name>
+      <definition>The transmission in the passband. Given in %.</definition>
+      <type>float</type>
+    </property>
+
+    <property>
+      <name>BeamsplitterType</name>
+      <definition>The type of beamsplitter used.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>BeamsplitterModel</name>
+      <definition>The beam splitter model name.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>BeamsplitterManufacturer</name>
+      <definition>The Manufacturer providing the beam splitter.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>BeamsplitterWavelength</name>
+      <definition>The wavelength at which the beam splitter separates the beams.</definition>
+      <type>float</type>
+      <unit>nm</unit>
+    </property>
+
+    <property>
+      <name>Description</name>
+      <definition>A description of this hardware item.</definition>
+      <type>string</type>
+    </property>
+
+  </section>
+</odML>

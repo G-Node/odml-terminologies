@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
+<!-- ********************************************************* -->
+<!--                 Random dot stimulus                       -->
+<!-- ********************************************************* -->
+<odML version="1.1">
+  <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+  <version>1.0</version>
+  <date>2011-01-21</date>
+
+  <section>
+    <type>stimulus/random_dot</type>
+    <name>RandomDot</name>
+    <definition>Properties to describe a random dot stimulus.</definition>
+
+    <property>
+      <name>Modality</name>
+      <definition>The stimulus modality like acoustic, haptic, light etc.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Duration</name>
+      <definition>The duration of the stimulus in seconds.</definition>
+      <type>float</type>
+      <unit>s</unit>
+    </property>
+
+    <property>
+      <name>TemporalOffset</name>
+      <definition>The temporal offset (with respect to the begin of the recorded trial) with which this stimulus was
+        presented.
+      </definition>
+      <type>float</type>
+      <unit>s</unit>
+    </property>
+
+    <property>
+      <name>Function</name>
+      <definition>The function of the described stimulus. E.g. if the white noise constituted the carrier.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>OutputChannel</name>
+      <definition>The physical output device (e.g. an analog output channel, a monitor screen, the same loudspeaker,
+        etc.). This information can be used to explicitly express that several stimuli (that share the same
+        OutputChannel) are jointly presented.
+      </definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>DotCount</name>
+      <definition>The number of random dots placed on the screen.</definition>
+      <type>int</type>
+    </property>
+
+    <property>
+      <name>DotHorizontalExtent</name>
+      <definition>The width of a single dot given in °.</definition>
+      <type>float</type>
+    </property>
+
+    <property>
+      <name>DotVerticalExtent</name>
+      <definition>The height of a single dot in °.</definition>
+      <type>float</type>
+    </property>
+
+    <property>
+      <name>DotPixelHeight</name>
+      <definition>The height of a single dot in pixel.</definition>
+      <type>int</type>
+    </property>
+
+    <property>
+      <name>DotPixelWidth</name>
+      <definition>The width of a single dot given in pixel.</definition>
+      <type>int</type>
+    </property>
+
+    <property>
+      <name>DotSize</name>
+      <definition>The size of a single dot specified as 2-tuple (width;height).</definition>
+      <type>2-tuple</type>
+    </property>
+
+    <property>
+      <name>Position</name>
+      <definition>The position of the stimulus on e.g the screen. Specified as a 2-tuple (x;y). By default this position
+        refers to the top-left corner of the object or its bounding box.
+      </definition>
+      <type>2-tuple</type>
+    </property>
+
+    <property>
+      <name>PositionReference</name>
+      <value>[top-left, center, bottom-right]</value>
+      <definition>By default stimulus positions are specified by the coordinates of the top-left corner (or of the
+        bounding box). Use this property for other definitions.
+      </definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>SpatialExtent</name>
+      <definition>The spatial extend of the presented stimulus (width;height) e.g. (1024;768).</definition>
+      <type>2-tuple</type>
+    </property>
+
+  </section>
+</odML>

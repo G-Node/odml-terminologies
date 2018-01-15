@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl"?>
+<odML version="1.1">
+  <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+  <version>1.0</version>
+  <date>2011-01-21</date>
+  <!-- ********************************************************* -->
+  <!--                     PSTH section                          -->
+  <!-- ********************************************************* -->
+  <section>
+    <type>analysis/psth</type>
+    <name>PSTH</name>
+    <definition>An Analysis-type section to describe an PSTH.</definition>
+
+    <property>
+      <name>Author</name>
+      <type>person</type>
+      <definition>The name of the person who did the analysis, e.g. 'John Doe' or 'Doe, John'</definition>
+    </property>
+
+    <property>
+      <name>Date</name>
+      <type>date</type>
+      <definition>The date of analysis.</definition>
+    </property>
+
+    <property>
+      <name>Description</name>
+      <type>text</type>
+      <definition>A general description of the analysis.</definition>
+    </property>
+
+    <property>
+      <name>Method</name>
+      <type>string</type>
+      <value>[instantaneous spike rate, sliding window, discrete window]</value>
+      <definition>The method used for creating the PSTH. instantaneous spike rate; Estimation of the firing rate by
+        using the inverse of the interspike interval.; sliding window: The window function was slid over the data at
+        recording resolution.; discrete window: Spikes were averaged within the window, window discretely displaced by
+        the window width.
+      </definition>
+    </property>
+
+    <property>
+      <name>WindowType</name>
+      <type>string</type>
+      <value>[rectangular, gaussian, alpha]</value>
+      <definition>The kind of windowing function used to cerate the PSTH.</definition>
+    </property>
+
+    <property>
+      <name>CommandlineCall</name>
+      <type>string</type>
+      <definition>The command used to execute the analysis including the command line parameter.</definition>
+    </property>
+
+    <property>
+      <name>Comment</name>
+      <type>text</type>
+      <definition>Specific comments on this analysis.</definition>
+    </property>
+
+    <property>
+      <name>CodeFile</name>
+      <type>binary</type>
+      <definition>The program code to analyse the data can be transferred using this property.
+        Using it will blow up the the size of the metadatafile and we recommend to rather define the URL of underlying
+        code file.
+      </definition>
+    </property>
+
+    <property>
+      <name>CodeFileURL</name>
+      <type>URL</type>
+      <definition>The URL of the applied piece of program code to actually do the analysis.</definition>
+    </property>
+
+    <property>
+      <name>CodeRevision</name>
+      <type>string</type>
+      <definition>If the analysis code is under version control the revision number can be specified using this
+        property.
+      </definition>
+    </property>
+
+    <property>
+      <name>ConfigFile</name>
+      <type>binary</type>
+      <definition>The configurations used to analyse the data can be transferred using this property.
+        Using it will blow up the the size of the metadatafile and we recommend to rather define the URL of underlying
+        configuration file.
+      </definition>
+    </property>
+
+    <property>
+      <name>ConfigFileURL</name>
+      <type>URL</type>
+      <definition>The URL of the used configuration file used to run the analysis.</definition>
+    </property>
+
+    <property>
+      <name>DatasetFile</name>
+      <type>binary</type>
+      <definition>The data analysed ion the described way can be transferred using this property.
+        Using it will blow up the the size of the metadatafile and we recommend to rather define the URL of underlying
+        dataset file.
+      </definition>
+    </property>
+
+    <property>
+      <name>DatasetFileURL</name>
+      <type>URL</type>
+      <definition>The URL of a analysed datasetFile.</definition>
+    </property>
+
+    <property>
+      <name>ResultFile</name>
+      <type>binary</type>
+      <definition>The results of this analysis can be transferred using this property.
+        Using it will blow up the the size of the metadatafile and we recommend to rather define the URL of the results
+        file.
+      </definition>
+    </property>
+
+    <property>
+      <name>ResultFileURL</name>
+      <type>URL</type>
+      <definition>The URL of a results file.</definition>
+    </property>
+
+    <property>
+      <name>ResultFigure</name>
+      <definition>A figure showing the results. This property is meant to store the real figure content.
+        This will blow up the the size of the metadatafile and we recommend to rather define the URL of the figure.
+      </definition>
+      <type>binary</type>
+    </property>
+
+    <property>
+      <name>PaperDOI</name>
+      <type>text</type>
+      <definition>If the results of this analysis have been published one can store the doi of the paper.</definition>
+    </property>
+
+    <property>
+      <name>PaperURL</name>
+      <type>URL</type>
+      <definition>If the results of this analysis have been published the URL of the document can be given here
+      </definition>
+    </property>
+
+  </section>
+</odML>

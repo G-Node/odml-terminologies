@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
+<odML version="1.1">
+  <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+  <version>1.0</version>
+  <date>2011-01-21</date>
+  <!-- ********************************** -->
+  <!--        Attenuator properties       -->
+  <!-- ********************************** -->
+  <section>
+    <type>hardware/attenuator</type>
+    <name>Attenuator</name>
+    <definition>Settings of the data acquisition system. most settings refer to individual channels the channel
+      number should be given after the property name like DAQ.AISampleRate0 for the sampling rate of the analog
+      input channel 0.
+    </definition>
+
+    <property>
+      <name>SerialNo</name>
+      <definition>The device's serial number.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Owner</name>
+      <definition>Who's the owner of the device.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>InventoryNo</name>
+      <definition>The inventory number of the device.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Model</name>
+      <definition>The model name of this hardware item.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Manufacturer</name>
+      <definition>The Manufacturer of this hardware item.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>LineCount</name>
+      <definition>The number of independent lines.</definition>
+      <type>int</type>
+    </property>
+
+    <property>
+      <name>MaxAttenuation</name>
+      <definition>The maximum attenuation.</definition>
+      <type>float</type>
+    </property>
+
+    <property>
+      <name>MinAttenuation</name>
+      <definition>The minimum attenuation.</definition>
+      <type>float</type>
+    </property>
+
+    <property>
+      <name>StepSize</name>
+      <definition>The size of the attenuation steps between minimum and maximum attenuation.</definition>
+      <type>float</type>
+    </property>
+
+    <property>
+      <name>Attenuation</name>
+      <definition>The actual attenuation setting.</definition>
+      <type>float</type>
+    </property>
+
+    <property>
+      <name>Description</name>
+      <definition>A description of this hardware item.</definition>
+      <type>string</type>
+    </property>
+
+  </section>
+</odML>

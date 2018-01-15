@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
+<!-- ********************************************************* -->
+<!--                     Experiment section                    -->
+<!-- ********************************************************* -->
+<odML version="1.1">
+  <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+  <version>1.0</version>
+  <date>2011-01-21</date>
+
+  <section>
+    <type>experiment</type>
+    <name>Experiment</name>
+    <definition>Specification of an experiment. The Experiment is part of a Project and the recorded data for a specific
+      Experiment are found in Datasets. Possible subsections are, for example, Dataset and Stimulus.
+    </definition>
+
+    <property>
+      <name>Description</name>
+      <definition>A description of the experiment.
+      </definition>
+      <type>text</type>
+    </property>
+
+    <property>
+      <name>DataDOI</name>
+      <definition>A unique Digital object identifier of data.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Type</name>
+      <value>[electrophysiology, behavior, simulation, imaging, psychophysics]</value>
+      <definition>The type of experiment.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Subtype</name>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>ProjectName</name>
+      <definition>The name of the project this experiment belongs to.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>ProjectID</name>
+      <definition>The ID of the project this experiment belongs to.</definition>
+      <type>string</type>
+    </property>
+
+  </section>
+</odML>

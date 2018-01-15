@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl"  xmlns:odml="http://www.g-node.org/odml"?>
+<odML version="1.1">
+  <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+  <version>1.0</version>
+  <date>2011-01-21</date>
+  <!-- ********************************************************* -->
+  <!--                  Preparation  section                     -->
+  <!-- ********************************************************* -->
+  <section>
+    <type>preparation</type>
+    <name>Preparation</name>
+    <definition>Description of the preparation procedure.</definition>
+
+    <property>
+      <name>Description</name>
+      <definition>A textual description of the preparation.</definition>
+      <type>text</type>
+    </property>
+
+    <property>
+      <name>Date</name>
+      <definition>Actual preparation date.</definition>
+      <type>date</type>
+    </property>
+
+    <property>
+      <name>Type</name>
+      <definition>In vivo or in vitro?</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>RingersSolution</name>
+      <definition>The Ringer solution used during preparation.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>SlicingMethod</name>
+      <definition>How was the brain sliced: Microtome etc.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>SliceThickness</name>
+      <definition>The thickness of the slice.</definition>
+      <type>string</type>
+      <unit>&#181;m</unit>
+    </property>
+
+    <property>
+      <name>SliceOrientation</name>
+      <definition>The slice orientation: horizontal, sagittal etc.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>BathSolution</name>
+      <definition>The solution the slice is bathed in.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>SolutionFlowSpeed</name>
+      <definition>The flow speed of the bath solution.</definition>
+      <type>string</type>
+      <unit>ml/min</unit>
+    </property>
+
+    <property>
+      <name>BathTemperature</name>
+      <definition>The temperature of the bath solution.</definition>
+      <type>float</type>
+    </property>
+
+    <property>
+      <name>Anaestesia</name>
+      <definition>Is the animal under anaesthesia (true) or awake (false)?</definition>
+      <type>boolean</type>
+    </property>
+
+    <property>
+      <name>Anaesthetic</name>
+      <definition>The drug used for anaesthesia.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>AnaestheticDose</name>
+      <definition>The dose of the used anaesthetic.</definition>
+      <type>float</type>
+    </property>
+
+    <property>
+      <name>LocalAnaesthesia</name>
+      <definition>Was there some local anaesthesia applied (true or false).</definition>
+      <type>boolean</type>
+    </property>
+
+    <property>
+      <name>LocalAnaesthetic</name>
+      <definition>The drug that was used for local anaesthesia.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>LocalAnaestheticDose</name>
+      <definition>The dose of the used local anaesthetic.</definition>
+      <type>float</type>
+    </property>
+
+    <property>
+      <name>LocalAnaestheticLocation</name>
+      <definition>Describes the place the local anaesthetic was applied.</definition>
+      <type>string</type>
+    </property>
+
+  </section>
+</odML>

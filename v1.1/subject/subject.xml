@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl"  xmlns:odml="http://www.g-node.org/odml"?>
+<!-- ********************************************************* -->
+<!--                     Subject section                       -->
+<!-- ********************************************************* -->
+<odML version="1.1">
+  <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+  <version>1.0</version>
+  <date>2011-01-21</date>
+
+  <section>
+    <type>subject</type>
+    <name>Subject</name>
+    <definition>The investigated experimental subject (animal or person). May contain the Cell and Preparation sections
+      as subsections.
+    </definition>
+
+    <property>
+      <name>Comment</name>
+      <definition>A general comment on a specific subject.</definition>
+      <type>text</type>
+    </property>
+
+    <property>
+      <name>Species</name>
+      <definition>The scientific name of the species e.g. Apis mellifera, Homo sapiens.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Genus</name>
+      <definition>The Genus of the studied subject.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>TrivialName</name>
+      <definition>The trivial name of the species like Honeybee, Human.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Gender</name>
+      <definition>Male or female?</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Birthday</name>
+      <definition>The birthday. Age can be inferred from the date of recording.</definition>
+      <type>date</type>
+    </property>
+
+    <property>
+      <name>Age</name>
+      <definition>The age of the subject since birth. E.g. P19, or 5 days.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Strain</name>
+      <definition>The strain the subject was taken from. E.g. a specific genetic variation etc.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>CellLine</name>
+      <definition>.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Population</name>
+      <definition>The population this subject is offspring of. This may be the bee hive, the ant colony, etc.
+      </definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Label</name>
+      <definition>If the subject has been labeled in a specific way. The label can be described here.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>HealthStatus</name>
+      <definition>Information about the health status of this subject.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>DevelopmentalStage</name>
+      <definition>The developmental stage of the subject. E.g. "embryonal", "adult", "larval" etc.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>ConactInformation</name>
+      <definition>How to get in contact with this subject.</definition>
+      <type>text</type>
+    </property>
+
+    <property>
+      <name>Size</name>
+      <definition>The size of the subject. This value may be used context dependent. Size could be length for a fish,
+        height for a human subject, or shoulder height for a horse etc...
+      </definition>
+      <type>float</type>
+    </property>
+
+    <property>
+      <name>Weight</name>
+      <definition>The weight of this subject.</definition>
+      <type>float</type>
+    </property>
+
+  </section>
+</odML>

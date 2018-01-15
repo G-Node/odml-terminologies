@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
+<!-- ********************************** -->
+<!--        Recording Electrodes        -->
+<!-- ********************************** -->
+<odML version="1.1">
+  <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+  <version>1.0</version>
+  <date>2014-04-01</date>
+
+  <section>
+    <type>electrode</type>
+    <name>Electrode</name>
+    <definition>Properties to describe an electrode.</definition>
+
+    <property>
+      <name>Type</name>
+      <value>[sharp, patch, injection, extracellular, multibarrel, multi-electrode-array, tetrode]</value>
+      <definition>The type of electrode.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Usage</name>
+      <value>[Ground, Reference, Channel]</value>
+      <definition>Usage of electrode.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Material</name>
+      <definition>The Material the electrodes are made of e.g. glass. tungsten, steel ...</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>GlassType</name>
+      <definition>The Type of Glass used to pull these electrodes. (e.g. Quartz, Borosilicate)</definition>
+      <dependency>Material</dependency>
+      <dependencyValue>Glass</dependencyValue>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>GlassSpecification</name>
+      <definition>Inner and outer diameter, with or without filament.</definition>
+      <dependency>Material</dependency>
+      <dependencyValue>Glass</dependencyValue>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>FirePolish</name>
+      <definition>Specifies whether or not the electrodes were fire polished.</definition>
+      <dependency>Material</dependency>
+      <dependencyValue>Glass</dependencyValue>
+      <type>boolean</type>
+    </property>
+
+    <property>
+      <name>Puller</name>
+      <definition>The Puller used to make the electrodes.</definition>
+      <dependency>Material</dependency>
+      <dependencyValue>Glass</dependencyValue>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>PullParameter</name>
+      <definition>The specific pull parameters like heat, trip velocity, heat and cooling duration etc..</definition>
+      <dependency>Material</dependency>
+      <dependencyValue>Glass</dependencyValue>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>ShapeParameters</name>
+      <definition>The shape parameters of the electrode.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Manufacturer</name>
+      <definition>The manufacturer of the electrodes if e.g. ordered from a company.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>TipSize</name>
+      <definition>The tip size.</definition>
+      <type>float</type>
+      <unit>&#956;m</unit>
+    </property>
+
+    <property>
+      <name>Coating</name>
+      <definition>The coating used to insulate the electrodes.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Impedance</name>
+      <definition>Electrode impedance.</definition>
+      <type>float</type>
+      <unit>M&#937;</unit>
+    </property>
+
+    <property>
+      <name>ElectrodeCount</name>
+      <definition>Number of electrodes in a multi-electrode-array.</definition>
+      <type>int</type>
+    </property>
+
+    <property>
+      <name>Description</name>
+      <definition/>
+      <type>string</type>
+    </property>
+
+  </section>
+</odML>

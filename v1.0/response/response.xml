@@ -5,122 +5,122 @@
   <date>2011-01-21</date>
   <repository>http://portal.g-node.org/odml/terminologies/v1.0/terminologies.xml</repository>
   <!-- ********************************************************* -->
-  <!--                  Response section                      -->
+  <!--                  Response section                         -->
   <!-- ********************************************************* -->
   <section>
     <type>Response</type>
     <name>Response</name>
-    <definition>General description of an recieved response (on stimulus).</definition>
-    
+    <definition>General description of an received response (on stimulus).</definition>
+
     <property>
       <name>Description</name>
       <value>
-	<type>text</type>
+        <type>text</type>
       </value>
       <definition>A textual description of the response.</definition>
-    </property>  
-    
+    </property>
+
     <property>
       <name>Comment</name>
       <value>
-	<type>text</type>
+        <type>text</type>
       </value>
       <definition>A comment on this specific response.</definition>
-    </property>  
-    
+    </property>
+
     <property>
       <name>Author</name>
       <value>
-	<type>person</type>
+        <type>person</type>
       </value>
       <definition>Who is the author of this response.</definition>
     </property>
-    
+
     <property>
       <name>Duration</name>
       <value>
-	<type>float</type>
-	<unit>s</unit>
+        <type>float</type>
+        <unit>s</unit>
       </value>
       <definition>The duration of the response.</definition>
-    </property> 
-    
+    </property>
+
     <property>
       <name>StartTime</name>
       <value>
-	<type>time</type>
+        <type>time</type>
       </value>
       <definition>The time the response started.</definition>
-    </property> 
-    
+    </property>
+
     <property>
       <name>EndTime</name>
       <value>
-	<type>time</type>
+        <type>time</type>
       </value>
       <definition>The time the response ended.</definition>
-    </property> 
-    
+    </property>
+
     <property>
       <name>Intensity</name>
       <value>
-	<type>string</type>
+        <type>string</type>
       </value>
       <definition>like the current in case of electrical stimulation.</definition>
     </property>
-    
+
     <property>
       <name>Location</name>
       <value>
-	<type>string</type>
+        <type>string</type>
       </value>
       <definition>Describes the site of the response application.</definition>
-    </property> 
-    
+    </property>
+
     <property>
       <name>Modality</name>
       <value>
-	<type>string</type>
+        <type>string</type>
       </value>
       <definition>Visual, acoustic, haptic, electrical, etc. response.</definition>
-    </property> 
-    
+    </property>
+
     <property>
       <name>Repetitions</name>
       <value>
-	<type>int</type>
+        <type>int</type>
       </value>
       <definition>The number of repetitions of the described response.</definition>
-    </property> 
-    
+    </property>
+
     <property>
       <name>InterstimulusInterval</name>
       <value>
-	<type>float</type>
-	<unit>s</unit>
+        <type>float</type>
+        <unit>s</unit>
       </value>
       <definition>The time between two subsequent response.</definition>
-    </property> 
-    
+    </property>
+
     <property>
       <name>ResponseFile</name>
       <value>
-	<type>binary</type>
+        <type>binary</type>
       </value>
-      <definition> The response file recived. Using it will blow
-      up the the size of the metadatafile and we recommend to
-      rather define the URL of underlying response
-      file.</definition>
-    </property> 
-    
+      <definition>The response file received. Using it will blow up the the size of the metadatafile and we recommend to
+        rather define the URL of underlying response file.
+      </definition>
+    </property>
+
     <property>
       <name>ResponseFileURL</name>
       <value>
-	<type>URL</type>
+        <type>URL</type>
       </value>
-      <definition>The URL of a an recievedresponse file. This
-      is the recommended alternative to explicitely including the
-      actual response via ResponseFile.</definition>
-    </property>  
+      <definition>The URL of a an recieved response file. This is the recommended alternative to explicitly including
+        the actual response via ResponseFile.
+      </definition>
+    </property>
+
   </section>
 </odML>

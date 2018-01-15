@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
+<!-- ********************************************************* -->
+<!--                     Project section                       -->
+<!-- ********************************************************* -->
+<odML version="1.1">
+  <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+  <version>1.0</version>
+  <date>2011-01-21</date>
+
+  <section>
+    <type>project</type>
+    <name>Project</name>
+    <definition>Information about the project.</definition>
+
+    <property>
+      <name>Topic</name>
+      <definition>A descriptive text of the project topic.</definition>
+      <type>text</type>
+    </property>
+
+    <property>
+      <name>Grant</name>
+      <definition>The name or identifier of the grant funding this project.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>PrincipleInvestigator</name>
+      <definition>The person responsible for this project.</definition>
+      <type>person</type>
+    </property>
+
+    <property>
+      <name>Scientist</name>
+      <definition>Additional involved person(s).</definition>
+      <type>person</type>
+    </property>
+
+    <property>
+      <name>Start</name>
+      <definition>The day the project was begun.</definition>
+      <type>date</type>
+    </property>
+
+    <property>
+      <name>End</name>
+      <definition>The date the project ended.</definition>
+      <type>date</type>
+    </property>
+
+  </section>
+</odML>

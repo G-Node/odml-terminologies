@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
+<!-- ********************************** -->
+<!--                Software            -->
+<!-- ********************************** -->
+<odML version="1.1">
+  <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+  <version>1.0</version>
+  <date>2014-03-02</date>
+
+  <section>
+    <type>software</type>
+    <name>Software</name>
+    <definition>This is a software section .</definition>
+
+    <property>
+      <name>Name</name>
+      <definition>The software's name.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Owner</name>
+      <definition>The owner of the software.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Developer</name>
+      <definition>The developer or the developers firm.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Version</name>
+      <definition>Version of the software.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Licence</name>
+      <definition>License type</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>LicenceStart</name>
+      <definition>The start date of time limited licence.</definition>
+      <type>date</type>
+    </property>
+
+    <property>
+      <name>LicenceExpiration</name>
+      <definition>The end date of time limited licence.</definition>
+      <type>date</type>
+    </property>
+
+    <property>
+      <name>LicenceDuration</name>
+      <definition>Duration of the licence for the software.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>LicenceCount</name>
+      <definition>Number of the software's licence.</definition>
+      <type>int</type>
+    </property>
+
+    <property>
+      <name>Distribution</name>
+      <definition>Distribution type</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Decsription</name>
+      <definition>The description of the software.</definition>
+      <type>string</type>
+    </property>
+
+  </section>
+</odML>

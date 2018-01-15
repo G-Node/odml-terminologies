@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
+<!-- ********************************************************* -->
+<!--                      Ramp stimulus                        -->
+<!-- ********************************************************* -->
+<odML version="1.1">
+  <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+  <version>1.0</version>
+  <date>2011-01-21</date>
+
+  <section>
+    <type>stimulus/ramp</type>
+    <name>Ramp</name>
+    <definition>A ramp stimulus may either linearly increase or decrease in amplitude. Starting from a certain start
+      amplitude and reaching with a certain slope the destination amplitude.
+    </definition>
+
+    <property>
+      <name>Modality</name>
+      <value>
+        </value>
+      <definition>The stimulus modality like acoustic, haptic, light etc.</definition>
+    <type>string</type></property>
+
+    <property>
+      <name>Duration</name>
+      <value>
+        </value>
+      <definition>The duration of the stimulus in seconds.</definition>
+    <type>float</type><unit>s</unit></property>
+
+    <property>
+      <name>TemporalOffset</name>
+      <value>
+        </value>
+      <definition>The temporal offset (with respect to the begin of the recorded trial) with which this stimulus was
+        presented.
+      </definition>
+    <type>float</type><unit>s</unit></property>
+
+    <property>
+      <name>Function</name>
+      <value>
+        </value>
+      <definition>The function of the described stimulus. E.g. if the white noise constituted the carrier.</definition>
+    <type>string</type></property>
+
+    <property>
+      <name>OutputChannel</name>
+      <value>
+        </value>
+      <definition>The physical output device (e.g. an analog output channel, a monitor screen, the same loudspeaker,
+        etc.). This information can be used to explicitly express that several stimuli (that share the same
+        OutputChannel) are jointly presented.
+      </definition>
+    <type>string</type></property>
+
+    <property>
+      <name>StartAmplitude</name>
+      <value>
+        </value>
+      <definition>The start amplitude of the ramp.</definition>
+    <type>float</type></property>
+
+    <property>
+      <name>EndAmplitude</name>
+      <value>
+        </value>
+      <definition>The ending amplitude.</definition>
+    <type>float</type></property>
+
+    <property>
+      <name>Slope</name>
+      <value>
+        </value>
+      <definition>The slope with which the ramp ascends respectively descends.</definition>
+    <type>float</type></property>
+
+    <property>
+      <name>RampStartTime</name>
+      <value>
+        </value>
+      <definition>The time the ramp started with respect to the beginning of this ramp stimulus.</definition>
+    <type>float</type><unit>s</unit></property>
+
+    <property>
+      <name>Position</name>
+      <value>
+        </value>
+      <definition>The position of the stimulus on e.g the screen. Specified as a 2-tuple (x;y). By default this position
+        refers to the top-left corner of the object or its bounding box.
+      </definition>
+    <type>2-tuple</type></property>
+
+    <property>
+      <name>PositionReference</name>
+      <value>top-left
+        , center
+        , bottom-right
+        </value>
+      <definition>By default stimulus positions are specified by the coordinates of the top-left corner (or of the
+        bounding box). Use this property for other definitions.
+      </definition>
+    <type>string</type></property>
+
+    <property>
+      <name>SpatialExtent</name>
+      <value>
+        </value>
+      <definition>The spatial extend of the presented stimulus (width;height) e.g. (1024;768).</definition>
+    <type>2-tuple</type></property>
+
+  </section>
+</odML>

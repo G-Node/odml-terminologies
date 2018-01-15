@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
+<!-- ********************************************************* -->
+<!--                  Leaky integrate and fire                 -->
+<!-- ********************************************************* -->
+<odML version="1.1">
+  <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+  <version>1.0</version>
+  <date>2011-01-21</date>
+
+  <section>
+    <type>model/lif</type>
+    <name>Leaky integrate and fire</name>
+    <definition>Properties to describe a leaky integrate and fire neuron model.</definition>
+
+    <property>
+      <name>Author</name>
+      <definition>The author of this model.</definition>
+      <type>person</type>
+    </property>
+
+    <property>
+      <name>Date</name>
+      <definition>The simulation date.</definition>
+      <type>date</type>
+    </property>
+
+    <property>
+      <name>Program</name>
+      <definition>The program name.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>ProgramVersion</name>
+      <definition>The program version name.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>Description</name>
+      <definition>A descriptive text.</definition>
+      <type>string</type>
+    </property>
+
+    <!--     Basics    -->
+    <property>
+      <name>RestingPotential</name>
+      <definition>The resting voltage.</definition>
+      <type>float</type>
+      <unit>V</unit>
+    </property>
+
+    <property>
+      <name>ResetPotential</name>
+      <definition>The potential to which the neuron's potential is set after a spike.</definition>
+      <type>float</type>
+      <unit>V</unit>
+    </property>
+
+    <property>
+      <name>Resistance</name>
+      <definition>The membrane resistance.</definition>
+      <type>float</type>
+      <unit>Ohm</unit>
+    </property>
+
+    <property>
+      <name>Capacitance</name>
+      <definition>The membrane resistance.</definition>
+      <type>float</type>
+      <unit>F</unit>
+    </property>
+
+    <property>
+      <name>MembraneTimeConstant</name>
+      <definition>The membrane time constant.</definition>
+      <type>float</type>
+      <unit>s</unit>
+    </property>
+
+    <property>
+      <name>BiasCurrent</name>
+      <definition>The offset current.</definition>
+      <type>float</type>
+      <unit>A</unit>
+    </property>
+
+    <property>
+      <name>Timestep</name>
+      <definition>The duration of a time step in the simulation.</definition>
+      <type>float</type>
+      <unit>s</unit>
+    </property>
+
+    <property>
+      <name>VoltageEquation</name>
+      <definition>The equation to calculate the membrane voltage.</definition>
+      <type>string</type>
+    </property>
+
+    <!--     Adaptation -->
+    <property>
+      <name>AdaptationIncrement</name>
+      <definition>When an adaptation current is implemented the amount about which the adaptation is increased when a
+        spike is fired.
+      </definition>
+      <type>float</type>
+      <unit>A</unit>
+    </property>
+
+    <property>
+      <name>AdaptationTimeConstant</name>
+      <definition>The time constant with which the adaptation current returns back to zero.</definition>
+      <type>float</type>
+      <unit>s</unit>
+    </property>
+
+    <property>
+      <name>AdaptationEquation</name>
+      <definition>The equation to calculate the adaptation current.</definition>
+      <type>string</type>
+    </property>
+
+    <!--     Noise  -->
+    <property>
+      <name>NoiseAmplitude</name>
+      <definition>The amount of noise added.</definition>
+      <type>float</type>
+      <unit>A</unit>
+    </property>
+
+    <property>
+      <name>NoiseType</name>
+      <definition>The type of noise. For example Gaussian, Ohrnstein-Uhlenbeck etc.</definition>
+      <type>string</type>
+    </property>
+
+    <property>
+      <name>NoiseCorrelation</name>
+      <definition>The correlation time constant used e.g. with OU noise.</definition>
+      <type>float</type>
+      <unit>s</unit>
+    </property>
+
+    <!-- Threshold settings -->
+    <property>
+      <name>Threshold</name>
+      <definition>The firing threshold.</definition>
+      <type>float</type>
+      <unit>V</unit>
+    </property>
+
+    <property>
+      <name>ThresholdIncrement</name>
+      <definition>The voltage about which the threshold is increased once a spike has been fired.</definition>
+      <type>float</type>
+      <unit>V</unit>
+    </property>
+
+    <property>
+      <name>ThresholdTimeConstant</name>
+      <definition>The time constant with which the threshold returns back to baseline.</definition>
+      <type>float</type>
+      <unit>s</unit>
+    </property>
+
+    <property>
+      <name>ThresholdEquation</name>
+      <definition>The equation to calculate the threshold.</definition>
+      <type>string</type>
+    </property>
+
+  </section>
+</odML>

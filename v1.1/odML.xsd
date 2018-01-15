@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.g-node.org/odml">
+  <!-- 1 -->
+  <!-- THE PROPERTY TYPE IS THE BUILDING BLOCK OF ALL odML METADATA. -->
+  <!-- PROPERTIES BASICALLY CONSIST OF name/value PAIRS. -->
+  <!-- -->
+  <!-- A: Value Subtype -->
+  <xs:element name ="value" type="xs:string">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="type" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="uncertainty" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="unit" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="reference" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="definition" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="filename" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="encoder" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="checksum" minOccurs="0" maxOccurs="1"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <!-- B: Property -->
+  <xs:element name ="property">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <!-- if there is a NAME there must also be a VALUE -->
+        <xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="value" minOccurs="1" maxOccurs="unbounded"/>
+        <!-- all other elements are optional -->
+        <xs:element name="definition" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="mapping" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="dependency" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="dependencyValue" type="xs:string" minOccurs="0" maxOccurs="1"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <!-- 2 -->
+  <!-- SECTIONS ARE MEANT TO CONTAIN PROPERTIES THAT BELONG -->
+  <!-- LOGICALLY TOGETHER THESE MAY HAVE SUBSECTIONS -->
+  <xs:element name="section">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="type" type="xs:string" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="reference" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="definition" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="link" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="include" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="repository" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="mapping" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="property" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="section" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <!-- 3 -->
+  <!-- THE ROOT ELEMENT THAT CAN CONTAIN ALL THE INFORMATION THE USER WANTS TO PROVIDE -->
+  <!-- THE ROOT ELEMENT ITSELF CAN ONLY CONTAIN SECTIONS BUT NO PROPERTIES -->
+  <xs:element name="odML">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="author" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="date" type="xs:date" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="version" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="repository" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="section" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:choice>
+      <xs:attribute name="version" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
