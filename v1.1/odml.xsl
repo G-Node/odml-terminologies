@@ -117,7 +117,6 @@
                <b>Link: </b><xsl:if test="link"><xsl:value-of select="link"/></xsl:if><br/>
                <b>Include:</b> <xsl:if test="include"><font color="red"><xsl:value-of select="include"/></font></xsl:if><br/>
                <b>Definition:</b> <xsl:if test="definition"><xsl:value-of select="definition"/></xsl:if><br/>
-               <b>Mapping: </b>   <xsl:if test="mapping"><xsl:value-of select="mapping"/></xsl:if><br/>
             </p>
 
             <!--  Check if there are any properties  -->

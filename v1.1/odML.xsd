@@ -29,7 +29,6 @@
         <xs:element ref="value" minOccurs="1" maxOccurs="unbounded"/>
         <!-- all other elements are optional -->
         <xs:element name="definition" type="xs:string" minOccurs="0" maxOccurs="1"/>
-        <xs:element name="mapping" type="xs:string" minOccurs="0" maxOccurs="1"/>
         <xs:element name="dependency" type="xs:string" minOccurs="0" maxOccurs="1"/>
         <xs:element name="dependencyValue" type="xs:string" minOccurs="0" maxOccurs="1"/>
       </xs:choice>
@@ -48,7 +47,6 @@
         <xs:element name="link" type="xs:string" minOccurs="0" maxOccurs="1"/>
         <xs:element name="include" type="xs:string" minOccurs="0" maxOccurs="1"/>
         <xs:element name="repository" type="xs:string" minOccurs="0" maxOccurs="1"/>
-        <xs:element name="mapping" type="xs:string" minOccurs="0" maxOccurs="1"/>
         <xs:element ref="property" minOccurs="0" maxOccurs="unbounded"/>
         <xs:element ref="section" minOccurs="0" maxOccurs="unbounded"/>
       </xs:choice>

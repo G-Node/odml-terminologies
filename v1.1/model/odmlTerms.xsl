@@ -128,8 +128,6 @@
                <b>Definition: </b><xsl:if test="definition"><xsl:value-of select="definition"/></xsl:if><br/>
             </p>
 
-            <b>Mapping: </b>   <xsl:if test="mapping"><xsl:value-of select="mapping"/></xsl:if><br/>
-
             <!--  Check if there are any properties  -->
             <xsl:if test="property">
                <table border="1" rules="rows" width="100%"><font size="-1">
@@ -139,7 +137,6 @@
                      <th><font size="+1" color="white"><b>Unit</b></font></th>
                      <th><font size="+1" color="white"><b>Type</b></font></th>
                      <th><font size="+1" color="white"><b>Definition</b></font></th>
-                     <th><font size="+1" color="white"><b>Mapping</b></font></th>
                      <th><font size="+1" color="white"><b>Dependency</b></font></th>
                      <th><font size="+1" color="white"><b>Dependency Value</b></font></th>
                   </tr>
@@ -167,14 +164,6 @@
                            </xsl:for-each>
                         </td>
                         <td width="22.5%"><p><xsl:value-of select="definition"/></p></td>
-                        <td width="10%">
-                           <p>
-                              <xsl:for-each select="mapping">
-                                 <xsl:variable name="mapping" select="."/>
-                                 <p><a href="{$mapping}"><small><xsl:value-of select="."/></small></a></p>
-                              </xsl:for-each>
-                           </p>
-                        </td>
                         <td width="5%"><p><xsl:value-of select="dependency"/></p></td>
                         <td width="5%"><p><xsl:value-of select="dependencyValue"/></p></td>
                      </tr>
