@@ -144,11 +144,7 @@
                         <td width="15%"><a name="{$anchor}"/>
                            <p><xsl:value-of select="name"/></p>
                         </td>
-                        <td width="10%">
-                           <xsl:for-each select="value">
-                              <p><xsl:value-of select="text()"/><br/></p>
-                           </xsl:for-each>
-                        </td>
+                        <td width="10%"><p><xsl:value-of select="value"/></p></td>
                         <td width="5%">
                            <xsl:for-each select="value">
                               <p><xsl:value-of select="uncertainty"/><br/></p>
