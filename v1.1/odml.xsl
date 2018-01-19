@@ -122,19 +122,19 @@
             <!--  Check if there are any properties  -->
             <xsl:if test="property">
                <table border="1" rules="rows" width="100%"><font size ="-1">
-                  <tr bgcolor="#336699">
+                  <tr bgcolor="#336699" valign="middle" align="left">
                      <th><font size="+1" color="white"><b>Name</b></font></th>
                      <th><font size="+1" color="white"><b>Value</b></font></th>
                      <th><font size="+1" color="white"><b>Uncertainty</b></font></th>
                      <th><font size="+1" color="white"><b>Unit</b></font></th>
-                     <th><font size="+1" color="white"><b>value reference</b></font></th>
                      <th><font size="+1" color="white"><b>Type</b></font></th>
-                     <th><font size="+1" color="white"><b>Comment</b></font></th>
+                     <th><font size="+1" color="white"><b>Reference</b></font></th>
+                     <th><font size="+1" color="white"><b>Definition</b></font></th>
+                     <th><font size="+1" color="white"><b>Value origin</b></font></th>
                      <!--
                        <th><font size="+1" color="white"><b>Dependency</b></font></th>
                        <th><font size="+1" color="white"><b>Dependency Value</b></font></th>
                      -->
-                     <th><font size="+1" color="white"><b>Definition</b></font></th>
                   </tr>
                   <xsl:for-each select="property">
                      <xsl:variable name="anchor">
@@ -145,28 +145,16 @@
                            <p><xsl:value-of select="name"/></p>
                         </td>
                         <td width="10%"><p><xsl:value-of select="value"/></p></td>
-                        <td width="5%">
-                           <xsl:for-each select="value">
-                              <p><xsl:value-of select="uncertainty"/><br/></p>
-                           </xsl:for-each>
-                        </td>
+                        <td width="5%"><p><xsl:value-of select="uncertainty"/></p></td>
                         <td width="5%"><p><xsl:value-of select="unit"/></p></td>
-                        <td width="5%">
-                           <xsl:for-each select="value">
-                              <p><xsl:value-of select="reference"/><br/></p>
-                           </xsl:for-each>
-                        </td>
                         <td width="5%"><p><xsl:value-of select="type"/></p></td>
-                        <td width="22.5%">
-                           <xsl:for-each select="value">
-                              <p><xsl:value-of select="comment"/><br/></p>
-                           </xsl:for-each>
-                        </td>
+                        <td width="5%"><p><xsl:value-of select="reference"/></p></td>
+                        <td width="22.5%"><p><xsl:value-of select="definition"/></p></td>
+                        <td width="7.5%%"><p><xsl:value-of select="value_origin"/></p></td>
                         <!--
                           <td width="5%"><p><xsl:value-of select="dependency"/></p></td>
                           <td width="5%"><p><xsl:value-of select="dependencyValue"/></p></td>
                         -->
-                        <td width="22.5%"><p><xsl:value-of select="definition"/></p></td>
                      </tr>
                   </xsl:for-each></font>
                </table>
