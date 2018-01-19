@@ -128,18 +128,15 @@
                <b>Definition: </b><xsl:if test="definition"><xsl:value-of select="definition"/></xsl:if><br/>
             </p>
 
-            <b>Mapping: </b>   <xsl:if test="mapping"><xsl:value-of select="mapping"/></xsl:if><br/>
-
             <!--  Check if there are any properties  -->
             <xsl:if test="property">
                <table border="1" rules="rows" width="100%"><font size="-1">
-                  <tr bgcolor="#336699">
+                  <tr bgcolor="#336699" align="left" valign="middle">
                      <th><font size="+1" color="white"><b>Name</b></font></th>
                      <th><font size="+1" color="white"><b>Value</b></font></th>
                      <th><font size="+1" color="white"><b>Unit</b></font></th>
                      <th><font size="+1" color="white"><b>Type</b></font></th>
                      <th><font size="+1" color="white"><b>Definition</b></font></th>
-                     <th><font size="+1" color="white"><b>Mapping</b></font></th>
                      <th><font size="+1" color="white"><b>Dependency</b></font></th>
                      <th><font size="+1" color="white"><b>Dependency Value</b></font></th>
                   </tr>
@@ -151,30 +148,10 @@
                         <td width="15%"><a name="{$anchor}"/>
                            <p><xsl:value-of select="name"/></p>
                         </td>
-                        <td width="10%">
-                           <xsl:for-each select="value">
-                              <p><xsl:value-of select="text()"/><br/></p>
-                           </xsl:for-each>
-                        </td>
-                        <td width="5%">
-                           <xsl:for-each select="value">
-                              <p><xsl:value-of select="unit"/><br/></p>
-                           </xsl:for-each>
-                        </td>
-                        <td width="5%">
-                           <xsl:for-each select="value">
-                              <p><xsl:value-of select="type"/><br/></p>
-                           </xsl:for-each>
-                        </td>
+                        <td width="10%"><p><xsl:value-of select="value"/></p></td>
+                        <td width="5%"><p><xsl:value-of select="unit"/><br/></p></td>
+                        <td width="5%"><p><xsl:value-of select="type"/></p></td>
                         <td width="22.5%"><p><xsl:value-of select="definition"/></p></td>
-                        <td width="10%">
-                           <p>
-                              <xsl:for-each select="mapping">
-                                 <xsl:variable name="mapping" select="."/>
-                                 <p><a href="{$mapping}"><small><xsl:value-of select="."/></small></a></p>
-                              </xsl:for-each>
-                           </p>
-                        </td>
                         <td width="5%"><p><xsl:value-of select="dependency"/></p></td>
                         <td width="5%"><p><xsl:value-of select="dependencyValue"/></p></td>
                      </tr>
