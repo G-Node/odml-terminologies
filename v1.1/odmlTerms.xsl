@@ -131,7 +131,7 @@
         <!--  Check if there are any properties  -->
         <xsl:if test="property">
           <table border="1" rules="rows" width="100%"><font size="-1">
-            <tr bgcolor="#336699">
+            <tr bgcolor="#336699" align="left" valign="middle">
               <th><font size="+1" color="white"><b>Name</b></font></th>
               <th><font size="+1" color="white"><b>Value</b></font></th>
               <th><font size="+1" color="white"><b>Unit</b></font></th>
