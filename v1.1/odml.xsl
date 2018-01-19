@@ -154,11 +154,7 @@
                               <p><xsl:value-of select="uncertainty"/><br/></p>
                            </xsl:for-each>
                         </td>
-                        <td width="5%">
-                           <xsl:for-each select="value">
-                              <p><xsl:value-of select="unit"/><br/></p>
-                           </xsl:for-each>
-                        </td>
+                        <td width="5%"><p><xsl:value-of select="unit"/></p></td>
                         <td width="5%">
                            <xsl:for-each select="value">
                               <p><xsl:value-of select="reference"/><br/></p>

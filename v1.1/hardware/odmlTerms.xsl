@@ -153,11 +153,7 @@
                     <p><xsl:value-of select="text()"/><br/></p>
                   </xsl:for-each>
                 </td>
-                <td width="5%">
-                  <xsl:for-each select="value">
-                    <p><xsl:value-of select="unit"/><br/></p>
-                  </xsl:for-each>
-                </td>
+                <td width="5%"><p><xsl:value-of select="unit"/><br/></p></td>
                 <td width="5%"><p><xsl:value-of select="type"/></p></td>
                 <td width="22.5%"><p><xsl:value-of select="definition"/></p></td>
                 <td width="5%"><p><xsl:value-of select="dependency"/></p></td>
