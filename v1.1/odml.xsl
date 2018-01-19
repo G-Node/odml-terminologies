@@ -164,11 +164,7 @@
                               <p><xsl:value-of select="reference"/><br/></p>
                            </xsl:for-each>
                         </td>
-                        <td width="5%">
-                           <xsl:for-each select="value">
-                              <p><xsl:value-of select="type"/><br/></p>
-                           </xsl:for-each>
-                        </td>
+                        <td width="5%"><p><xsl:value-of select="type"/></p></td>
                         <td width="22.5%">
                            <xsl:for-each select="value">
                               <p><xsl:value-of select="comment"/><br/></p>
