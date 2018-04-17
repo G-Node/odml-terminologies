@@ -33,7 +33,7 @@
     <property>
       <name>ProtocolFile</name>
       <definition>Protocol File</definition>
-      <type>binary</type>
+      <type>text</type>
     </property>
 
     <property>

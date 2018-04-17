@@ -85,7 +85,7 @@
       <definition>The response file received. Using it will blow up the the size of the metadatafile and we recommend to
         rather define the URL of underlying response file.
       </definition>
-      <type>binary</type>
+      <type>text</type>
     </property>
 
     <property>
