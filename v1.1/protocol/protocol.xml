@@ -32,12 +32,6 @@
 
     <property>
       <name>ProtocolFile</name>
-      <definition>Protocol File</definition>
-      <type>text</type>
-    </property>
-
-    <property>
-      <name>ProtocolFileURL</name>
       <definition>URL for protocol file</definition>
       <type>URL</type>
     </property>
