@@ -82,17 +82,7 @@
 
     <property>
       <name>ResponseFile</name>
-      <definition>The response file received. Using it will blow up the the size of the metadatafile and we recommend to
-        rather define the URL of underlying response file.
-      </definition>
-      <type>text</type>
-    </property>
-
-    <property>
-      <name>ResponseFileURL</name>
-      <definition>The URL of a an received response file. This is the recommended alternative to explicitly including
-        the actual response via ResponseFile.
-      </definition>
+      <definition>The URL to a received response file.</definition>
       <type>URL</type>
     </property>
 
