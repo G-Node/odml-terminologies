@@ -84,17 +84,7 @@
 
     <property>
       <name>StimulusFile</name>
-      <definition>The stimulus file used. Using it will blow up the the size of the metadatafile and we recommend to
-        rather define the URL of underlying stimulus file.
-      </definition>
-      <type>text</type>
-    </property>
-
-    <property>
-      <name>StimulusFileURL</name>
-      <definition>The URL of a an applied stimulus file. This is the recommended alternative to explicitely including
-        the actual stimulus via StimulusFile.
-      </definition>
+      <definition>The URL to an applied stimulus file.</definition>
       <type>URL</type>
     </property>
 
