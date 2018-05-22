@@ -69,11 +69,8 @@
 
     <property>
       <name>Code</name>
-      <type>binary</type>
-      <definition>The program code to analyse the data can be transferred using this property.
-        Using it will blow up the the size of the metadatafile and we recommend to rather define the URL of underlying
-        code file.
-      </definition>
+      <type>URL</type>
+      <definition>The URL to the program code file used to perform the data analysis.</definition>
     </property>
 
     <property>
@@ -92,31 +89,20 @@
 
     <property>
       <name>DatasetFile</name>
-      <type>binary</type>
-      <definition>
-        The data analysed ion the described way can be transferred using this property.
-        Using it will blow up the the size of the metadatafile and we recommend to rather define the URL of underlying
-        dataset file.
-      </definition>
+      <type>URL</type>
+      <definition>The URL to the dataset file the analysis is applied on.</definition>
     </property>
 
     <property>
       <name>ResultFile</name>
-      <type>binary</type>
-      <definition>
-        A file containing the results of this analysis. The results of this analysis can be transferred using this
-        property. Using it will blow up the the size of the metadatafile and we recommend to rather define the URL of
-        the results file.
-      </definition>
+      <type>URL</type>
+      <definition>The URL to the results file the analysis was applied on.</definition>
     </property>
 
     <property>
       <name>ResultFigure</name>
-      <type>binary</type>
-      <definition>
-        This property is meant to store the real figure content. This will blow up the the size
-        of the metadatafile and we recommend to rather define the URL of the figure.
-      </definition>
+      <type>URL</type>
+      <definition>The URL to a figure file showing the results of the analysis.</definition>
     </property>
 
     <property>
