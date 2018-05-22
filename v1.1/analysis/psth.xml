@@ -62,15 +62,6 @@
 
     <property>
       <name>CodeFile</name>
-      <type>text</type>
-      <definition>The program code to analyse the data can be transferred using this property.
-        Using it will blow up the the size of the metadatafile and we recommend to rather define the URL of underlying
-        code file.
-      </definition>
-    </property>
-
-    <property>
-      <name>CodeFileURL</name>
       <type>URL</type>
       <definition>The URL of the applied piece of program code to actually do the analysis.</definition>
     </property>
@@ -85,55 +76,26 @@
 
     <property>
       <name>ConfigFile</name>
-      <type>text</type>
-      <definition>The configurations used to analyse the data can be transferred using this property.
-        Using it will blow up the the size of the metadatafile and we recommend to rather define the URL of underlying
-        configuration file.
-      </definition>
-    </property>
-
-    <property>
-      <name>ConfigFileURL</name>
       <type>URL</type>
-      <definition>The URL of the used configuration file used to run the analysis.</definition>
+      <definition>The URL to the configuration file used to run the analysis.</definition>
     </property>
 
     <property>
       <name>DatasetFile</name>
-      <type>text</type>
-      <definition>The data analysed ion the described way can be transferred using this property.
-        Using it will blow up the the size of the metadatafile and we recommend to rather define the URL of underlying
-        dataset file.
-      </definition>
-    </property>
-
-    <property>
-      <name>DatasetFileURL</name>
       <type>URL</type>
-      <definition>The URL of a analysed datasetFile.</definition>
+      <definition>The URL to the dataset file the analysis is applied on.</definition>
     </property>
 
     <property>
       <name>ResultFile</name>
-      <type>text</type>
-      <definition>The results of this analysis can be transferred using this property.
-        Using it will blow up the the size of the metadatafile and we recommend to rather define the URL of the results
-        file.
-      </definition>
-    </property>
-
-    <property>
-      <name>ResultFileURL</name>
       <type>URL</type>
-      <definition>The URL of a results file.</definition>
+      <definition>The URL to the results file the analysis was applied on.</definition>
     </property>
 
     <property>
       <name>ResultFigure</name>
-      <type>text</type>
-      <definition>A figure showing the results. This property is meant to store the real figure content.
-        This will blow up the the size of the metadatafile and we recommend to rather define the URL of the figure.
-      </definition>
+      <type>URL</type>
+      <definition>The URL to a figure file showing the results of the analysis.</definition>
     </property>
 
     <property>
