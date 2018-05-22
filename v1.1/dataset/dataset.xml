@@ -61,11 +61,8 @@
 
     <property>
       <name>File</name>
-      <type>text</type>
-      <definition>Data of this dataset. Be aware that including the actual content of a data file by this property
-        will blow up the the size of the metadatafile. We rather recommend to simply refer to the URL of a dataset
-        file using the FileURL property.
-      </definition>
+      <type>URL</type>
+      <definition>The URL to the file containing the data of this dataset.</definition>
     </property>
 
     <property>
