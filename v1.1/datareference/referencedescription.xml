@@ -19,12 +19,6 @@
         </property>
 
         <property>
-            <name>Authors</name>
-            <definition>List of Authors of the published dataset.</definition>
-            <type>string</type>
-        </property>
-
-        <property>
             <name>Description</name>
             <definition>Abstract of the published dataset.</definition>
             <type>string</type>
