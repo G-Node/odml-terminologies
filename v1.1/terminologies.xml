@@ -25,6 +25,13 @@
 
   <section>
     <type>DataReference</type>
+    <name>DataURL</name>
+    <definition>A published dataset referenced by a URL. The referenced dataset will contain either the odML file itself or the data the odML is annotating.</definition>
+    <include>http://portal.g-node.org/odml/terminologies/v1.1/datareference/dataurl.xml</include>
+  </section>
+
+  <section>
+    <type>DataReference</type>
     <name>DataReferenceDescription</name>
     <definition>Description of a data reference. This Section is defined to be used as a subsection of the 'DataReference' type sections.</definition>
     <include>http://portal.g-node.org/odml/terminologies/v1.1/datareference/referencedescription.xml</include>

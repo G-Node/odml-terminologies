@@ -14,14 +14,14 @@
     <!-- *********************************************************        -->
     <section>
         <type>DataReference</type>
-        <name>DataURI</name>
-        <definition>A published dataset referenced by a URI. The referenced dataset will contain either the odML file itself or the data the odML is annotating.
+        <name>DataURL</name>
+        <definition>A published dataset referenced by a URL. The referenced dataset will contain either the odML file itself or the data the odML is annotating.
         </definition>
 
         <property>
-            <name>DataURI</name>
-            <definition>A URI linking to the published dataset.</definition>
-            <type>string</type>
+            <name>DataURL</name>
+            <definition>A URL linking to the published dataset.</definition>
+            <type>url</type>
         </property>
     </section>
 </odML>
