@@ -19,6 +19,12 @@
         </definition>
 
         <property>
+            <name>DataDOI</name>
+            <definition>A unique Digital object identifier of data. In the current context a URI linking to the published dataset.</definition>
+            <type>url</type>
+        </property>
+
+        <property>
             <name>ResourceType</name>
             <definition>A description of the resource. The format is open, but the preferred format is a single term of some detail so that a pair can be formed with the sub-property.Text formats can be free-text OR terms from the CASRAI Publications resource type list. In the odML context the value will mostly be 'Dataset'.</definition>
             <type>string</type>
@@ -33,21 +39,43 @@
                 <type>string</type>
             </property>
             <property>
-                <name>refType</name>
+                <name>RefType</name>
                 <definition>refType might be: IsCitedBy, IsSupplementTo, IsReferencedBy, IsPartOf for further valid types see https://schema.datacite.org/meta/kernel-4</definition>
                 <type>string</type>
             </property>
             <property>
-                <name>publictionCitation</name>
+                <name>PublicationCitation</name>
                 <definition>Full citation of the reference publication</definition>
                 <type>string</type>
             </property>
         </section>
 
-        <property>
-            <name>DataDOI</name>
-            <definition>A unique Digital object identifier of data. In the current context a URI linking to the published dataset.</definition>
-            <type>url</type>
-        </property>
+        <section>
+            <name>DataCiteAuthor</name>
+            <description>Information about an author as required by DataCite.</description>
+            <property>
+                <name>FirstName</name>
+                <definition>The authors first Name (John).</definition>
+                <type>string</type>
+            </property>
+
+            <property>
+                <name>LastName</name>
+                <definition>The authors last name (Doe).</definition>
+                <type>string</type>
+            </property>
+            <property>
+                <name>Affiliation</name>
+                <definition>Affiliation of the author [Institute, City, Country]</definition>
+                <type>string</type>
+            </property>
+            <property>
+                <name>Id</name>
+                <definition>Any Id that is capable of identifying the author e.g. ORCID</definition>
+                <type>string</type>
+            </property>
+        </section>
+
     </section>
+
 </odML>
