@@ -31,6 +31,7 @@
         </property>
 
         <section>
+            <type>DataReference</type>
             <name>DataCiteReference</name>
             <definition>A publication the published dataset is referencing.</definition>
             <property>
@@ -51,6 +52,7 @@
         </section>
 
         <section>
+            <type>DataReference</type>
             <name>DataCiteAuthor</name>
             <description>Information about an author as required by DataCite.</description>
             <property>
