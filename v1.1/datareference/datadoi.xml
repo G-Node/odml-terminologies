@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
+<odML version="1.1">
+    <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+    <version>1.0</version>
+    <date>2019-03-26</date>
+    <!-- *********************************************************        -->
+    <!--                      Data reference section                      -->
+    <!--  The minimal description of a data reference is a URI linking back
+          to the repository the odml file or the data the odml document describes
+          resides in.
+          Further details common to the different types of data reference sections
+          can be added via the reference description section              -->
+    <!-- *********************************************************        -->
+    <section>
+        <type>DataReference</type>
+        <name>DataDOI</name>
+        <definition>A published dataset referenced by a DOI. The referenced dataset will contain either the odML file itself or the data the odML is annotating.
+        </definition>
+
+        <property>
+            <name>DataDOI</name>
+            <definition>A unique Digital object identifier of data. In the current context a URI linking to the published dataset.</definition>
+            <type>url</type>
+        </property>
+    </section>
+
+</odML>

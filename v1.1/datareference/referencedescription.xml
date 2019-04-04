@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl"  xmlns:odml="http://www.g-node.org/odml"?>
+<odML version="1.1">
+    <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+    <version>1.0</version>
+    <date>2019-03-26</date>
+    <!-- ********************************************************* -->
+    <!--         Data reference description  section               -->
+    <!-- ********************************************************* -->
+    <section>
+        <type>DataReference</type>
+        <name>DataReferenceDescription</name>
+        <definition>Description of a data reference. This Section is defined to be used as a subsection of the 'DataReference' type sections.</definition>
+
+        <property>
+            <name>Title</name>
+            <definition>Title of the published dataset.</definition>
+            <type>string</type>
+        </property>
+
+        <property>
+            <name>Description</name>
+            <definition>Abstract of the published dataset.</definition>
+            <type>string</type>
+        </property>
+
+        <property>
+            <name>License</name>
+            <definition>License the dataset is published under.</definition>
+            <type>string</type>
+        </property>
+
+        <property>
+            <name>References</name>
+            <definition>List of publications the published dataset is referencing.</definition>
+            <type>string</type>
+        </property>
+
+        <property>
+            <name>Funding</name>
+            <definition>List of grants the published dataset was funded by.</definition>
+            <type>string</type>
+        </property>
+
+        <property>
+            <name>Keywords</name>
+            <definition>List of keywords describing the published dataset.</definition>
+            <type>string</type>
+        </property>
+
+    </section>
+</odML>

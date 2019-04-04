@@ -74,7 +74,7 @@
     </property>
 
     <property>
-      <name>Decsription</name>
+      <name>Description</name>
       <definition>The description of the software.</definition>
       <type>string</type>
     </property>

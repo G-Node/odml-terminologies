@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
+<odML version="1.1">
+    <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+    <version>1.0</version>
+    <date>2019-03-26</date>
+    <!-- *********************************************************        -->
+    <!--                      Data reference section                      -->
+    <!--  The minimal description of a data reference is a URI linking back
+          to the repository the odml file or the data the odml document describes
+          resides in.
+          Further details common to the different types of data reference sections
+          can be added via the reference description section              -->
+    <!-- *********************************************************        -->
+    <section>
+        <type>DataReference</type>
+        <name>DataCite</name>
+        <definition>A published dataset referenced by a DOI and registered with DataCite. The referenced dataset will contain either the odML file itself or the data the odML is annotating.
+        </definition>
+
+        <property>
+            <name>DataDOI</name>
+            <definition>A unique Digital object identifier of data. In the current context a URI linking to the published dataset.</definition>
+            <type>url</type>
+        </property>
+
+        <property>
+            <name>ResourceType</name>
+            <definition>A description of the resource. The format is open, but the preferred format is a single term of some detail so that a pair can be formed with the sub-property.Text formats can be free-text OR terms from the CASRAI Publications resource type list. In the odML context the value will mostly be 'Dataset'.</definition>
+            <type>string</type>
+        </property>
+
+        <section>
+            <type>DataReference</type>
+            <name>DataCiteReference</name>
+            <definition>A publication the published dataset is referencing.</definition>
+            <property>
+                <name>DOI</name>
+                <definition>DOI to the referenced publication</definition>
+                <type>string</type>
+            </property>
+            <property>
+                <name>RefType</name>
+                <definition>refType might be: IsCitedBy, IsSupplementTo, IsReferencedBy, IsPartOf for further valid types see https://schema.datacite.org/meta/kernel-4</definition>
+                <type>string</type>
+            </property>
+            <property>
+                <name>PublicationCitation</name>
+                <definition>Full citation of the reference publication</definition>
+                <type>string</type>
+            </property>
+        </section>
+
+        <section>
+            <type>DataReference</type>
+            <name>DataCiteAuthor</name>
+            <definition>Information about an author as required by DataCite.</definition>
+            <property>
+                <name>FirstName</name>
+                <definition>The authors first Name (John).</definition>
+                <type>string</type>
+            </property>
+
+            <property>
+                <name>LastName</name>
+                <definition>The authors last name (Doe).</definition>
+                <type>string</type>
+            </property>
+            <property>
+                <name>Affiliation</name>
+                <definition>Affiliation of the author [Institute, City, Country]</definition>
+                <type>string</type>
+            </property>
+            <property>
+                <name>Id</name>
+                <definition>Any Id that is capable of identifying the author e.g. ORCID</definition>
+                <type>string</type>
+            </property>
+        </section>
+
+    </section>
+
+</odML>
