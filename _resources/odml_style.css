@@ -7,7 +7,7 @@ footer,
 header,
 hgroup,
 nav,
-section,
+sec,
 summary {
     display: block
 }
@@ -428,6 +428,10 @@ dl {
     margin: 0 0 20px
 }
 
+ol.nested {
+    margin: 0 0 0
+}
+
 h1,
 h2,
 h3 {
@@ -447,18 +451,22 @@ a small {
     display: block
 }
 
+a.white {
+    color: white;
+}
+
 strong {
     font-weight: bold;
     color: #333
 }
 
 .wrapper {
-    width: 650px;
+    width: 800px;
     margin: 0 auto;
     position: relative
 }
 
-section img {
+sec img {
     max-width: 100%
 }
 
@@ -523,6 +531,22 @@ hr {
     height: 11px;
     background: transparent center center repeat-x;
     margin: 0 0 20px
+}
+
+hr.fatline {
+    color: yellow;
+    background-color: #336699;
+    height: 4px;
+    margin-right: 0;
+    text-align: right;
+    border: 1px dashed black;
+}
+
+hr.thinline {
+    background-color: #336699;
+    height: 1px;
+    margin-right: 0;
+    text-align: right;
 }
 
 dt {
@@ -651,8 +675,13 @@ header p {
     display: block;
 }
 
-section {
-    width: 590px;
+.navWrapper {
+    margin-top: 190px;
+    position: relative
+}
+
+sec {
+    width: 800px;
     padding: 30px 30px 50px 30px;
     margin: 20px 0;
     margin-top: 190px;
@@ -738,12 +767,12 @@ screen and (max-width: 1060px) {
         display: none
     }
     header,
-    section,
+    sec,
     footer {
         float: none
     }
     header h1,
-    section h1,
+    sec h1,
     footer h1 {
         white-space: nowrap;
         overflow: hidden;
@@ -760,7 +789,7 @@ screen and (max-width: 1060px) {
     #banner #logo {
         margin-right: 15px
     }
-    section {
+    sec {
         border: 1px solid #e5e5e5;
         border-width: 1px 0;
         padding: 20px auto;
@@ -807,7 +836,7 @@ screen and (max-width: 720px) {
         position: fixed;
         left: 20px
     }
-    section {
+    sec {
         margin-top: 130px;
         margin-bottom: 0px;
         width: auto
@@ -833,7 +862,7 @@ screen and (max-width: 480px) {
         -o-text-overflow: ellipsis;
         -ms-text-overflow: ellipsis
     }
-    section {
+    sec {
         margin-top: 5px
     }
     #banner {
