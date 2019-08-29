@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="odmlRepository.xsl" xmlns:odml="http://www.g-node.org/odml"?>
+<odML version="1">
+  <section>
+    <type>analysis</type>
+    <name>Analysis</name>
+    <definition>Sections of the Analysis type can be used to describe analyses.</definition>
+    <include>https://terminologies.g-node.org/v1.0/analysis/analysis.xml</include>
+  </section>
+
+  <section>
+    <type>analysis/psth</type>
+    <name>PSTH</name>
+    <definition>An Analysis-type section to describe a PSTH.</definition>
+    <include>https://terminologies.g-node.org/v1.0/analysis/psth.xml</include>
+  </section>
+
+  <section>
+    <type>analysis/power_spectrum</type>
+    <name>PowerSpectrum</name>
+    <definition>Properties of this section define the way a power spectrum was calculated.</definition>
+    <include>https://terminologies.g-node.org/v1.0/analysis/power_spectrum.xml</include>
+  </section>
+
+  <section>
+    <type>cell</type>
+    <name>Cell</name>
+    <definition>Specification of the recorded cell. A cell definition should be a subsection of the
+      <a href="../subject/subject.xml">Subject</a>
+      section.
+    </definition>
+    <include>https://terminologies.g-node.org/v1.0/cell/cell.xml</include>
+  </section>
+
+  <section>
+    <type>dataset</type>
+    <name>Dataset</name>
+    <definition>Names (URLs) and times of recorded data files. Datasets are obtained during a Recording and may belong
+      to different Experiments. Related sections that can be used as subsections, parent sections, or siblings are
+      Stimulus, HardwareSettings, and Experiment.
+    </definition>
+    <include>https://terminologies.g-node.org/v1.0/dataset/dataset.xml</include>
+  </section>
+
+  <section>
+    <type>blackrock</type>
+    <name>Blackrock</name>
+    <definition>Information on the Cerebus^TM data acquisition system</definition>
+    <include>https://terminologies.g-node.org/v1.0/blackrock/blackrock.xml</include>
+  </section>
+
+  <section>
+    <type>electrode</type>
+    <name>Electrode</name>
+    <definition>Properties to describe an electrode.</definition>
+    <include>https://terminologies.g-node.org/v1.0/electrode/electrode.xml</include>
+  </section>
+
+  <section>
+    <type>event</type>
+    <name>Event</name>
+    <definition>Section for short annotations that are taken during an experiment to describe certain events.
+    </definition>
+    <include>https://terminologies.g-node.org/v1.0/event/event.xml</include>
+  </section>
+
+  <section>
+    <type>event_list</type>
+    <name>EventList</name>
+    <definition>Section for grouping short annotations that are taken during
+      an experiment, preparation etc...
+    </definition>
+    <include>https://terminologies.g-node.org/v1.0/collection/event_list.xml</include>
+  </section>
+
+  <section>
+    <type>experiment</type>
+    <name>Experiment</name>
+    <definition>Specification of an experiment. The Experiment is part of a Project and the recorded data for a specific
+      Experiment are found in Datasets. Possible subsections are, for example, Dataset and Stimulus.
+    </definition>
+    <include>https://terminologies.g-node.org/v1.0/experiment/experiment.xml</include>
+  </section>
+
+  <section>
+    <type>experiment/behavior</type>
+    <name>Behavior</name>
+    <definition>Properties for describing an behavioural experiment.</definition>
+    <include>https://terminologies.g-node.org/v1.0/experiment/behavior.xml</include>
+  </section>
+
+  <section>
+    <type>experiment/electrophysiology</type>
+    <name>Electrophysiology</name>
+    <definition>Properties for describing an electrophysiological experiment.</definition>
+    <include>https://terminologies.g-node.org/v1.0/experiment/electrophysiology.xml</include>
+  </section>
+
+  <section>
+    <type>experiment/imaging</type>
+    <name>Imaging</name>
+    <definition>Properties for describing an imaging experiment ranging from conventional light microscpoy to fMRI.
+    </definition>
+    <include>https://terminologies.g-node.org/v1.0/experiment/imaging.xml</include>
+  </section>
+
+  <section>
+    <type>experiment/pschophysics</type>
+    <name>Psychophysics</name>
+    <definition>Properties for describing an psychophysical experiment.</definition>
+    <include>https://terminologies.g-node.org/v1.0/experiment/psychophysics.xml</include>
+  </section>
+
+  <section>
+    <type>hardware_properties</type>
+    <name>HardwareProperties</name>
+    <include>https://terminologies.g-node.org/v1.0/collection/hardware_properties.xml</include>
+  </section>
+
+  <section>
+    <type>hardware_settings</type>
+    <name>HardwareSettings</name>
+    <definition>The used values of variable properties of hardware
+      components. There are two sections for describing hardware
+      components: the "HardwareProperties" and the "HardwareSettings"
+      section. While the HardwareProperties describe the fixed
+      properties of the hardware that can not be changed, the
+      HardwareSettings section describes the actual, adjustable,
+      parameters of the hardware that may change with each recording
+      or dataset. For example, the sample rate of an data-acquisition
+      board or the settings of a filter. In each of these two sections
+      there are subsections for each device that correspond to the
+      class of the device like data-acquisition, amplifier, etc. Some
+      properties are common for any type.
+    </definition>
+    <include>https://terminologies.g-node.org/v1.0/collection/hardware_settings.xml</include>
+  </section>
+
+  <section>
+    <type>hardware</type>
+    <name>Hardware</name>
+    <definition>Fixed properties of hardware components used in the
+      experimental setup. There are two sections for describing
+      hardware components: the "HardwareProperties" and the
+      "HardwareSettings" section. While the HardwareProperties
+      describe the fixed properties of the hardware that can not be
+      changed, the HardwareSettings section describes the actual,
+      adjustable, parameters of the hardware that may change with each
+      recording or dataset. For example, the sample rate of an
+      data-acquisition board or the settings of a filter. In each of
+      these two sections there are subsections for each device that
+      correspond to the class of the device like data-acquisition,
+      amplifier, etc. Some properties are common for any
+      type.
+    </definition>
+    <include>https://terminologies.g-node.org/v1.0/hardware/hardware.xml</include>
+  </section>
+
+  <section>
+    <type>hardware/amplifier</type>
+    <name>Amplifier</name>
+    <definition>The amplifier section defines elements that can be used to describe amplifier properties and settings.
+    </definition>
+    <include>https://terminologies.g-node.org/v1.0/hardware/amplifier.xml</include>
+  </section>
+
+  <section>
+    <type>hardware/attenuator</type>
+    <name>Attenuator</name>
+    <definition>Settings of the data acquisition system. most settings refer to individual channels the channel
+      number should be given after the property name like DAQ. AISampleRate0 for the sampling rate of the analog
+      input channel 0.
+    </definition>
+    <include>https://terminologies.g-node.org/v1.0/hardware/attenuator.xml</include>
+  </section>
+
+  <section>
+    <type>hardware/camera_objective</type>
+    <name>CameraObjective</name>
+    <definition>This section contains properties that describe a camera objective.</definition>
+    <include>https://terminologies.g-node.org/v1.0/hardware/attenuator.xml</include>
+  </section>
+
+  <section>
+    <type>hardware/daq</type>
+    <name>DataAcquisition</name>
+    <definition>The hardware section describes the settings of the used hardware. There should be one hardware section
+      for each hardware item that was used.
+    </definition>
+    <include>https://terminologies.g-node.org/v1.0/hardware/daq.xml</include>
+  </section>
+
+  <section>
+    <type>hardware/eyetracker</type>
+    <name>Eyetracker</name>
+    <definition>Properties of an eyetracker.</definition>
+    <include>https://terminologies.g-node.org/v1.0/hardware/eyetracker.xml</include>
+  </section>
+
+  <section>
+    <type>hardware/filter</type>
+    <name>Filter</name>
+    <definition>Properties a filter modul for analog signal conditioning.</definition>
+    <include>https://terminologies.g-node.org/v1.0/hardware/filter.xml</include>
+  </section>
+
+  <section>
+    <type>hardware/filter_set</type>
+    <name>Filterset</name>
+    <definition>The FilterSet or also FilterCube used in a microscope.</definition>
+    <include>https://terminologies.g-node.org/v1.0/hardware/filter_set.xml</include>
+  </section>
+
+  <section>
+    <type>hardware/iaq</type>
+    <name>ImageAcquisition</name>
+    <definition>Properties to define an Image acquisition device. This can be a framegrabber, a camera etc.</definition>
+    <include>https://terminologies.g-node.org/v1.0/hardware/iaq.xml</include>
+  </section>
+
+  <section>
+    <type>hardware/microscope</type>
+    <name>Microscope</name>
+    <definition>The Microscope section describes the properties of the used microscope.</definition>
+    <include>https://terminologies.g-node.org/v1.0/hardware/microscope.xml</include>
+  </section>
+
+  <section>
+    <type>hardware/microscope_objective</type>
+    <name>MicroscopeObjective</name>
+    <definition>This section contains properties that describe the objective used in a microscope.</definition>
+    <include>https://terminologies.g-node.org/v1.0/hardware/microscope_objective.xml</include>
+  </section>
+
+  <section>
+    <type>hardware/scanner</type>
+    <name>Scanner</name>
+    <definition>The Scanner used to scan microscope images.</definition>
+    <include>https://terminologies.g-node.org/v1.0/hardware/scanner.xml</include>
+  </section>
+
+  <section>
+    <type>hardware/stimulus_isolator</type>
+    <name>StimulusIsolator</name>
+    <definition>Properties of a stimulus Isolator device.</definition>
+    <include>https://terminologies.g-node.org/v1.0/hardware/stimulus_isolator.xml</include>
+  </section>
+
+  <section>
+    <type>model/lif</type>
+    <name>Leaky integrate and fire</name>
+    <definition>Section to describe a leaky integrate and fire neuron model.</definition>
+    <include>https://terminologies.g-node.org/v1.0/model/lif.xml</include>
+  </section>
+
+  <section>
+    <type>model/pif</type>
+    <name>perfect integrate and fire</name>
+    <definition>Section to describe a perfect integrate and fire model.</definition>
+    <include>https://terminologies.g-node.org/v1.0/model/pif.xml</include>
+  </section>
+
+  <section>
+    <type>model/multi_compartment</type>
+    <name>Multi compartment model</name>
+    <definition>Section to describe a biophysical model that consists of a number of compartments.</definition>
+    <include>https://terminologies.g-node.org/v1.0/model/multi_compartment.xml</include>
+  </section>
+
+  <section>
+    <type>model/single_compartment</type>
+    <name>One compartment model</name>
+    <definition>Section to describe a biophysical model that consists of a single compartment.</definition>
+    <include>https://terminologies.g-node.org/v1.0/model/single_compartment.xml</include>
+  </section>
+
+  <section>
+    <type>license</type>
+    <name>License</name>
+    <definition>This section contains keywords to a data or software license.</definition>
+    <include>https://terminologies.g-node.org/v1.0/license/license.xml</include>
+  </section>
+
+  <section>
+    <type>questionnaire/questionnaire</type>
+    <name>Questionnaire</name>
+    <definition>Description of a questionnaire.</definition>
+    <include>https://terminologies.g-node.org/v1.0/questionnaire/questionnaire.xml</include>
+  </section>
+
+  <section>
+    <type>questionnaire/question</type>
+    <name>Question</name>
+    <definition>Description of a question if a questionnaire.</definition>
+    <include>https://terminologies.g-node.org/v1.0/questionnaire/question.xml</include>
+  </section>
+
+  <section>
+    <type>person</type>
+    <name>Person</name>
+    <definition>Information about a person. E.g. as Experimenter, Author, etc.</definition>
+    <include>https://terminologies.g-node.org/v1.0/person/person.xml</include>
+  </section>
+
+  <section>
+    <type>preparation</type>
+    <name>Preparation</name>
+    <definition>Description of the preparation procedure.</definition>
+    <include>https://terminologies.g-node.org/v1.0/preparation/preparation.xml</include>
+  </section>
+
+  <section>
+    <type>project</type>
+    <name>Project</name>
+    <definition>Information about the project.</definition>
+    <include>https://terminologies.g-node.org/v1.0/project/project.xml</include>
+  </section>
+
+  <section>
+    <type>protocol</type>
+    <name>protocol</name>
+    <definition>Information about the experimental protocol.</definition>
+    <include>https://terminologies.g-node.org/v1.0/protocol/protocol.xml</include>
+  </section>
+
+  <section>
+    <type>recording</type>
+    <name>Recording</name>
+    <definition>During a recording session in a Setup Datasets are obtained from Cells and/or a Subject by using various
+      stimuli (Stimulus section).
+    </definition>
+    <include>https://terminologies.g-node.org/v1.0/recording/recording.xml</include>
+  </section>
+
+  <section>
+    <type>response</type>
+    <name>Response</name>
+    <definition>General description of an received response (on stimulus).</definition>
+    <include>https://terminologies.g-node.org/v1.0/response/response.xml</include>
+  </section>
+
+  <section>
+    <type>setup</type>
+    <name>Setup</name>
+    <definition>The experimental setup used in the recordings. By using HardwareProperties as a subsection, a very
+      detailed description of the setup can be given.
+    </definition>
+    <include>https://terminologies.g-node.org/v1.0/setup/setup.xml</include>
+  </section>
+
+  <section>
+    <type>stimulus</type>
+    <name>Stimulus</name>
+    <definition>General description of an applied stimulus. This section is basis of various related sections that
+      specify more specific stimuli.
+    </definition>
+    <include>https://terminologies.g-node.org/v1.0/stimulus/stimulus.xml</include>
+  </section>
+
+  <section>
+    <type>stimulus/dc</type>
+    <name>DC</name>
+    <definition>Property definitions to describe a DC stimulus meaning a constant stimulus e.g. a constant illumination,
+      current etc.
+    </definition>
+    <include>https://terminologies.g-node.org/v1.0/stimulus/dc.xml</include>
+  </section>
+
+  <section>
+    <type>stimulus/gabor</type>
+    <name>Gabor</name>
+    <include>https://terminologies.g-node.org/v1.0/stimulus/gabor.xml</include>
+  </section>
+
+  <section>
+    <type>stimulus/grating</type>
+    <name>Grating</name>
+    <definition>Property definitions to describe Gabor stimuli.</definition>
+    <include>https://terminologies.g-node.org/v1.0/stimulus/grating.xml</include>
+  </section>
+
+  <section>
+    <type>stimulus/pulse</type>
+    <name>Pulse</name>
+    <definition>Properties to describe a simple pulse stimulus that starts from and returns to a certain baseline.
+    </definition>
+    <include>https://terminologies.g-node.org/v1.0/stimulus/pulse.xml</include>
+  </section>
+
+  <section>
+    <type>stimulus/movie</type>
+    <name>Movie</name>
+    <definition>Properties to describe a movie (or image sequence) stimulus.</definition>
+    <include>https://terminologies.g-node.org/v1.0/stimulus/movie.xml</include>
+  </section>
+
+  <section>
+    <type>stimulus/ramp</type>
+    <name>Ramp</name>
+    <definition>A ramp stimulus may either linearly increase or decrease in amplitude. Starting from a certain start
+      amplitude and reaching with a certain slope the destination amplitude.
+    </definition>
+    <include>https://terminologies.g-node.org/v1.0/stimulus/ramp.xml</include>
+  </section>
+
+  <section>
+    <type>stimulus/random_dot</type>
+    <name>RandomDot</name>
+    <definition>Properties to describe a random dot stimulus.</definition>
+    <include>https://terminologies.g-node.org/v1.0/stimulus/random_dot.xml</include>
+  </section>
+
+  <section>
+    <type>stimulus/sawtooth</type>
+    <name>Sawtooth</name>
+    <include>https://terminologies.g-node.org/v1.0/stimulus/sawtooth.xml</include>
+  </section>
+
+  <section>
+    <type>stimulus/sine_wave</type>
+    <name>Sinewave</name>
+    <definition>Sawtooth Properties.</definition>
+    <include>https://terminologies.g-node.org/v1.0/stimulus/sine_wave.xml</include>
+  </section>
+
+  <section>
+    <type>stimulus/square_wave</type>
+    <name>Squarewave</name>
+    <definition>A squarewave stimulus was presented. Squarewaves modulate with a certain frequency about the intensity
+      offset.
+    </definition>
+    <include>https://terminologies.g-node.org/v1.0/stimulus/square_wave.xml</include>
+  </section>
+
+  <section>
+    <type>stimulus/white_noise</type>
+    <name>Whitenoise</name>
+    <definition>Property definitions to describe a white noise stimulus.</definition>
+    <include>https://terminologies.g-node.org/v1.0/stimulus/white_noise.xml</include>
+  </section>
+
+  <section>
+    <type>subject</type>
+    <name>Subject</name>
+    <definition>The investigated experimental subject (animal or person).
+      May contain the Cell and Preparation sections as subsections.
+    </definition>
+    <include>https://terminologies.g-node.org/v1.0/subject/subject.xml</include>
+  </section>
+
+  <section>
+    <type>carmen_mini</type>
+    <name>CarmenMini</name>
+    <definition>This is a convenience section that lists the terms of the CARMEN MINI (Gibson et al. Nature Precedings,
+      2009 Version 0.6) and maps them to the odml "standard" terminologies.
+    </definition>
+    <include>https://terminologies.g-node.org/v1.0/carmenMini/carmen_mini.xml</include>
+  </section>
+
+</odML>
