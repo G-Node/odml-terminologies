@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                xmlns:fn="http://www.w3.org/2005/02/xpath-functions">
+                xmlns:fn="http://www.w3.org/2005/02/xpath-functions"
+                xmlns:odml="http://www.g-node.org/odml">
 
-  <!-- This stylesheet is for viewing odml-terminologies in a web browser -->
-  <!-- Please note: only those elements will be displayed terminology related -->
-  <!-- e.g. uncertainty, id, and valueComments will not be shown -->
-  <!-- For viewing real metadata files use the odml.xsl stylesheet -->
+  <!-- This stylesheet is meant to view odml-templates in a web browser -->
+  <!-- Please note: only template related elements will be displayed -->
+  <!-- Elements like uncertainty, id or value will not be shown -->
   <!-- ************************************************  -->
   <!--                   root template                   -->
   <xsl:template match="odML">
@@ -13,56 +13,64 @@
     <xsl:variable name="repository" select="repository"/>
     <html>
       <head>
-      <link rel="stylesheet" href="./odml_style.css" />
-      <link href="./odMLIcon.ico" rel="shortcut icon" livesrc="./odMLIcon.png" />
+        <meta charset="utf-8" />
+        <title>odML | Open metadata markup language - Templates and Terminologies -</title>
+        <meta name="description"
+              content="Templates and Terminologies for the storage of scientific metadata" />
+        <link rel="stylesheet" href="https://terminologies.g-node.org/_resources/odml_style.css" />
+        <link rel="icon" href="https://terminologies.g-node.org/_resources/odMLIcon.ico" />
       </head>
 
       <body>
-        <navigationContainer>
-        <a name="top" style="color:#336699"><h1>odML - Metadata</h1></a>
-        <div id="navigationContainer">
-          <p>
-            <hr style="color:yellow; background-color:#336699; height:4px; margin-right:0; text-align:right; border:1px dashed black;"/>
-            <h2>Document info</h2>
-            <b>Author: </b><xsl:if test="author"><xsl:value-of select="author"/></xsl:if><br/>
-            <b>Date: </b><xsl:if test="date"><xsl:value-of select="date"/></xsl:if><br/>
-            <b>Version: </b><xsl:if test="version"><xsl:value-of select="version"/></xsl:if><br/>
-            <b>Repository: </b><xsl:if test="repository"><xsl:value-of select="repository"/></xsl:if><br/>
-          </p>
+        <header>
+          <h1><a class="white" href="https://terminologies.g-node.org/index.html">odML metadata terminology</a></h1>
+        </header>
 
-          <hr style="color:yellow; background-color:#336699; height:4px; margin-right:0; text-align:right; border:1px dashed black;"/>
+        <div class="navWrapper">
+          <navigationContainer>
+            <div id="navigationContainer">
+              <hr class="fatline" />
+              <p>
+                <h2>Document info</h2>
+                <b>Author: </b><xsl:if test="author"><xsl:value-of select="author"/></xsl:if><br/>
+                <b>Date: </b><xsl:if test="date"><xsl:value-of select="date"/></xsl:if><br/>
+                <b>Version: </b><xsl:if test="version"><xsl:value-of select="version"/></xsl:if><br/>
+                <b>Repository: </b><xsl:if test="repository"><xsl:value-of select="repository"/></xsl:if><br/>
+              </p>
 
-          <h2>Structure</h2>
-          <font size ="-1" >
-            <xsl:if test="section">
-              <xsl:for-each select="section">
-                <li>
+              <hr class="fatline" />
+
+              <h2>Structure</h2>
+              <font size ="-1" >
+                <xsl:if test="section">
+                  <xsl:for-each select="section">
+                    <xsl:call-template name="sectionTemplate">
+                      <xsl:with-param name="navigation">1</xsl:with-param>
+                      <xsl:with-param name="anchorBase">Sec</xsl:with-param>
+                      <xsl:with-param name="url" select="$repository"/>
+                    </xsl:call-template>
+                  </xsl:for-each>
+                </xsl:if>
+              </font>
+              <br/>
+            </div>
+
+            <div id="contentContainer">
+              <hr class="fatline" />
+              <h2>Content</h2>
+              <!-- apply the section template  -->
+              <xsl:if test="section">
+                <xsl:for-each select="section">
                   <xsl:call-template name="sectionTemplate">
-                    <xsl:with-param name="navigation">1</xsl:with-param>
+                    <xsl:with-param name="navigation">0</xsl:with-param>
                     <xsl:with-param name="anchorBase">Sec</xsl:with-param>
                     <xsl:with-param name="url" select="$repository"/>
                   </xsl:call-template>
-                </li>
-              </xsl:for-each>
-            </xsl:if>
-          </font>
+                </xsl:for-each>
+              </xsl:if>
+            </div>
+          </navigationContainer>
         </div>
-
-        <div id="contentContainer">
-          <hr style="color:yellow; background-color:#336699; height:4px; margin-right:0; text-align:right; border:1px dashed black;"/>
-          <h2>Content</h2>
-          <!-- apply the section template  -->
-          <xsl:if test="section">
-            <xsl:for-each select="section">
-              <xsl:call-template name="sectionTemplate">
-                <xsl:with-param name="navigation">0</xsl:with-param>
-                <xsl:with-param name="anchorBase">Sec</xsl:with-param>
-                <xsl:with-param name="url" select="$repository"/>
-              </xsl:call-template>
-            </xsl:for-each>
-          </xsl:if>
-        </div>
-        </navigationContainer>
       </body>
     </html>
   </xsl:template>
@@ -90,7 +98,7 @@
       <!--  fill the navigation container if this is the task (navigation param = 1) -->
       <xsl:when test="$navigation = 1">
         <!-- create a link to the anchor in the content container  -->
-        <ol style="compact">
+        <ol class="nested">
           <font size="normal"><a href="#{$anchorName}">
             <xsl:value-of select="name"/> (type: <xsl:value-of select="type"/>)
           </a></font>
@@ -155,7 +163,8 @@
           </table>
         </xsl:if>
         <a href="#top"><tiny>top</tiny></a>
-        <hr style="background-color:#336699; height:1px; margin-right:0; text-align:right;"/>
+
+        <hr class="thinline" />
         <!--  recursive call if there are subsections  -->
         <xsl:if test="section">
           <xsl:for-each select="section">
