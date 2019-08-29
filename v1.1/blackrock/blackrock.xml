@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl" xmlns:odml="http://www.g-node.org/odml"?>
+<?xml-stylesheet type="text/xsl" href="https://terminologies.g-node.org/_resources/odmlDocument.xsl" xmlns:odml="http://www.g-node.org/odml"?>
 <odML version="1.1">
-  <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+  <repository>https://terminologies.g-node.org/v1.1/terminologies.xml</repository>
   <version>1.0</version>
   <author>Lyuba Zehl</author>
   <date>2014-04-01</date>
 
   <section>
-    <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+    <repository>https://terminologies.g-node.org/v1.1/terminologies.xml</repository>
     <definition>Information on the Cerebus^TM data acquisition system</definition>
     <property>
       <name>Owner</name>
@@ -18,7 +18,7 @@
     <property>
       <name>Manufacturer</name>
       <type>string</type>
-      <value>Blackrock Micorsystems</value>
+      <value>Blackrock Microsystems</value>
       <definition>Manufacturer of the device</definition>
     </property>
     <property>
@@ -36,7 +36,7 @@
     <name>Cerebus</name>
 
     <section>
-      <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+      <repository>https://terminologies.g-node.org/v1.1/terminologies.xml</repository>
       <definition>Information of the Cerebus^TM neural signal processor (NSP)</definition>
       <property>
         <name>Type</name>
@@ -53,7 +53,7 @@
       <name>NeuralSignalProcessor</name>
 
       <section>
-        <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+        <repository>https://terminologies.g-node.org/v1.1/terminologies.xml</repository>
         <definition>Information on analog inputs and outputs of the device</definition>
         <property>
           <name>PortType</name>
@@ -124,7 +124,7 @@
         <name>AnalogIO</name>
 
         <section>
-          <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+          <repository>https://terminologies.g-node.org/v1.1/terminologies.xml</repository>
           <definition>Information on the analog-to-digital converter</definition>
           <property>
             <name>AIRange</name>
@@ -168,7 +168,7 @@
       </section>
 
       <section>
-        <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+        <repository>https://terminologies.g-node.org/v1.1/terminologies.xml</repository>
         <definition>Information on neural signal inputs and outputs of the device</definition>
         <property>
           <name>PortType</name>
@@ -205,7 +205,7 @@
       </section>
 
       <section>
-        <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+        <repository>https://terminologies.g-node.org/v1.1/terminologies.xml</repository>
         <definition>Information on digital inputs and outputs of the device</definition>
         <property>
           <name>DIOPorts</name>
@@ -224,7 +224,7 @@
       </section>
 
       <section>
-        <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+        <repository>https://terminologies.g-node.org/v1.1/terminologies.xml</repository>
         <definition>Information on inputs and outputs of the spike detection</definition>
         <property>
           <name>ThresholdType</name>
@@ -241,7 +241,7 @@
         <name>SpikeIO</name>
 
         <section>
-          <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+          <repository>https://terminologies.g-node.org/v1.1/terminologies.xml</repository>
           <definition>Information on the filter settings</definition>
           <property>
             <name>Type</name>
@@ -286,7 +286,7 @@
         </section>
 
         <section>
-          <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+          <repository>https://terminologies.g-node.org/v1.1/terminologies.xml</repository>
           <definition>Information on the recorded spike waveforms of the spike detection</definition>
           <property>
             <name>Width</name>
@@ -314,7 +314,7 @@
         </section>
 
         <section>
-          <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+          <repository>https://terminologies.g-node.org/v1.1/terminologies.xml</repository>
           <definition>Information on the recorded spike events of the spike detection</definition>
           <property>
             <name>SamplingRate</name>
@@ -340,7 +340,7 @@
         </section>
 
         <section>
-          <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+          <repository>https://terminologies.g-node.org/v1.1/terminologies.xml</repository>
           <definition>Information on rejected recorded spike events of the spike detection</definition>
           <property>
             <name>AmplitudeLimits</name>
@@ -381,7 +381,7 @@
     </section>
 
     <section>
-      <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+      <repository>https://terminologies.g-node.org/v1.1/terminologies.xml</repository>
       <definition>Information on the Cerebus^TM neural signal amplifier (NSA)</definition>
       <property>
         <name>Type</name>
@@ -410,7 +410,7 @@
       <name>NeuralSignalAmplifier</name>
 
       <section>
-        <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+        <repository>https://terminologies.g-node.org/v1.1/terminologies.xml</repository>
         <definition>Information on the analog-to-digital converter</definition>
         <property>
           <name>AIRange</name>
@@ -452,7 +452,7 @@
       </section>
 
       <section>
-        <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+        <repository>https://terminologies.g-node.org/v1.1/terminologies.xml</repository>
         <definition>Information on the filter settings</definition>
         <property>
           <name>Type</name>
@@ -497,7 +497,7 @@
       </section>
 
       <section>
-        <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+        <repository>https://terminologies.g-node.org/v1.1/terminologies.xml</repository>
         <definition>Information on the amplifier</definition>
         <property>
           <name>Gain</name>
@@ -511,14 +511,14 @@
       <type>setup/daq/hardware</type>
     </section>
     <section>
-      <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+      <repository>https://terminologies.g-node.org/v1.1/terminologies.xml</repository>
       <name>NeuralSignalStimulator</name>
       <type>setup/daq/hardware</type>
       <definition>Information on the Cerebus^TM neural signal stimulator (NSS)</definition>
     </section>
 
     <section>
-      <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+      <repository>https://terminologies.g-node.org/v1.1/terminologies.xml</repository>
       <definition>Information on the Cerebus^TM control computer</definition>
       <property>
         <name>CPU</name>
@@ -560,7 +560,7 @@
       </property>
       <name>ControlComputer</name>
       <section>
-        <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+        <repository>https://terminologies.g-node.org/v1.1/terminologies.xml</repository>
         <name>ControlSoftware</name>
         <type>setup/daq</type>
         <definition>Information on the control software of the Cerebus^TM system</definition>
@@ -571,7 +571,7 @@
   </section>
 
   <section>
-    <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+    <repository>https://terminologies.g-node.org/v1.1/terminologies.xml</repository>
     <definition>Information on the Blackrock Utah Electrode Array</definition>
     <property>
       <name>Owner</name>
@@ -614,7 +614,7 @@
     <name>UtahArray</name>
 
     <section>
-      <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+      <repository>https://terminologies.g-node.org/v1.1/terminologies.xml</repository>
       <definition>Information on the used connector</definition>
       <property>
         <name>Style</name>
@@ -674,7 +674,7 @@
     </section>
 
     <section>
-      <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+      <repository>https://terminologies.g-node.org/v1.1/terminologies.xml</repository>
       <definition>Information on the array used</definition>
       <property>
         <name>GridNo</name>
@@ -696,7 +696,7 @@
       </property>
       <name>Array</name>
       <section>
-        <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+        <repository>https://terminologies.g-node.org/v1.1/terminologies.xml</repository>
         <definition>Information on array grid</definition>
         <property>
           <name>ID</name>
@@ -772,7 +772,7 @@
       </section>
 
       <section>
-        <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+        <repository>https://terminologies.g-node.org/v1.1/terminologies.xml</repository>
         <definition>Information on array electrodes</definition>
         <property>
           <name>ElectrodeCount</name>
@@ -789,7 +789,7 @@
         <name>Electrodes</name>
 
         <section>
-          <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+          <repository>https://terminologies.g-node.org/v1.1/terminologies.xml</repository>
           <definition>Information on electrode</definition>
           <property>
             <name>ID</name>
@@ -878,7 +878,7 @@
   </section>
 
   <section>
-    <repository>http://portal.g-node.org/odml/terminologies/v1.1/terminologies.xml</repository>
+    <repository>https://terminologies.g-node.org/v1.1/terminologies.xml</repository>
     <definition>Information on the headstage used</definition>
     <property>
       <name>Model</name>
