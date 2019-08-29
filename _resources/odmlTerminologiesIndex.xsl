@@ -12,7 +12,7 @@
         <meta name="description"
               content="Templates and Terminologies for the storage of scientific metadata" />
         <link rel="stylesheet" href="https://terminologies.g-node.org/_resources/odml_style.css" />
-        <link rel="icon" href="https://terminologies.g-node.org/_resources/odMLIcon.ico" />
+        <link rel="icon" href="https://terminologies.g-node.org/images/odMLIcon.png" />
       </head>
 
       <body>
@@ -24,7 +24,7 @@
         <div class="wrapper">
           <sec>
             <p><a href="https://terminologies.g-node.org/index.html">
-              <img src="https://terminologies.g-node.org/_resources/odMLTitle.png"
+              <img src="https://terminologies.g-node.org/images/odMLTitle.png"
                    title="Terminologies home" />
             </a></p>
             <h1>odML - Terminologies</h1>

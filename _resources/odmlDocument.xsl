@@ -18,7 +18,7 @@
         <meta name="description"
               content="Templates and Terminologies for the storage of scientific metadata" />
         <link rel="stylesheet" href="https://terminologies.g-node.org/_resources/odml_style.css" />
-        <link rel="icon" href="https://terminologies.g-node.org/_resources/odMLIcon.ico" />
+        <link rel="icon" href="https://terminologies.g-node.org/images/odMLIcon.png" />
       </head>
 
       <body>
