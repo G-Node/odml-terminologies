@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="odmlRepository.xsl" xmlns:odml="http://www.g-node.org/odml"?>
 <odML version="1.1">
+
+  <section>
+    <type>DataReference</type>
+    <name>DataCite</name>
+    <definition>A published dataset referenced by a DOI and registered with DataCite. The referenced dataset will contain either the odML file itself or the data the odML is annotating.</definition>
+    <include>http://portal.g-node.org/odml/terminologies/v1.1/datareference/datacite.xml</include>
+  </section>
+
+  <section>
+    <type>DataReference</type>
+    <name>DataDOI</name>
+    <definition>A published dataset referenced by a DOI. The referenced dataset will contain either the odML file itself or the data the odML is annotating.</definition>
+    <include>http://portal.g-node.org/odml/terminologies/v1.1/datareference/datadoi.xml</include>
+  </section>
+
+  <section>
+    <type>DataReference</type>
+    <name>DataURI</name>
+    <definition>A published dataset referenced by a URI. The referenced dataset will contain either the odML file itself or the data the odML is annotating.</definition>
+    <include>http://portal.g-node.org/odml/terminologies/v1.1/datareference/datauri.xml</include>
+  </section>
+
+  <section>
+    <type>DataReference</type>
+    <name>DataURL</name>
+    <definition>A published dataset referenced by a URL. The referenced dataset will contain either the odML file itself or the data the odML is annotating.</definition>
+    <include>http://portal.g-node.org/odml/terminologies/v1.1/datareference/dataurl.xml</include>
+  </section>
+
+  <section>
+    <type>DataReference</type>
+    <name>DataReferenceDescription</name>
+    <definition>Description of a data reference. This Section is defined to be used as a subsection of the 'DataReference' type sections.</definition>
+    <include>http://portal.g-node.org/odml/terminologies/v1.1/datareference/referencedescription.xml</include>
+  </section>
+
   <section>
     <type>analysis</type>
     <name>Analysis</name>

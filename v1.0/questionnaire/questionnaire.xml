@@ -31,7 +31,7 @@
     <property>
       <name>Question</name>
       <value>
-        <type>question</type>
+        <type>text</type>
       </value>
       <definition>Question of the questionnaire.</definition>
     </property>
@@ -40,7 +40,7 @@
     <property>
       <name>File</name>
       <value>
-        <type>File</type>
+        <type>text</type>
       </value>
       <definition>The binary file with questionnaire.</definition>
     </property>

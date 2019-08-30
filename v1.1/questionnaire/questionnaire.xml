@@ -27,13 +27,13 @@
     <property>
       <name>Question</name>
       <definition>Question of the questionnaire.</definition>
-      <type>question</type>
+      <type>text</type>
     </property>
 
     <property>
       <name>File</name>
       <definition>The binary file with questionnaire.</definition>
-      <type>File</type>
+      <type>text</type>
     </property>
 
     <property>
