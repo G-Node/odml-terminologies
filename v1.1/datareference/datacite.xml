@@ -455,6 +455,11 @@
                 <definition>Any rights information for this resource. The property may be repeated to record complex rights characteristics.</definition>
 
                 <property>
+                    <name>rights</name>
+                    <type>string</type>
+                    <definition>Value of rights.</definition>
+                </property>
+                <property>
                     <name>rightsURI</name>
                     <type>url</type>
                     <definition>The URI of the license.</definition>
