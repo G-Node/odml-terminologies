@@ -45,7 +45,7 @@
                     <definition>The full name of the creator.</definition>
                 </property>
                 <property>
-                    <name>creatorNameType</name>
+                    <name>nameType</name>
                     <type>string</type>
                     <value>[Organizational, Personal (default)]</value>
                     <definition>The type of name</definition>
