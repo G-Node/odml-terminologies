@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl"  xmlns:odml="http://www.g-node.org/odml"?>
+<?xml-stylesheet type="text/xsl" href="https://terminologies.g-node.org/_resources/odmlDocument.xsl" xmlns:odml="http://www.g-node.org/odml"?>
 <!-- ********************************************************* -->
 <!--                   square wave stimulus                    -->
 <!-- ********************************************************* -->
