@@ -36,7 +36,7 @@
 
             <section>
                 <name>creator #</name>
-                <type>datacite/creators/creator</type>
+                <type>datacite/creator</type>
                 <definition>The main researchers involved in producing the data, or the authors of the publication, in priority order. To supply multiple creators, repeat this property.</definition>
 
                 <property>
@@ -63,7 +63,7 @@
 
                 <section>
                     <name>namedIdentifier #</name>
-                    <type>datacite/creators/creator/named_identifier</type>
+                    <type>datacite/creator/named_identifier</type>
                     <definition>Uniquely identifies an individual or legal entity, according to various schemes.</definition>
 
                     <property>
@@ -85,7 +85,7 @@
 
                 <section>
                     <name>affiliation #</name>
-                    <type>datacite/creators/creator/affiliation</type>
+                    <type>datacite/creator/affiliation</type>
                     <definition>The organizational or institutional affiliation of the creator.</definition>
 
                     <property>
@@ -119,7 +119,7 @@
 
             <section>
                 <name>title #</name>
-                <type>datacite/titles/title</type>
+                <type>datacite/title</type>
                 <definition>A name or title by which a resource is known. May be the title of a dataset or the name of a piece of software.</definition>
 
                 <property>
@@ -177,7 +177,7 @@
 
             <section>
                 <name>subject #</name>
-                <type>datacite/subjects/subject</type>
+                <type>datacite/subject</type>
                 <definition>Subject, keyword, classification code, or key phrase describing the resource.</definition>
 
                 <property>
@@ -210,7 +210,7 @@
 
             <section>
                 <name>contributor #</name>
-                <type>datacite/contributors/contributor</type>
+                <type>datacite/contributor</type>
                 <definition>The institution or person responsible for collecting, managing, distributing, or otherwise contributing to the development of the resource.To supply multiple contributors, repeat this property.For software, if there is an alternate entity that "holds, archives, publishes, prints, distributes, releases, issues, or produces" the code, use the contributorType "hostingInstitution" for the code repository.</definition>
 
                 <property>
@@ -243,7 +243,7 @@
 
                 <section>
                     <name>namedIdentifier #</name>
-                    <type>datacite/contributors/contributor/named_identifier</type>
+                    <type>datacite/contributor/named_identifier</type>
                     <definition>Uniquely identifies an individual or legal entity, according to various schemes.</definition>
 
                     <property>
@@ -265,7 +265,7 @@
 
                 <section>
                     <name>affiliation #</name>
-                    <type>datacite/contributors/contributor/affiliation</type>
+                    <type>datacite/contributor/affiliation</type>
                     <definition>The organizational or institutional affiliation of the contributor.</definition>
 
                     <property>
@@ -299,7 +299,7 @@
 
             <section>
                 <name>date #</name>
-                <type>datacite/dates/date</type>
+                <type>datacite/date</type>
                 <definition>Different dates relevant to the work.</definition>
 
                 <property>
@@ -335,7 +335,7 @@
 
             <section>
                 <name>alternateIdentifier #</name>
-                <type>datacite/alternate_identifiers/alternate_identifier</type>
+                <type>datacite/alternate_identifier</type>
                 <definition>An identifier or identifiers other than the primary Identifier applied to the resource being registered. This may be any alphanumeric string which is unique within its domain of issue. May be used for local identifiers. AlternateIdentifier should be used for another identifier of the same instance (same location, same file).</definition>
 
                 <property>
@@ -358,7 +358,7 @@
 
             <section>
                 <name>relatedIdentifier #</name>
-                <type>datacite/related_identifiers/related_identifier</type>
+                <type>datacite/related_identifier</type>
                 <definition>Identifiers of related resources. These must be globally unique identifiers.</definition>
 
                 <property>
@@ -408,7 +408,7 @@
 
             <section>
                 <name>size #</name>
-                <type>datacite/sizes/size</type>
+                <type>datacite/size</type>
                 <definition>Size (e.g. bytes, pages, inches, etc.) or duration (extent), e.g. hours, minutes, days, etc., of a resource.</definition>
 
                 <property>
@@ -426,7 +426,7 @@
 
             <section>
                 <name>format #</name>
-                <type>datacite/formats/format</type>
+                <type>datacite/format</type>
                 <definition>Technical format of the resource.</definition>
 
                 <property>
@@ -451,7 +451,7 @@
 
             <section>
                 <name>rights #</name>
-                <type>datacite/rights_list/rights</type>
+                <type>datacite/rights</type>
                 <definition>Any rights information for this resource. The property may be repeated to record complex rights characteristics.</definition>
 
                 <property>
@@ -489,7 +489,7 @@
 
             <section>
                 <name>description #</name>
-                <type>datacite/descriptions/description</type>
+                <type>datacite/description</type>
                 <definition>All additional information that does not fit in any of the other categories. May be used for technical information.</definition>
 
                 <property>
@@ -513,7 +513,7 @@
 
             <section>
                 <name>geoLocation #</name>
-                <type>datacite/geo_locations/geo_location</type>
+                <type>datacite/geo_location</type>
                 <definition>Spatial region or named place where the data was gathered or about which the data is focused.</definition>
 
                 <property>
@@ -524,7 +524,7 @@
 
                 <section>
                     <name>geoLocationPoint</name>
-                    <type>datacite/geo_locations/geo_location/geo_location_point</type>
+                    <type>datacite/geo_location/geo_location_point</type>
                     <definition>A point location in space.</definition>
 
                     <property>
@@ -540,7 +540,7 @@
                 </section>
                 <section>
                     <name>geoLocationBox</name>
-                    <type>datacite/geo_locations/geo_location/geo_location_box</type>
+                    <type>datacite/geo_location/geo_location_box</type>
                     <definition>The spatial limits of a box. A box is defined by two geographic points. Left low corner and right upper corner. Each point is defined by its longitude and latitude.</definition>
 
                     <property>
@@ -566,12 +566,12 @@
                 </section>
                 <section>
                     <name>geoLocationPolygon</name>
-                    <type>datacite/geo_locations/geo_location/geo_location_polygon</type>
+                    <type>datacite/geo_location/geo_location_polygon</type>
                     <definition>A drawn polygon area, defined by a set of points and lines connecting the points in a closed chain.</definition>
 
                     <section>
                         <name>polygonPoint #</name>
-                        <type>datacite/geo_locations/geo_location/geo_location_polygon/polygon_point</type>
+                        <type>datacite/geo_location/geo_location_polygon/polygon_point</type>
                         <definition>A point location in a polygon. If geoLocationPolygon is used, polygonPoint must be used as well. There must be at least 4 non-aligned points to make a closed curve, with the last point described the same as the first point.</definition>
 
                         <property>
@@ -596,7 +596,7 @@
 
             <section>
                 <name>fundingReference #</name>
-                <type>datacite/funding_references/funding_reference</type>
+                <type>datacite/funding_reference</type>
                 <definition>Information about financial support (funding) for the resource being registered.</definition>
 
                 <property>
@@ -664,7 +664,7 @@
 
             <section>
                 <name>reference #</name>
-                <type>datacite_complement/references/reference</type>
+                <type>datacite_complement/reference</type>
                 <definition>A publication the published dataset is referencing.</definition>
 
                 <property>
