@@ -331,11 +331,11 @@
         <!-- #11 alternateIdentifier  -->
         <section>
             <name>alternateIdentifiers</name>
-            <type>datacite/alternateIdentifiers</type>
+            <type>datacite/alternate_identifiers</type>
 
             <section>
                 <name>alternateIdentifier #</name>
-                <type>datacite/alternateIdentifiers/alternateIdentifier</type>
+                <type>datacite/alternate_identifiers/alternate_identifier</type>
                 <definition>An identifier or identifiers other than the primary Identifier applied to the resource being registered. This may be any alphanumeric string which is unique within its domain of issue. May be used for local identifiers. AlternateIdentifier should be used for another identifier of the same instance (same location, same file).</definition>
 
                 <property>
