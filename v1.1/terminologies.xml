@@ -60,35 +60,35 @@
   </section>
 
   <section>
-    <type>DataReference</type>
+    <type>data_reference</type>
     <name>DataCite</name>
     <definition>A published dataset referenced by a DOI and registered with DataCite. The referenced dataset will contain either the odML file itself or the data the odML is annotating.</definition>
     <include>https://terminologies.g-node.org/v1.1/datareference/datacite.xml</include>
   </section>
 
   <section>
-    <type>DataReference</type>
+    <type>data_reference</type>
     <name>DataDOI</name>
     <definition>A published dataset referenced by a DOI. The referenced dataset will contain either the odML file itself or the data the odML is annotating.</definition>
     <include>https://terminologies.g-node.org/v1.1/datareference/datadoi.xml</include>
   </section>
 
   <section>
-    <type>DataReference</type>
+    <type>data_reference</type>
     <name>DataURI</name>
     <definition>A published dataset referenced by a URI. The referenced dataset will contain either the odML file itself or the data the odML is annotating.</definition>
     <include>https://terminologies.g-node.org/v1.1/datareference/datauri.xml</include>
   </section>
 
   <section>
-    <type>DataReference</type>
+    <type>data_reference</type>
     <name>DataURL</name>
     <definition>A published dataset referenced by a URL. The referenced dataset will contain either the odML file itself or the data the odML is annotating.</definition>
     <include>https://terminologies.g-node.org/v1.1/datareference/dataurl.xml</include>
   </section>
 
   <section>
-    <type>DataReference</type>
+    <type>data_reference/description</type>
     <name>DataReferenceDescription</name>
     <definition>Description of a data reference. This Section is defined to be used as a subsection of the 'DataReference' type sections.</definition>
     <include>https://terminologies.g-node.org/v1.1/datareference/referencedescription.xml</include>
@@ -150,7 +150,7 @@
   </section>
 
   <section>
-    <type>experiment/pschophysics</type>
+    <type>experiment/psychophysics</type>
     <name>Psychophysics</name>
     <definition>Properties for describing an psychophysical experiment.</definition>
     <include>https://terminologies.g-node.org/v1.1/experiment/psychophysics.xml</include>
