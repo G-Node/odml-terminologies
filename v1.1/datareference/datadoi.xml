@@ -13,7 +13,7 @@
           can be added via the reference description section              -->
     <!-- *********************************************************        -->
     <section>
-        <type>DataReference</type>
+        <type>data_reference</type>
         <name>DataDOI</name>
         <definition>A published dataset referenced by a DOI. The referenced dataset will contain either the odML file itself or the data the odML is annotating.
         </definition>

@@ -8,7 +8,7 @@
     <!--         Data reference description  section               -->
     <!-- ********************************************************* -->
     <section>
-        <type>DataReference</type>
+        <type>data_reference/description</type>
         <name>DataReferenceDescription</name>
         <definition>Description of a data reference. This Section is defined to be used as a subsection of the 'DataReference' type sections.</definition>
 
