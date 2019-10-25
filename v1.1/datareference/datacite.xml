@@ -2,82 +2,688 @@
 <?xml-stylesheet type="text/xsl" href="https://terminologies.g-node.org/_resources/odmlDocument.xsl" xmlns:odml="http://www.g-node.org/odml"?>
 <odML version="1.1">
     <repository>https://terminologies.g-node.org/v1.1/terminologies.xml</repository>
-    <version>1.0</version>
-    <date>2019-03-26</date>
-    <!-- *********************************************************        -->
-    <!--                      Data reference section                      -->
-    <!--  The minimal description of a data reference is a URI linking back
-          to the repository the odml file or the data the odml document describes
-          resides in.
-          Further details common to the different types of data reference sections
-          can be added via the reference description section              -->
-    <!-- *********************************************************        -->
+    <version>1.1</version>
+    <date>2019-10-15</date>
+
     <section>
-        <type>DataReference</type>
         <name>DataCite</name>
-        <definition>A published dataset referenced by a DOI and registered with DataCite. The referenced dataset will contain either the odML file itself or the data the odML is annotating.
-        </definition>
+        <type>data_reference</type>
+        <definition>A published dataset referenced by a DOI and registered with DataCite. The referenced dataset will contain either the odML file itself or the data the odML is annotating.</definition>
 
-        <property>
-            <name>DataDOI</name>
-            <definition>A unique Digital object identifier of data. In the current context a URI linking to the published dataset.</definition>
-            <type>url</type>
-        </property>
-
-        <property>
-            <name>ResourceType</name>
-            <definition>A description of the resource. The format is open, but the preferred format is a single term of some detail so that a pair can be formed with the sub-property.Text formats can be free-text OR terms from the CASRAI Publications resource type list. In the odML context the value will mostly be 'Dataset'.</definition>
-            <type>string</type>
-        </property>
-
+        <!-- #1 identifier -->
         <section>
-            <type>DataReference</type>
-            <name>DataCiteReference</name>
-            <definition>A publication the published dataset is referencing.</definition>
+            <name>identifier</name>
+            <type>datacite/identifier</type>
+            <definition>The Identifier is a unique string that identifies a resource.  For software, determine whether the identifier is for a specific version of a piece of software, (per the Force11 Software Citation Principles11), or for all versions.</definition>
+
             <property>
-                <name>DOI</name>
-                <definition>DOI to the referenced publication</definition>
+                <name>identifierType</name>
                 <type>string</type>
+                <value>DOI</value>
+                <definition>The type of Identifier.</definition>
             </property>
             <property>
-                <name>RefType</name>
-                <definition>refType might be: IsCitedBy, IsSupplementTo, IsReferencedBy, IsPartOf for further valid types see https://schema.datacite.org/meta/kernel-4</definition>
+                <name>identifier</name>
                 <type>string</type>
-            </property>
-            <property>
-                <name>PublicationCitation</name>
-                <definition>Full citation of the reference publication</definition>
-                <type>string</type>
+                <definition>The value of the identifier.</definition>
             </property>
         </section>
 
+        <!-- #2 creators -->
         <section>
-            <type>DataReference</type>
-            <name>DataCiteAuthor</name>
-            <definition>Information about an author as required by DataCite.</definition>
-            <property>
-                <name>FirstName</name>
-                <definition>The authors first Name (John).</definition>
-                <type>string</type>
-            </property>
+            <name>creators</name>
+            <type>datacite/creators</type>
+
+            <section>
+                <name>creator #</name>
+                <type>datacite/creator</type>
+                <definition>The main researchers involved in producing the data, or the authors of the publication, in priority order. To supply multiple creators, repeat this property.</definition>
+
+                <property>
+                    <name>creatorName</name>
+                    <type>string</type>
+                    <definition>The full name of the creator.</definition>
+                </property>
+                <property>
+                    <name>nameType</name>
+                    <type>string</type>
+                    <value>[Organizational, Personal (default)]</value>
+                    <definition>The type of name</definition>
+                </property>
+                <property>
+                    <name>givenName</name>
+                    <type>string</type>
+                    <definition>The personal or first name of the creator.</definition>
+                </property>
+                <property>
+                    <name>familyName</name>
+                    <type>string</type>
+                    <definition>The surname or last name of the creator.</definition>
+                </property>
+
+                <section>
+                    <name>namedIdentifier #</name>
+                    <type>datacite/creator/named_identifier</type>
+                    <definition>Uniquely identifies an individual or legal entity, according to various schemes.</definition>
+
+                    <property>
+                        <name>namedIdentifier</name>
+                        <type>string</type>
+                        <definition>Value of the named identifier</definition>
+                    </property>
+                    <property>
+                        <name>nameIdentifierScheme</name>
+                        <type>string</type>
+                        <definition>The name of the name identifier scheme. Examples: ORCID, ISNI, ROR, GRID</definition>
+                    </property>
+                    <property>
+                        <name>schemeURI</name>
+                        <type>url</type>
+                        <definition>The URI of the name identifier scheme.</definition>
+                    </property>
+                </section>
+
+                <section>
+                    <name>affiliation #</name>
+                    <type>datacite/creator/affiliation</type>
+                    <definition>The organizational or institutional affiliation of the creator.</definition>
+
+                    <property>
+                        <name>affiliation</name>
+                        <type>string</type>
+                        <definition>Value of the affiliation</definition>
+                    </property>
+                    <property>
+                        <name>affiliationIdentifier</name>
+                        <type>string</type>
+                        <definition>Uniquely identifies the organizational affiliation of the creator.</definition>
+                    </property>
+                    <property>
+                        <name>affiliationIdentifierScheme</name>
+                        <type>string</type>
+                        <definition>Name of the affiliation identifier schema. Examples: ROR, GRID</definition>
+                    </property>
+                    <property>
+                        <name>schemeURI</name>
+                        <type>url</type>
+                        <definition>URI of the affiliation identifier schema.</definition>
+                    </property>
+                </section>
+            </section>
+        </section>
+
+        <!-- #3 Title -->
+        <section>
+            <name>titles</name>
+            <type>datacite/titles</type>
+
+            <section>
+                <name>title #</name>
+                <type>datacite/title</type>
+                <definition>A name or title by which a resource is known. May be the title of a dataset or the name of a piece of software.</definition>
+
+                <property>
+                    <name>title</name>
+                    <type>string</type>
+                    <definition>Value of title</definition>
+                </property>
+                <property>
+                    <name>titleType</name>
+                    <type>string</type>
+                    <value>[AlternativeTitle, Subtitle, TranslatedTitle, Other]</value>
+                    <definition>The type of Title.</definition>
+                </property>
+            </section>
+        </section>
+
+        <!-- #4 Publisher -->
+        <property>
+            <name>publisher</name>
+            <type>string</type>
+            <definition>The name of the entity that holds, archives, publishes prints, distributes, releases, issues, or produces the resource. This property will be used to formulate the citation, so consider the prominence of the role. For software, use Publisher for the code repository. If there is an entity other than a code repository, that "holds, archives, publishes, prints, distributes, releases, issues, or produces" the code, use the property Contributor/contributorType/hostingInstitution for the code repository.</definition>
+        </property>
+
+        <!-- #5 PublicationYear -->
+        <property>
+            <name>publicationYear</name>
+            <type>string</type>
+            <definition>The year when the data was or will be made publicly available.  In the case of resources such as software or dynamic data where there may be multiple releases in one year, include the Date/dateType/dateInformation property and sub-properties to provide more information about the publication or release date details.</definition>
+        </property>
+
+        <!-- #10 ResourceType -->
+        <section>
+            <name>resourceType</name>
+            <type>datacite/resource_type</type>
+            <definition>A description of the resource. The format is open, but the preferred format is a single term of some detail so that a pair can be formed with the sub-property. Text formats can be free-text OR terms from the CASRAI Publications resource type list.</definition>
 
             <property>
-                <name>LastName</name>
-                <definition>The authors last name (Doe).</definition>
+                <name>resourceTypeGeneral</name>
                 <type>string</type>
+                <value>[Audiovisual, Collection, DataPaper, Dataset, Event, Image, InteractiveResource, Model, PhysicalObject, Service, Software, Sound, Text, Workflow, Other]</value>
+                <definition>The general type of a resource.</definition>
             </property>
             <property>
-                <name>Affiliation</name>
-                <definition>Affiliation of the author [Institute, City, Country]</definition>
+                <name>resourceType</name>
                 <type>string</type>
+                <definition>Value of the resourceType</definition>
             </property>
-            <property>
-                <name>Id</name>
-                <definition>Any Id that is capable of identifying the author e.g. ORCID</definition>
-                <type>string</type>
-            </property>
+        </section>
+
+        <!-- #6 Subject  -->
+        <!-- can be used to provide keywords describing the dataset -->
+        <section>
+            <name>subjects</name>
+            <type>datacite/subjects</type>
+
+            <section>
+                <name>subject #</name>
+                <type>datacite/subject</type>
+                <definition>Subject, keyword, classification code, or key phrase describing the resource.</definition>
+
+                <property>
+                    <name>subject</name>
+                    <type>string</type>
+                    <definition>Value of the subject.</definition>
+                </property>
+                <property>
+                    <name>subjectScheme</name>
+                    <type>string</type>
+                    <definition>The name of the subject scheme or classification code or authority if one is used.</definition>
+                </property>
+                <property>
+                    <name>schemeURI</name>
+                    <type>url</type>
+                    <definition>The URI of the subject identifier scheme.</definition>
+                </property>
+                <property>
+                    <name>valueURI</name>
+                    <type>url</type>
+                    <definition>The URI of the subject term.</definition>
+                </property>
+            </section>
+        </section>
+
+        <!-- #7 Contributor -->
+        <section>
+            <name>contributors</name>
+            <type>datacite/contributors</type>
+
+            <section>
+                <name>contributor #</name>
+                <type>datacite/contributor</type>
+                <definition>The institution or person responsible for collecting, managing, distributing, or otherwise contributing to the development of the resource.To supply multiple contributors, repeat this property.For software, if there is an alternate entity that "holds, archives, publishes, prints, distributes, releases, issues, or produces" the code, use the contributorType "hostingInstitution" for the code repository.</definition>
+
+                <property>
+                    <name>contributorType</name>
+                    <type>string</type>
+                    <value>[ContactPerson, DataCollector, DataCurator, DataManager, Distributor, Editor, HostingInstitution, Producer, ProjectLeader, ProjectManager, ProjectMember, RegistrationAgency, RegistrationAuthority, RelatedPerson, Researcher, ResearchGroup, RightsHolder, Sponsor, Supervisor, WorkPackageLeader, Other]</value>
+                    <definition>The type of contributor of the resource.</definition>
+                </property>
+                <property>
+                    <name>contributorName</name>
+                    <type>string</type>
+                    <definition>The full name of the contributor.</definition>
+                </property>
+                <property>
+                    <name>nameType</name>
+                    <type>string</type>
+                    <value>[Organizational, Personal (default)]</value>
+                    <definition>The type of name</definition>
+                </property>
+                <property>
+                    <name>givenName</name>
+                    <type>string</type>
+                    <definition>The personal or first name of the contributor.</definition>
+                </property>
+                <property>
+                    <name>familyName</name>
+                    <type>string</type>
+                    <definition>The surname or last name of the contributor.</definition>
+                </property>
+
+                <section>
+                    <name>namedIdentifier #</name>
+                    <type>datacite/contributor/named_identifier</type>
+                    <definition>Uniquely identifies an individual or legal entity, according to various schemes.</definition>
+
+                    <property>
+                        <name>namedIdentifier</name>
+                        <type>string</type>
+                        <definition>Value of the namedIdentifier.</definition>
+                    </property>
+                    <property>
+                        <name>nameIdentifierScheme</name>
+                        <type>string</type>
+                        <definition>The name of the name identifier scheme. Examples: ORCID, ISNI, ROR, GRID</definition>
+                    </property>
+                    <property>
+                        <name>schemeURI</name>
+                        <type>url</type>
+                        <definition>The URI of the name identifier scheme.</definition>
+                    </property>
+                </section>
+
+                <section>
+                    <name>affiliation #</name>
+                    <type>datacite/contributor/affiliation</type>
+                    <definition>The organizational or institutional affiliation of the contributor.</definition>
+
+                    <property>
+                        <name>affiliation</name>
+                        <type>string</type>
+                        <definition>Value of the affiliation.</definition>
+                    </property>
+                    <property>
+                        <name>affiliationIdentifier</name>
+                        <type>string</type>
+                        <definition>Uniquely identifies the organizational affiliation of the contributor.</definition>
+                    </property>
+                    <property>
+                        <name>affiliationIdentifierScheme</name>
+                        <type>string</type>
+                        <definition>Name of the affiliation identifier schema. Examples: ROR, GRID</definition>
+                    </property>
+                    <property>
+                        <name>schemeURI</name>
+                        <type>url</type>
+                        <definition>URI of the affiliation identifier schema.</definition>
+                    </property>
+                </section>
+            </section>
+        </section>
+
+        <!-- #8 date -->
+        <section>
+            <name>dates</name>
+            <type>datacite/dates</type>
+
+            <section>
+                <name>date #</name>
+                <type>datacite/date</type>
+                <definition>Different dates relevant to the work.</definition>
+
+                <property>
+                    <name>date</name>
+                    <type>string</type>
+                    <definition>Value of date. YYYY,YYYY-MM-DD, YYYY-MM-DDThh:mm:ssTZD or any other format or level of granularity described in W3CDTF24. Use RKMS-ISO860125standard for depicting date ranges.Example: 2004-03-02/2005-06-02.Years before 0000 must be prefixed with a -sign,e.g. -0054 to indicate 55 BC.</definition>
+                </property>
+                <property>
+                    <name>dateType</name>
+                    <type>string</type>
+                    <value>[Accepted, Available, Copyrighted, Collected, Created, Issued, Submitted, Updated, Valid, Withdrawn, Other]</value>
+                    <definition>The type of date. If Date is used, dateType is mandatory.</definition>
+                </property>
+                <property>
+                    <name>dateInformation</name>
+                    <type>string</type>
+                    <definition>Specific information about the date, if appropriate.</definition>
+                </property>
+            </section>
+        </section>
+
+        <!-- #9 Language -->
+        <property>
+            <name>language</name>
+            <type>string</type>
+            <definition>The primary language of the resource. Allowed values are taken from IETF BCP 47, ISO 639-1 language codes.Examples: en, de, fr</definition>
+        </property>
+
+        <!-- #11 alternateIdentifier  -->
+        <section>
+            <name>alternateIdentifiers</name>
+            <type>datacite/alternate_identifiers</type>
+
+            <section>
+                <name>alternateIdentifier #</name>
+                <type>datacite/alternate_identifier</type>
+                <definition>An identifier or identifiers other than the primary Identifier applied to the resource being registered. This may be any alphanumeric string which is unique within its domain of issue. May be used for local identifiers. AlternateIdentifier should be used for another identifier of the same instance (same location, same file).</definition>
+
+                <property>
+                    <name>alternateIdentifier</name>
+                    <type>string</type>
+                    <definition>Value of alternateIdentifier</definition>
+                </property>
+                <property>
+                    <name>alternateIdentifierType</name>
+                    <type>string</type>
+                    <definition>The type of the AlternateIdentifier. If alternateIdentifier is used, alternateIdentifierType is mandatory.</definition>
+                </property>
+            </section>
+        </section>
+
+        <!-- #12 relatedIdentifier -->
+        <section>
+            <name>relatedIdentifiers</name>
+            <type>datacite/related_identifiers</type>
+
+            <section>
+                <name>relatedIdentifier #</name>
+                <type>datacite/related_identifier</type>
+                <definition>Identifiers of related resources. These must be globally unique identifiers.</definition>
+
+                <property>
+                    <name>relatedIdentifier</name>
+                    <type>string</type>
+                    <definition>Value of relatedIdentifier</definition>
+                </property>
+                <property>
+                    <name>relatedIdentifierType</name>
+                    <type>string</type>
+                    <value>[ARK, arXiv, bibcode, DOI, EAN13, EISSN, Handle, IGSN, ISBN, ISSN, ISTC, LISSN, LSID, PMID, PURL, UPC, URL, URN, w3id]</value>
+                    <definition>The type of the RelatedIdentifier</definition>
+                </property>
+                <property>
+                    <name>relationType</name>
+                    <type>string</type>
+                    <value>[IsCitedBy, Cites, IsSupplementTo, IsSupplementedBy, IsContinuedBy, Continues, IsDescribedBy, Describes, HasMetadata, IsMetadataFor, HasVersion, IsVersionOf, IsNewVersionOf, IsPreviousVersionOf, IsPartOf, HasPart, IsReferencedBy, References, IsDocumentedBy, Documents, IsCompiledBy, Compiles, IsVariantFormOf, IsOriginalFormOf, IsIdenticalTo, IsReviewedBy, Reviews, IsDerivedFrom, IsSourceOf, IsRequiredBy, Requires, IsObsoletedBy, Obsoletes]</value>
+                    <definition>Description of the relationship of the resource being registered (A) and the related resource (B).</definition>
+                </property>
+                <property>
+                    <name>relatedMetadataScheme</name>
+                    <type>string</type>
+                    <definition>The name of the scheme. Use only with this relation pair: (HasMetadata/IsMetadataFor)</definition>
+                </property>
+                <property>
+                    <name>schemeURI</name>
+                    <type>url</type>
+                    <definition>The URI of the relatedMetadataScheme. Use only with this relation pair: (HasMetadata/IsMetadataFor)</definition>
+                </property>
+                <property>
+                    <name>schemeType</name>
+                    <type>string</type>
+                    <definition>The type of the relatedMetadataScheme, linked with the schemeURI. Use only with this relation pair: (HasMetadata/IsMetadataFor)</definition>
+                </property>
+                <property>
+                    <name>resourceTypeGeneral</name>
+                    <type>string</type>
+                    <definition>The general type of the related resource.</definition>
+                </property>
+            </section>
+        </section>
+
+        <!-- #13 size -->
+        <section>
+            <name>sizes</name>
+            <type>datacite/sizes</type>
+
+            <section>
+                <name>size #</name>
+                <type>datacite/size</type>
+                <definition>Size (e.g. bytes, pages, inches, etc.) or duration (extent), e.g. hours, minutes, days, etc., of a resource.</definition>
+
+                <property>
+                    <name>size</name>
+                    <type>string</type>
+                    <definition>Value of size.</definition>
+                </property>
+            </section>
+        </section>
+
+        <!-- #14 format -->
+        <section>
+            <name>formats</name>
+            <type>datacite/formats</type>
+
+            <section>
+                <name>format #</name>
+                <type>datacite/format</type>
+                <definition>Technical format of the resource.</definition>
+
+                <property>
+                    <name>format</name>
+                    <type>string</type>
+                    <definition>Value of format.</definition>
+                </property>
+            </section>
+        </section>
+
+        <!-- #15 version -->
+        <property>
+            <name>version</name>
+            <type>string</type>
+            <definition>The version number of the resource. Suggested practice: track major_version.minor_version. Register a new identifier for a major version change.</definition>
+        </property>
+
+        <!-- #16 Rights -->
+        <section>
+            <name>rightsList</name>
+            <type>datacite/rights_list</type>
+
+            <section>
+                <name>rights #</name>
+                <type>datacite/rights</type>
+                <definition>Any rights information for this resource. The property may be repeated to record complex rights characteristics.</definition>
+
+                <property>
+                    <name>rights</name>
+                    <type>string</type>
+                    <definition>Value of rights.</definition>
+                </property>
+                <property>
+                    <name>rightsURI</name>
+                    <type>url</type>
+                    <definition>The URI of the license.</definition>
+                </property>
+                <property>
+                    <name>rightsIdentifier</name>
+                    <type>string</type>
+                    <definition>A short, standardized version of the license name.</definition>
+                </property>
+                <property>
+                    <name>rightsIdentifierScheme</name>
+                    <type>string</type>
+                    <definition>The name of the scheme.</definition>
+                </property>
+                <property>
+                    <name>schemeURI</name>
+                    <type>url</type>
+                    <definition>The URI of the rightsIdentifierScheme.</definition>
+                </property>
+            </section>
+        </section>
+
+        <!-- #17 description -->
+        <section>
+            <name>descriptions</name>
+            <type>datacite/descriptions</type>
+
+            <section>
+                <name>description #</name>
+                <type>datacite/description</type>
+                <definition>All additional information that does not fit in any of the other categories. May be used for technical information.</definition>
+
+                <property>
+                    <name>description</name>
+                    <type>string</type>
+                    <value>Value of description.</value>
+                </property>
+                <property>
+                    <name>descriptionType</name>
+                    <type>string</type>
+                    <value>[Abstract, Methods, Series, Information, TableOfContents ,TechnicalInfo, Other]</value>
+                    <definition>The type of the Description. If Description is used, descriptionType is mandatory.</definition>
+                </property>
+            </section>
+        </section>
+
+        <!-- #18 geolocation -->
+        <section>
+            <name>geoLocations</name>
+            <type>datacite/geo_locations</type>
+
+            <section>
+                <name>geoLocation #</name>
+                <type>datacite/geo_location</type>
+                <definition>Spatial region or named place where the data was gathered or about which the data is focused.</definition>
+
+                <property>
+                    <name>geoLocationPlace</name>
+                    <type>string</type>
+                    <definition>Description of a geographic location</definition>
+                </property>
+
+                <section>
+                    <name>geoLocationPoint</name>
+                    <type>datacite/geo_location/geo_location_point</type>
+                    <definition>A point location in space.</definition>
+
+                    <property>
+                        <name>pointLongitude</name>
+                        <type>float</type>
+                        <definition>Longitudinal dimension of point.</definition>
+                    </property>
+                    <property>
+                        <name>pointLatitude</name>
+                        <type>float</type>
+                        <definition>Latitudinal dimension of point.</definition>
+                    </property>
+                </section>
+                <section>
+                    <name>geoLocationBox</name>
+                    <type>datacite/geo_location/geo_location_box</type>
+                    <definition>The spatial limits of a box. A box is defined by two geographic points. Left low corner and right upper corner. Each point is defined by its longitude and latitude.</definition>
+
+                    <property>
+                        <name>westBoundLongitude</name>
+                        <type>float</type>
+                        <definition>Western longitudinal dimension of box.</definition>
+                    </property>
+                    <property>
+                        <name>eastBoundLongitude</name>
+                        <type>float</type>
+                        <definition>Eastern longitudinal dimension of box.</definition>
+                    </property>
+                    <property>
+                        <name>southBoundLatitude</name>
+                        <type>float</type>
+                        <definition>Southern latitudinal dimension of box.</definition>
+                    </property>
+                    <property>
+                        <name>northBoundLatitude</name>
+                        <type>float</type>
+                        <definition>Northern latitudinal dimension of box.</definition>
+                    </property>
+                </section>
+                <section>
+                    <name>geoLocationPolygon</name>
+                    <type>datacite/geo_location/geo_location_polygon</type>
+                    <definition>A drawn polygon area, defined by a set of points and lines connecting the points in a closed chain.</definition>
+
+                    <section>
+                        <name>polygonPoint #</name>
+                        <type>datacite/geo_location/geo_location_polygon/polygon_point</type>
+                        <definition>A point location in a polygon. If geoLocationPolygon is used, polygonPoint must be used as well. There must be at least 4 non-aligned points to make a closed curve, with the last point described the same as the first point.</definition>
+
+                        <property>
+                            <name>pointLatitude</name>
+                            <type>float</type>
+                            <definition>Longitudinal dimension of point.</definition>
+                        </property>
+                        <property>
+                            <name>pointLongitude</name>
+                            <type>float</type>
+                            <definition>Latitudinal dimension of point.</definition>
+                        </property>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <!-- #19 fundingReference -->
+        <section>
+            <name>fundingReferences</name>
+            <type>datacite/funding_references</type>
+
+            <section>
+                <name>fundingReference #</name>
+                <type>datacite/funding_reference</type>
+                <definition>Information about financial support (funding) for the resource being registered.</definition>
+
+                <property>
+                    <name>funderName</name>
+                    <type>string</type>
+                    <definition>Name of the funding provider.</definition>
+                </property>
+                <property>
+                    <name>funderIdentifier</name>
+                    <type>string</type>
+                    <definition>Uniquely identifies a funding entity, according to various types.</definition>
+                </property>
+                <property>
+                    <name>funderIdentifierType</name>
+                    <type>string</type>
+                    <value>[Crossref Funder ID, GRID, ISNI, ROR, Other]</value>
+                    <definition>The type of the funderIdentifier.</definition>
+                </property>
+                <property>
+                    <name>schemeURI</name>
+                    <type>url</type>
+                    <definition>The URI of the funder identifier schema.</definition>
+                </property>
+                <property>
+                    <name>awardNumber</name>
+                    <type>string</type>
+                    <definition>The code assigned by the funder to a sponsored award (grant).</definition>
+                </property>
+                <property>
+                    <name>awardURI</name>
+                    <type>url</type>
+                    <definition>The URI leading to a page provided by the funder for more information about the award (grant).</definition>
+                </property>
+                <property>
+                    <name>awardTitle</name>
+                    <type>string</type>
+                    <definition>The human readable title or name of the award (grant).</definition>
+                </property>
+            </section>
         </section>
 
     </section>
 
+    <section>
+        <name>DataCiteComplement</name>
+        <type>data_reference</type>
+        <definition>Additional sections complementing the Datacite scheme. The information contained in this section is not supported by the DataCite scheme.</definition>
+
+        <section>
+            <name>version</name>
+            <type>datacite_complement/version</type>
+            <definition>The implemented datacite schema version</definition>
+
+            <property>
+                <name>version</name>
+                <value>4.3</value>
+                <type>string</type>
+                <reference>https://schema.datacite.org/meta/kernel-4.3/</reference>
+            </property>
+        </section>
+
+        <section>
+            <name>references</name>
+            <type>datacite_complement/references</type>
+
+            <section>
+                <name>reference #</name>
+                <type>datacite_complement/reference</type>
+                <definition>A publication the published dataset is referencing.</definition>
+
+                <property>
+                    <name>DOI</name>
+                    <type>string</type>
+                    <definition>DOI to the referenced publication</definition>
+                </property>
+                <property>
+                    <name>refType</name>
+                    <type>string</type>
+                    <definition>refType might be: IsCitedBy, IsSupplementTo, IsReferencedBy, IsPartOf for further valid types see https://schema.datacite.org/meta/kernel-4</definition>
+                </property>
+                <property>
+                    <name>publicationCitation</name>
+                    <type>string</type>
+                    <definition>Full citation of the reference publication</definition>
+                </property>
+            </section>
+        </section>
+
+    </section>
 </odML>
