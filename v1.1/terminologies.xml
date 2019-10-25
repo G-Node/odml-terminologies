@@ -3,6 +3,63 @@
 <odML version="1.1">
 
   <section>
+    <type>analysis</type>
+    <name>Analysis</name>
+    <definition>Sections of the Analysis type can be used to describe analyses.</definition>
+    <include>https://terminologies.g-node.org/v1.1/analysis/analysis.xml</include>
+  </section>
+
+  <section>
+    <type>analysis/power_spectrum</type>
+    <name>PowerSpectrum</name>
+    <definition>Properties of this section define the way a power spectrum was calculated.</definition>
+    <include>https://terminologies.g-node.org/v1.1/analysis/power_spectrum.xml</include>
+  </section>
+
+  <section>
+    <type>analysis/psth</type>
+    <name>PSTH</name>
+    <definition>An Analysis-type section to describe a PSTH.</definition>
+    <include>https://terminologies.g-node.org/v1.1/analysis/psth.xml</include>
+  </section>
+
+  <section>
+    <type>blackrock</type>
+    <name>Blackrock</name>
+    <definition>Information on the Cerebus^TM data acquisition system</definition>
+    <include>https://terminologies.g-node.org/v1.1/blackrock/blackrock.xml</include>
+  </section>
+
+  <section>
+    <type>carmen_mini</type>
+    <name>CarmenMini</name>
+    <definition>This is a convenience section that lists the terms of the CARMEN MINI (Gibson et al. Nature Precedings,
+      2009 Version 0.6) and maps them to the odml "standard" terminologies.
+    </definition>
+    <include>https://terminologies.g-node.org/v1.1/carmenMini/carmen_mini.xml</include>
+  </section>
+
+  <section>
+    <type>cell</type>
+    <name>Cell</name>
+    <definition>Specification of the recorded cell. A cell definition should be a subsection of the
+      <a href="../subject/subject.xml">Subject</a>
+      section.
+    </definition>
+    <include>https://terminologies.g-node.org/v1.1/cell/cell.xml</include>
+  </section>
+
+  <section>
+    <type>dataset</type>
+    <name>Dataset</name>
+    <definition>Names (URLs) and times of recorded data files. Datasets are obtained during a Recording and may belong
+      to different Experiments. Related sections that can be used as subsections, parent sections, or siblings are
+      Stimulus, HardwareSettings, and Experiment.
+    </definition>
+    <include>https://terminologies.g-node.org/v1.1/dataset/dataset.xml</include>
+  </section>
+
+  <section>
     <type>DataReference</type>
     <name>DataCite</name>
     <definition>A published dataset referenced by a DOI and registered with DataCite. The referenced dataset will contain either the odML file itself or the data the odML is annotating.</definition>
@@ -35,54 +92,6 @@
     <name>DataReferenceDescription</name>
     <definition>Description of a data reference. This Section is defined to be used as a subsection of the 'DataReference' type sections.</definition>
     <include>https://terminologies.g-node.org/v1.1/datareference/referencedescription.xml</include>
-  </section>
-
-  <section>
-    <type>analysis</type>
-    <name>Analysis</name>
-    <definition>Sections of the Analysis type can be used to describe analyses.</definition>
-    <include>https://terminologies.g-node.org/v1.1/analysis/analysis.xml</include>
-  </section>
-
-  <section>
-    <type>analysis/psth</type>
-    <name>PSTH</name>
-    <definition>An Analysis-type section to describe a PSTH.</definition>
-    <include>https://terminologies.g-node.org/v1.1/analysis/psth.xml</include>
-  </section>
-
-  <section>
-    <type>analysis/power_spectrum</type>
-    <name>PowerSpectrum</name>
-    <definition>Properties of this section define the way a power spectrum was calculated.</definition>
-    <include>https://terminologies.g-node.org/v1.1/analysis/power_spectrum.xml</include>
-  </section>
-
-  <section>
-    <type>cell</type>
-    <name>Cell</name>
-    <definition>Specification of the recorded cell. A cell definition should be a subsection of the
-      <a href="../subject/subject.xml">Subject</a>
-      section.
-    </definition>
-    <include>https://terminologies.g-node.org/v1.1/cell/cell.xml</include>
-  </section>
-
-  <section>
-    <type>dataset</type>
-    <name>Dataset</name>
-    <definition>Names (URLs) and times of recorded data files. Datasets are obtained during a Recording and may belong
-      to different Experiments. Related sections that can be used as subsections, parent sections, or siblings are
-      Stimulus, HardwareSettings, and Experiment.
-    </definition>
-    <include>https://terminologies.g-node.org/v1.1/dataset/dataset.xml</include>
-  </section>
-
-  <section>
-    <type>blackrock</type>
-    <name>Blackrock</name>
-    <definition>Information on the Cerebus^TM data acquisition system</definition>
-    <include>https://terminologies.g-node.org/v1.1/blackrock/blackrock.xml</include>
   </section>
 
   <section>
@@ -283,17 +292,17 @@
   </section>
 
   <section>
+    <type>license</type>
+    <name>License</name>
+    <definition>This section contains keywords to a data or software license.</definition>
+    <include>https://terminologies.g-node.org/v1.1/license/license.xml</include>
+  </section>
+
+  <section>
     <type>model/lif</type>
     <name>Leaky integrate and fire</name>
     <definition>Section to describe a leaky integrate and fire neuron model.</definition>
     <include>https://terminologies.g-node.org/v1.1/model/lif.xml</include>
-  </section>
-
-  <section>
-    <type>model/pif</type>
-    <name>perfect integrate and fire</name>
-    <definition>Section to describe a perfect integrate and fire model.</definition>
-    <include>https://terminologies.g-node.org/v1.1/model/pif.xml</include>
   </section>
 
   <section>
@@ -304,31 +313,17 @@
   </section>
 
   <section>
+    <type>model/pif</type>
+    <name>perfect integrate and fire</name>
+    <definition>Section to describe a perfect integrate and fire model.</definition>
+    <include>https://terminologies.g-node.org/v1.1/model/pif.xml</include>
+  </section>
+
+  <section>
     <type>model/single_compartment</type>
     <name>One compartment model</name>
     <definition>Section to describe a biophysical model that consists of a single compartment.</definition>
     <include>https://terminologies.g-node.org/v1.1/model/single_compartment.xml</include>
-  </section>
-
-  <section>
-    <type>license</type>
-    <name>License</name>
-    <definition>This section contains keywords to a data or software license.</definition>
-    <include>https://terminologies.g-node.org/v1.1/license/license.xml</include>
-  </section>
-
-  <section>
-    <type>questionnaire/questionnaire</type>
-    <name>Questionnaire</name>
-    <definition>Description of a questionnaire.</definition>
-    <include>https://terminologies.g-node.org/v1.1/questionnaire/questionnaire.xml</include>
-  </section>
-
-  <section>
-    <type>questionnaire/question</type>
-    <name>Question</name>
-    <definition>Description of a question if a questionnaire.</definition>
-    <include>https://terminologies.g-node.org/v1.1/questionnaire/question.xml</include>
   </section>
 
   <section>
@@ -357,6 +352,20 @@
     <name>protocol</name>
     <definition>Information about the experimental protocol.</definition>
     <include>https://terminologies.g-node.org/v1.1/protocol/protocol.xml</include>
+  </section>
+
+  <section>
+    <type>questionnaire/question</type>
+    <name>Question</name>
+    <definition>Description of a question if a questionnaire.</definition>
+    <include>https://terminologies.g-node.org/v1.1/questionnaire/question.xml</include>
+  </section>
+
+  <section>
+    <type>questionnaire/questionnaire</type>
+    <name>Questionnaire</name>
+    <definition>Description of a questionnaire.</definition>
+    <include>https://terminologies.g-node.org/v1.1/questionnaire/questionnaire.xml</include>
   </section>
 
   <section>
@@ -416,18 +425,18 @@
   </section>
 
   <section>
+    <type>stimulus/movie</type>
+    <name>Movie</name>
+    <definition>Properties to describe a movie (or image sequence) stimulus.</definition>
+    <include>https://terminologies.g-node.org/v1.1/stimulus/movie.xml</include>
+  </section>
+
+  <section>
     <type>stimulus/pulse</type>
     <name>Pulse</name>
     <definition>Properties to describe a simple pulse stimulus that starts from and returns to a certain baseline.
     </definition>
     <include>https://terminologies.g-node.org/v1.1/stimulus/pulse.xml</include>
-  </section>
-
-  <section>
-    <type>stimulus/movie</type>
-    <name>Movie</name>
-    <definition>Properties to describe a movie (or image sequence) stimulus.</definition>
-    <include>https://terminologies.g-node.org/v1.1/stimulus/movie.xml</include>
   </section>
 
   <section>
@@ -482,15 +491,6 @@
       May contain the Cell and Preparation sections as subsections.
     </definition>
     <include>https://terminologies.g-node.org/v1.1/subject/subject.xml</include>
-  </section>
-
-  <section>
-    <type>carmen_mini</type>
-    <name>CarmenMini</name>
-    <definition>This is a convenience section that lists the terms of the CARMEN MINI (Gibson et al. Nature Precedings,
-      2009 Version 0.6) and maps them to the odml "standard" terminologies.
-    </definition>
-    <include>https://terminologies.g-node.org/v1.1/carmenMini/carmen_mini.xml</include>
   </section>
 
 </odML>
