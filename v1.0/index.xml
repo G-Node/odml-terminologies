@@ -178,7 +178,7 @@
     <type>hardware/camera_objective</type>
     <name>CameraObjective</name>
     <definition>This section contains properties that describe a camera objective.</definition>
-    <include>https://terminologies.g-node.org/v1.0/hardware/attenuator.xml</include>
+    <include>https://terminologies.g-node.org/v1.0/hardware/camera_objective.xml</include>
   </section>
 
   <section>
